@@ -437,7 +437,7 @@ $(document).ready(function()
 
                         <div class="others">
                             <div class="prev"><span>上一篇：</span><a href="/Item/23765.aspx" target="_self" title="标题：10.7班级一日考核&#xD;点击数：50&#xD;发表时间：26年10月08日">10.7班级一日考核</a>[ 10-08 ]</div>
-                            <div class="next"><span>下一篇：</span><a href="/Item/23773.aspx" target="_self" title="标题：绍兴一中2026年国旗队交接仪式方案&#xD;点击数：79&#xD;发表时间：26年10月10日">绍兴一中2026年国旗队交接仪式方案</a>[ 10-10 ]</div>
+                            <div class="next"><span>下一篇：</span><a href="/Item/23773.aspx" target="_self" title="标题：绍兴一中2026年国旗队交接仪式方案&#xD;点击数：80&#xD;发表时间：26年10月10日">绍兴一中2026年国旗队交接仪式方案</a>[ 10-10 ]</div>
                         </div>
                     </div>
 
