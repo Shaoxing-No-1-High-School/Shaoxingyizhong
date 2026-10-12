@@ -350,28 +350,29 @@ function GetUserInfo1(response){
                     <h1 class="title"><b>关键词 "<i></i>"</b></h1>
                     <div class="con">
                         <div class="infoList a14" style="margin-bottom: 30px;"> 
-  <li><span class="date">2026-10-12</span><a href="/Item/23777.aspx" target="_blank" title="标题：空军招飞宣讲会邀请函&#xD;点击数：7&#xD;发表时间：2026年10月12日">空军招飞宣讲会邀请函</a></li>
-<li><span class="date">2026-10-12</span><a href="/Item/23776.aspx" target="_blank" title="标题：大扫除通知&#xD;点击数：9&#xD;发表时间：2026年10月12日">大扫除通知</a></li>
-<li><span class="date">2026-10-12</span><a href="/Item/23775.aspx" target="_blank" title="标题：10.9班级一日考核&#xD;点击数：11&#xD;发表时间：2026年10月12日">10.9班级一日考核</a></li>
-<li><span class="date">2026-10-12</span><a href="/Item/23774.aspx" target="_blank" title="标题：高二晚自习(10.11-10.16)&#xD;点击数：14&#xD;发表时间：2026年10月12日">高二晚自习(10.11-10.16)</a></li>
-<li><span class="date">2026-10-10</span><a href="/Item/13310.aspx" target="_blank" title="标题：作息时间调整通知&#xD;点击数：9741&#xD;发表时间：2026年10月10日">作息时间调整通知</a></li>
+  <li><span class="date">2026-10-12</span><a href="/Item/23778.aspx" target="_blank" title="标题：高三晚自修（10.12-10.25）&#xD;点击数：8&#xD;发表时间：2026年10月12日">高三晚自修（10.12-10.25）</a></li>
+<li><span class="date">2026-10-12</span><a href="/Item/23777.aspx" target="_blank" title="标题：空军招飞宣讲会邀请函&#xD;点击数：21&#xD;发表时间：2026年10月12日">空军招飞宣讲会邀请函</a></li>
+<li><span class="date">2026-10-12</span><a href="/Item/23776.aspx" target="_blank" title="标题：大扫除通知&#xD;点击数：19&#xD;发表时间：2026年10月12日">大扫除通知</a></li>
+<li><span class="date">2026-10-12</span><a href="/Item/23775.aspx" target="_blank" title="标题：10.9班级一日考核&#xD;点击数：16&#xD;发表时间：2026年10月12日">10.9班级一日考核</a></li>
+<li><span class="date">2026-10-12</span><a href="/Item/23774.aspx" target="_blank" title="标题：高二晚自习(10.11-10.16)&#xD;点击数：20&#xD;发表时间：2026年10月12日">高二晚自习(10.11-10.16)</a></li>
+<li><span class="date">2026-10-10</span><a href="/Item/13310.aspx" target="_blank" title="标题：作息时间调整通知&#xD;点击数：9743&#xD;发表时间：2026年10月10日">作息时间调整通知</a></li>
 <li><span class="date">2026-10-10</span><a href="/Item/23773.aspx" target="_blank" title="标题：绍兴一中2026年国旗队交接仪式方案&#xD;点击数：93&#xD;发表时间：2026年10月10日">绍兴一中2026年国旗队交接仪式方案</a></li>
 <li><span class="date">2026-10-10</span><a href="/Item/23772.aspx" target="_blank" title="标题：绍兴一中排球队招收新队员通知&#xD;点击数：65&#xD;发表时间：2026年10月10日">绍兴一中排球队招收新队员通知</a></li>
 <li><span class="date">2026-10-10</span><a href="/Item/23771.aspx" target="_blank" title="标题：健康教育资料领取通知&#xD;点击数：61&#xD;发表时间：2026年10月10日">健康教育资料领取通知</a></li>
 <li><span class="date">2026-10-09</span><a href="/Item/23770.aspx" target="_blank" title="标题：10.8班级一日考核&#xD;点击数：48&#xD;发表时间：2026年10月09日">10.8班级一日考核</a></li>
 <li><span class="date">2026-10-09</span><a href="/Item/23769.aspx" target="_blank" title="标题：求真实验室招新考试&#xD;点击数：110&#xD;发表时间：2026年10月09日">求真实验室招新考试</a></li>
 <li><span class="date">2026-10-08</span><a href="/Item/23767.aspx" target="_blank" title="标题：高一晚自修（10.11-10.16）&#xD;点击数：64&#xD;发表时间：2026年10月08日">高一晚自修（10.11-10.16）</a></li>
-<li><span class="date">2026-10-08</span><a href="/Item/23766.aspx" target="_blank" title="标题：学生证领取和注册通知&#xD;点击数：150&#xD;发表时间：2026年10月08日">学生证领取和注册通知</a></li>
+<li><span class="date">2026-10-08</span><a href="/Item/23766.aspx" target="_blank" title="标题：学生证领取和注册通知&#xD;点击数：151&#xD;发表时间：2026年10月08日">学生证领取和注册通知</a></li>
 <li><span class="date">2026-10-08</span><a href="/Item/23765.aspx" target="_blank" title="标题：10.7班级一日考核&#xD;点击数：51&#xD;发表时间：2026年10月08日">10.7班级一日考核</a></li>
 <li><span class="date">2026-10-08</span><a href="/Item/23764.aspx" target="_blank" title="标题：学时登记：2026暑假博雅•模拟联合国大会校内会活动学分认定&#xD;点击数：10&#xD;发表时间：2026年10月08日">学时登记：2026暑假博雅•模拟联合国大会校内会活动学分认定</a></li>
 <li><span class="date">2026-10-08</span><a href="/Item/23763.aspx" target="_blank" title="标题：数学教研活动通知&#xD;点击数：127&#xD;发表时间：2026年10月08日">数学教研活动通知</a></li>
 <li><span class="date">2026-10-08</span><a href="/Item/23761.aspx" target="_blank" title="标题：关于开展2026年教师资格定期注册工作的通知&#xD;点击数：181&#xD;发表时间：2026年10月08日">关于开展2026年教师资格定期注册工作的通知</a></li>
 <li><span class="date">2026-10-08</span><a href="/Item/23762.aspx" target="_blank" title="标题：关于成立第八届家长委员会的通知&#xD;点击数：100&#xD;发表时间：2026年10月08日">关于成立第八届家长委员会的通知</a></li>
 <li><span class="date">2026-10-08</span><a href="/Item/23760.aspx" target="_blank" title="标题：关于本周开展主题班会活动的通知&#xD;点击数：159&#xD;发表时间：2026年10月08日">关于本周开展主题班会活动的通知</a></li>
-<li><span class="date">2026-10-07</span><a href="/Item/23759.aspx" target="_blank" title="标题：2026学年“博雅·养新”班主任成长工作坊培训通知（第一期）&#xD;点击数：179&#xD;发表时间：2026年10月07日">2026学年“博雅·养新”班主任成长工作坊培训通知（第一期）</a></li>
-<li><span class="date">2026-10-07</span><a href="/Item/23758.aspx" target="_blank" title="标题：热烈祝贺！我校1985届校友叶军院士获2026年沃尔夫物理学奖&#xD;点击数：48&#xD;发表时间：2026年10月07日">热烈祝贺！我校1985届校友叶军院士获2026年沃尔夫物理学奖</a></li>
-<li><span class="date">2026-10-07</span><a href="/Item/23757.aspx" target="_blank" title="标题：秋启新章 社团风采飞扬  ——2026年社团纳新火热进行中&#xD;点击数：58&#xD;发表时间：2026年10月07日">秋启新章 社团风采飞扬  ——2026年社团纳新火热进行中</a></li>
-<li><span class="date">2026-10-07</span><a href="/Item/23756.aspx" target="_blank" title="标题：金秋赛场竞风流，运动精神永相传  ——我校2026年运动会圆满落幕&#xD;点击数：85&#xD;发表时间：2026年10月07日">金秋赛场竞风流，运动精神永相传  ——我校2026年运动会圆满落幕</a></li>
+<li><span class="date">2026-10-07</span><a href="/Item/23759.aspx" target="_blank" title="标题：2026学年“博雅·养新”班主任成长工作坊培训通知（第一期）&#xD;点击数：180&#xD;发表时间：2026年10月07日">2026学年“博雅·养新”班主任成长工作坊培训通知（第一期）</a></li>
+<li><span class="date">2026-10-07</span><a href="/Item/23758.aspx" target="_blank" title="标题：热烈祝贺！我校1985届校友叶军院士获2026年沃尔夫物理学奖&#xD;点击数：51&#xD;发表时间：2026年10月07日">热烈祝贺！我校1985届校友叶军院士获2026年沃尔夫物理学奖</a></li>
+<li><span class="date">2026-10-07</span><a href="/Item/23757.aspx" target="_blank" title="标题：秋启新章 社团风采飞扬  ——2026年社团纳新火热进行中&#xD;点击数：59&#xD;发表时间：2026年10月07日">秋启新章 社团风采飞扬  ——2026年社团纳新火热进行中</a></li>
+<li><span class="date">2026-10-07</span><a href="/Item/23756.aspx" target="_blank" title="标题：金秋赛场竞风流，运动精神永相传  ——我校2026年运动会圆满落幕&#xD;点击数：86&#xD;发表时间：2026年10月07日">金秋赛场竞风流，运动精神永相传  ——我校2026年运动会圆满落幕</a></li>
 <li><span class="date">2026-10-07</span><a href="/Item/23755.aspx" target="_blank" title="标题：9.30班级一日考核&#xD;点击数：63&#xD;发表时间：2026年10月07日">9.30班级一日考核</a></li>
 <li><span class="date">2026-10-07</span><a href="/Item/23754.aspx" target="_blank" title="标题：9.29班级一日考核&#xD;点击数：52&#xD;发表时间：2026年10月07日">9.29班级一日考核</a></li>
 <li><span class="date">2026-10-07</span><a href="/Item/23753.aspx" target="_blank" title="标题：9.28班级一日考核&#xD;点击数：55&#xD;发表时间：2026年10月07日">9.28班级一日考核</a></li>
@@ -385,7 +386,7 @@ function GetUserInfo1(response){
 <li><span class="date">2026-09-30</span><a href="/Item/23745.aspx" target="_blank" title="标题：高三晚自修（10.4-10.11）&#xD;点击数：102&#xD;发表时间：2026年09月30日">高三晚自修（10.4-10.11）</a></li>
 <li><span class="date">2026-09-30</span><a href="/Item/23768.aspx" target="_blank" title="标题：中共绍兴市第一中学委员会关于理科一支部委员会增补选举结果的批复&#xD;点击数：186&#xD;发表时间：2026年09月30日">中共绍兴市第一中学委员会关于理科一支部委员会增补选举结果的批复</a></li>
 <li><span class="date">2026-09-30</span><a href="/Item/23751.aspx" target="_blank" title="标题：任前公示通告&#xD;点击数：280&#xD;发表时间：2026年09月30日">任前公示通告</a></li>
-<li><span class="date">2026-09-30</span><a href="/Item/23743.aspx" target="_blank" title="标题：创新班学部10月4日至10月16日晚自习安排&#xD;点击数：126&#xD;发表时间：2026年09月30日">创新班学部10月4日至10月16日晚自习安排</a></li>
+<li><span class="date">2026-09-30</span><a href="/Item/23743.aspx" target="_blank" title="标题：创新班学部10月4日至10月16日晚自习安排&#xD;点击数：127&#xD;发表时间：2026年09月30日">创新班学部10月4日至10月16日晚自习安排</a></li>
 <li><span class="date">2026-09-29</span><a href="/Item/23742.aspx" target="_blank" title="标题：高三10月8-10日强基联盟测试时间安排&#xD;点击数：251&#xD;发表时间：2026年09月29日">高三10月8-10日强基联盟测试时间安排</a></li>
 <li><span class="date">2026-09-29</span><a href="/Item/23741.aspx" target="_blank" title="标题：每周一学（2026年9月28日-10月4日）习近平就建设更高水平平安中国作出重要指示&#xD;点击数：5&#xD;发表时间：2026年09月29日">每周一学（2026年9月28日-10月4日）习近平就建设更高水平平安中国作出重要指示</a></li>
 <li><span class="date">2026-09-29</span><a href="/Item/23740.aspx" target="_blank" title="标题：两则社团课通知&#xD;点击数：121&#xD;发表时间：2026年09月29日">两则社团课通知</a></li>
@@ -399,7 +400,6 @@ function GetUserInfo1(response){
 <li><span class="date">2026-09-28</span><a href="/Item/23732.aspx" target="_blank" title="标题：9月份“美丽寝室”表彰公告&#xD;点击数：101&#xD;发表时间：2026年09月28日">9月份“美丽寝室”表彰公告</a></li>
 <li><span class="date">2026-09-28</span><a href="/Item/23731.aspx" target="_blank" title="标题：9.27班级一日考核&#xD;点击数：60&#xD;发表时间：2026年09月28日">9.27班级一日考核</a></li>
 <li><span class="date">2026-09-28</span><a href="/Item/23730.aspx" target="_blank" title="标题：关于秋季运动会的有关工作提醒&#xD;点击数：279&#xD;发表时间：2026年09月28日">关于秋季运动会的有关工作提醒</a></li>
-<li><span class="date">2026-09-28</span><a href="/Item/23729.aspx" target="_blank" title="标题：高二、高三大扫除通知&#xD;点击数：71&#xD;发表时间：2026年09月28日">高二、高三大扫除通知</a></li>
   </div>
                         <div class="page"><span id="pe100_page_全站搜索按标题_普通式" class="pagecss"><!--{pe.begin.pagination}-->
  <a href="search.aspx">首页</a>
