@@ -350,7 +350,7 @@ function GetUserInfo1(response){
                     <h1 class="title"><b>关键词 "<i></i>"</b></h1>
                     <div class="con">
                         <div class="infoList a14" style="margin-bottom: 30px;"> 
-  <li><span class="date">2026-10-13</span><a href="/Item/23781.aspx" target="_blank" title="标题：关于2026学年学生体检工作有关事项的通知&#xD;点击数：24&#xD;发表时间：2026年10月13日">关于2026学年学生体检工作有关事项的通知</a></li>
+  <li><span class="date">2026-10-13</span><a href="/Item/23781.aspx" target="_blank" title="标题：关于2026学年学生体检工作有关事项的通知&#xD;点击数：34&#xD;发表时间：2026年10月13日">关于2026学年学生体检工作有关事项的通知</a></li>
 <li><span class="date">2026-10-12</span><a href="/Item/23780.aspx" target="_blank" title="标题：10.10班级一日考核&#xD;点击数：40&#xD;发表时间：2026年10月12日">10.10班级一日考核</a></li>
 <li><span class="date">2026-10-12</span><a href="/Item/23779.aspx" target="_blank" title="标题：每周一学（2026年10月12日-10月18日）习近平总书记引领健康中国建设&#xD;点击数：1&#xD;发表时间：2026年10月12日">每周一学（2026年10月12日-10月18日）习近平总书记引领健康中国建设</a></li>
 <li><span class="date">2026-10-12</span><a href="/Item/23777.aspx" target="_blank" title="标题：空军招飞宣讲会邀请函（改到4106）&#xD;点击数：129&#xD;发表时间：2026年10月12日">空军招飞宣讲会邀请函（改到4106）</a></li>
