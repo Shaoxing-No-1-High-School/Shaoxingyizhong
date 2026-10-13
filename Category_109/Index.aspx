@@ -401,6 +401,14 @@ function GetUserInfo1(response){
   </tr>
  
 <tr class="tableCont">
+    <td class="msgT"><a href="/Item/23786.aspx">$β世纪城</a></td>
+    <td>sjcnb</td>
+    <td>0</td>
+    <td>2026-10-13</td>
+    <td><span class="msg_wait">待回复</span></td>
+  </tr>
+ 
+<tr class="tableCont">
     <td class="msgT"><a href="/Item/23492.aspx">d#a$k#a$r#a,QjH@gKe!X</a></td>
     <td>AS</td>
     <td>46</td>
@@ -419,7 +427,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/23460.aspx">鲁迅中学王朝了</a></td>
     <td>sjcnb</td>
-    <td>95</td>
+    <td>96</td>
     <td>2026-07-01</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -427,7 +435,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/23459.aspx">pzxnzyb</a></td>
     <td>234a</td>
-    <td>65</td>
+    <td>66</td>
     <td>2026-07-01</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -443,7 +451,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/23415.aspx">我不要一栋楼创新班的男的，我不要滂臭的厕所</a></td>
     <td>jing</td>
-    <td>83</td>
+    <td>84</td>
     <td>2026-06-22</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -475,7 +483,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/22890.aspx">雷霆</a></td>
     <td>kouzi1001</td>
-    <td>111</td>
+    <td>112</td>
     <td>2026-03-19</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -499,7 +507,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/22242.aspx">老是有人故意在三楼男厕所外面拉屎</a></td>
     <td>kouzi1001</td>
-    <td>147</td>
+    <td>149</td>
     <td>2025-11-10</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -547,16 +555,8 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/21848.aspx">🎈🎃🎉🎄</a></td>
     <td>LovelyFlorrie</td>
-    <td>79</td>
+    <td>80</td>
     <td>2025-09-06</td>
-    <td><span class="msg_wait">待回复</span></td>
-  </tr>
- 
-<tr class="tableCont">
-    <td class="msgT"><a href="/Item/21847.aspx">😊</a></td>
-    <td>LovelyUsing</td>
-    <td>34</td>
-    <td>2025-09-05</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
 
