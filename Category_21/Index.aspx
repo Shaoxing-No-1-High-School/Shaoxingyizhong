@@ -369,7 +369,7 @@ function GetUserInfo1(response){
 	<div class="bd">
 		<ul class="sideinfoList">
 			
-            <li class="first"><a href="/Item/23758.aspx" target="_blank" title="标题：热烈祝贺！我校1985届校友叶军院士获2026年沃尔夫物理学奖&#xD;点击数：58&#xD;发表时间：2026年10月07日">热烈祝贺！我校1985届校友叶军院士获2026年沃尔夫物理学奖</a><span class="dateRight">[10-07]</span></li><li><a href="/Item/23757.aspx" target="_blank" title="标题：秋启新章 社团风采飞扬  ——2026年社团纳新火热进行中&#xD;点击数：64&#xD;发表时间：2026年10月07日">秋启新章 社团风采飞扬  ——2026年社团纳新火热进行中</a><span class="dateRight">[10-07]</span></li><li><a href="/Item/23756.aspx" target="_blank" title="标题：金秋赛场竞风流，运动精神永相传  ——我校2026年运动会圆满落幕&#xD;点击数：90&#xD;发表时间：2026年10月07日">金秋赛场竞风流，运动精神永相传  ——我校2026年运动会…</a><span class="dateRight">[10-07]</span></li><li><a href="/Item/23734.aspx" target="_blank" title="标题：绍兴市教育教学研究院来我校开展教学调研&#xD;点击数：24&#xD;发表时间：2026年09月28日">绍兴市教育教学研究院来我校开展教学调研</a><span class="dateRight">[09-28]</span></li><li><a href="/Item/23735.aspx" target="_blank" title="标题：“乒”搏赛场，载誉而归  ——我校在2026年市直中学生乒乓球比赛中获女团第二名、男团第三名&#xD;点击数：38&#xD;发表时间：2026年09月28日">“乒”搏赛场，载誉而归  ——我校在2026年市直中学生乒…</a><span class="dateRight">[09-28]</span></li><li><a href="/Item/23738.aspx" target="_blank" title="标题：踏歌而行，向光奔跑 ——绍兴一中开展校园跑操比赛&#xD;点击数：80&#xD;发表时间：2026年09月28日">踏歌而行，向光奔跑 ——绍兴一中开展校园跑操比赛</a><span class="dateRight">[09-28]</span></li><li class="last"><a href="/Item/18671.aspx" target="_blank" title="标题：“青春筑梦心相融，科技报国向未来”——2023年绍兴一中秋季田径运动会成功举行&#xD;点击数：263&#xD;发表时间：2023年10月24日">“青春筑梦心相融，科技报国向未来”——2023年绍兴一中…</a><span class="dateRight">[10-24]</span></li>
+            <li class="first"><a href="/Item/23782.aspx" target="_blank" title="标题：红旗见证，青春接力 | 绍兴一中2026届国旗队换届表彰仪式圆满举行&#xD;点击数：14&#xD;发表时间：2026年10月13日">红旗见证，青春接力 | 绍兴一中2026届国旗队换届表彰仪式…</a><span class="dateRight">[10-13]</span></li><li><a href="/Item/23757.aspx" target="_blank" title="标题：秋启新章 社团风采飞扬  ——2026年社团纳新火热进行中&#xD;点击数：64&#xD;发表时间：2026年10月07日">秋启新章 社团风采飞扬  ——2026年社团纳新火热进行中</a><span class="dateRight">[10-07]</span></li><li><a href="/Item/23734.aspx" target="_blank" title="标题：绍兴市教育教学研究院来我校开展教学调研&#xD;点击数：24&#xD;发表时间：2026年09月28日">绍兴市教育教学研究院来我校开展教学调研</a><span class="dateRight">[09-28]</span></li><li><a href="/Item/23735.aspx" target="_blank" title="标题：“乒”搏赛场，载誉而归  ——我校在2026年市直中学生乒乓球比赛中获女团第二名、男团第三名&#xD;点击数：38&#xD;发表时间：2026年09月28日">“乒”搏赛场，载誉而归  ——我校在2026年市直中学生乒…</a><span class="dateRight">[09-28]</span></li><li><a href="/Item/23758.aspx" target="_blank" title="标题：热烈祝贺！我校1985届校友叶军院士获2026年沃尔夫物理学奖&#xD;点击数：61&#xD;发表时间：2026年10月07日">热烈祝贺！我校1985届校友叶军院士获2026年沃尔夫物理学奖</a><span class="dateRight">[10-07]</span></li><li><a href="/Item/23738.aspx" target="_blank" title="标题：踏歌而行，向光奔跑 ——绍兴一中开展校园跑操比赛&#xD;点击数：80&#xD;发表时间：2026年09月28日">踏歌而行，向光奔跑 ——绍兴一中开展校园跑操比赛</a><span class="dateRight">[09-28]</span></li><li class="last"><a href="/Item/23737.aspx" target="_blank" title="标题：数理化齐开花！绍兴一中创新学部学子竞赛捷报频传&#xD;点击数：74&#xD;发表时间：2026年09月28日">数理化齐开花！绍兴一中创新学部学子竞赛捷报频传</a><span class="dateRight">[09-28]</span></li>
           
 		</ul>
 	</div>
@@ -424,6 +424,11 @@ function GetUserInfo1(response){
 </ul>
 <ul class="slideCon">
   <li>
+    <div class="pe_u_thumb"><a href="/Item/23782.aspx" target="_blank"><img src="/UploadFiles/xwzx/2026/10/202610131058066893_600_340.jpg" alt="红旗见证，青春接力 | 绍兴一中2026届国旗队换届表彰仪式圆满举行"></a></div>
+    <p class="pe_u_thumb_title"><a href="/Item/23782.aspx" target="_blank">红旗见证，青春接力 | 绍兴一中2026届国旗队换届表彰仪式圆满举行</a></p>
+    <p class="intro">
+晨光初启，红旗飘扬。10月12日上午大课间，全体师生齐聚，怀揣着对国旗的崇高敬意，共同见证了绍兴一中2026届国旗队交接暨换…<a href="/Item/23782.aspx" class="more">[详细]</a></p><span class="bg"></span></li>
+  <li>
     <div class="pe_u_thumb"><a href="/Item/23758.aspx" target="_blank"><img src="/UploadFiles/xwzx/2026/10/202610071627072043_600_340.png" alt="热烈祝贺！我校1985届校友叶军院士获2026年沃尔夫物理学奖"></a></div>
     <p class="pe_u_thumb_title"><a href="/Item/23758.aspx" target="_blank">热烈祝贺！我校1985届校友叶军院士获2026年沃尔夫物理学奖</a></p>
     <p class="intro">
@@ -438,11 +443,6 @@ function GetUserInfo1(response){
     <p class="pe_u_thumb_title"><a href="/Item/23756.aspx" target="_blank">金秋赛场竞风流，运动精神永相传  ——我校2026年运动会圆满落幕</a></p>
     <p class="intro">
 金秋九月，清风送爽，彩旗飞扬。我校2026年运动会在全校师生的共同努力下，于9月30日顺利完赛。运动健儿奋力驰骋、挥洒汗水；…<a href="/Item/23756.aspx" class="more">[详细]</a></p><span class="bg"></span></li>
-  <li>
-    <div class="pe_u_thumb"><a href="/Item/23738.aspx" target="_blank"><img src="/UploadFiles/xwzx/2026/9/202609281636169444_600_340.jpg" alt="踏歌而行，向光奔跑 ——绍兴一中开展校园跑操比赛"></a></div>
-    <p class="pe_u_thumb_title"><a href="/Item/23738.aspx" target="_blank">踏歌而行，向光奔跑 ——绍兴一中开展校园跑操比赛</a></p>
-    <p class="intro">
-暑气渐收，秋意初显。9月22日，绍兴一中田径场响起一阵阵嘹亮的口号声。高一、高二、高三全体学生列队于此。一场跑操比赛，把…<a href="/Item/23738.aspx" class="more">[详细]</a></p><span class="bg"></span></li>
 </ul>
           
         </div>
@@ -472,7 +472,7 @@ $("#pageSlide span:contains('还没有任何项目！')").hide( function()
                         <div class="bd" style="height:190px">
                             <ul class="infoList a14">
                                 
-            <li class="first"><span class="date">10-07</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/23758.aspx" target="_blank" title="标题：热烈祝贺！我校1985届校友叶军院士获2026年沃尔夫物理学奖&#xD;点击数：58&#xD;发表时间：2026年10月07日">热烈祝贺！我校1985届校友叶军院士获2026年沃尔夫物理学奖</a></li><li><span class="date">10-07</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/23757.aspx" target="_blank" title="标题：秋启新章 社团风采飞扬  ——2026年社团纳新火热进行中&#xD;点击数：64&#xD;发表时间：2026年10月07日">秋启新章 社团风采飞扬  ——2026年社团纳新火热进行中</a></li><li><span class="date">10-07</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/23756.aspx" target="_blank" title="标题：金秋赛场竞风流，运动精神永相传  ——我校2026年运动会圆满落幕&#xD;点击数：90&#xD;发表时间：2026年10月07日">金秋赛场竞风流，运动精神永相传  ——我校2026年运动会…</a></li><li><span class="date">09-28</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/23738.aspx" target="_blank" title="标题：踏歌而行，向光奔跑 ——绍兴一中开展校园跑操比赛&#xD;点击数：80&#xD;发表时间：2026年09月28日">踏歌而行，向光奔跑 ——绍兴一中开展校园跑操比赛</a></li><li><span class="date">09-28</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/23737.aspx" target="_blank" title="标题：数理化齐开花！绍兴一中创新学部学子竞赛捷报频传&#xD;点击数：73&#xD;发表时间：2026年09月28日">数理化齐开花！绍兴一中创新学部学子竞赛捷报频传</a></li><li class="last"><span class="date">09-28</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/23736.aspx" target="_blank" title="标题：无声方寸境，有声育人情  ——绍兴一中教育集团“美丽教室”建设活动&#xD;点击数：40&#xD;发表时间：2026年09月28日">无声方寸境，有声育人情  ——绍兴一中教育集团“美丽教…</a></li>
+            <li class="first"><span class="date">10-13</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/23782.aspx" target="_blank" title="标题：红旗见证，青春接力 | 绍兴一中2026届国旗队换届表彰仪式圆满举行&#xD;点击数：14&#xD;发表时间：2026年10月13日">红旗见证，青春接力 | 绍兴一中2026届国旗队换届表彰仪式…</a>&nbsp;<img src="/images/new.gif" alt="最新内容"></li><li><span class="date">10-07</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/23758.aspx" target="_blank" title="标题：热烈祝贺！我校1985届校友叶军院士获2026年沃尔夫物理学奖&#xD;点击数：61&#xD;发表时间：2026年10月07日">热烈祝贺！我校1985届校友叶军院士获2026年沃尔夫物理学奖</a></li><li><span class="date">10-07</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/23757.aspx" target="_blank" title="标题：秋启新章 社团风采飞扬  ——2026年社团纳新火热进行中&#xD;点击数：64&#xD;发表时间：2026年10月07日">秋启新章 社团风采飞扬  ——2026年社团纳新火热进行中</a></li><li><span class="date">10-07</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/23756.aspx" target="_blank" title="标题：金秋赛场竞风流，运动精神永相传  ——我校2026年运动会圆满落幕&#xD;点击数：92&#xD;发表时间：2026年10月07日">金秋赛场竞风流，运动精神永相传  ——我校2026年运动会…</a></li><li><span class="date">09-28</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/23738.aspx" target="_blank" title="标题：踏歌而行，向光奔跑 ——绍兴一中开展校园跑操比赛&#xD;点击数：80&#xD;发表时间：2026年09月28日">踏歌而行，向光奔跑 ——绍兴一中开展校园跑操比赛</a></li><li class="last"><span class="date">09-28</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/23737.aspx" target="_blank" title="标题：数理化齐开花！绍兴一中创新学部学子竞赛捷报频传&#xD;点击数：74&#xD;发表时间：2026年09月28日">数理化齐开花！绍兴一中创新学部学子竞赛捷报频传</a></li>
           
                             </ul>
                         </div>
