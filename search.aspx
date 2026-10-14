@@ -350,17 +350,18 @@ function GetUserInfo1(response){
                     <h1 class="title"><b>关键词 "<i></i>"</b></h1>
                     <div class="con">
                         <div class="infoList a14" style="margin-bottom: 30px;"> 
-  <li><span class="date">2026-10-14</span><a href="/Item/23793.aspx" target="_blank" title="标题：化学教研活动通知&#xD;点击数：49&#xD;发表时间：2026年10月14日">化学教研活动通知</a></li>
+  <li><span class="date">2026-10-14</span><a href="/Item/23794.aspx" target="_blank" title="标题：10.13班级一日考核&#xD;点击数：1&#xD;发表时间：2026年10月14日">10.13班级一日考核</a></li>
+<li><span class="date">2026-10-14</span><a href="/Item/23793.aspx" target="_blank" title="标题：化学教研活动通知&#xD;点击数：53&#xD;发表时间：2026年10月14日">化学教研活动通知</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23792.aspx" target="_blank" title="标题：求真实验室考试结果&#xD;点击数：44&#xD;发表时间：2026年10月14日">求真实验室考试结果</a></li>
-<li><span class="date">2026-10-14</span><a href="/Item/23791.aspx" target="_blank" title="标题：绍兴一中微电影创作大赛剧本征集&#xD;点击数：30&#xD;发表时间：2026年10月14日">绍兴一中微电影创作大赛剧本征集</a></li>
+<li><span class="date">2026-10-14</span><a href="/Item/23791.aspx" target="_blank" title="标题：绍兴一中微电影创作大赛剧本征集&#xD;点击数：31&#xD;发表时间：2026年10月14日">绍兴一中微电影创作大赛剧本征集</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23790.aspx" target="_blank" title="标题：sjc的会议&#xD;点击数：1&#xD;发表时间：2026年10月14日">sjc的会议</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23789.aspx" target="_blank" title="标题：论1014会议😶&#xD;点击数：1&#xD;发表时间：2026年10月14日">论1014会议😶</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23788.aspx" target="_blank" title="标题：绍兴一中创新班学部期中学生大会&#xD;点击数：113&#xD;发表时间：2026年10月14日">绍兴一中创新班学部期中学生大会</a></li>
 <li><span class="date">2026-10-13</span><a href="/Item/23786.aspx" target="_blank" title="标题：$β世纪城&#xD;点击数：3&#xD;发表时间：2026年10月13日">$β世纪城</a></li>
-<li><span class="date">2026-10-13</span><a href="/Item/23785.aspx" target="_blank" title="标题：10.13跑操量化考核反馈&#xD;点击数：62&#xD;发表时间：2026年10月13日">10.13跑操量化考核反馈</a></li>
-<li><span class="date">2026-10-13</span><a href="/Item/23784.aspx" target="_blank" title="标题：10.12班级一日考核&#xD;点击数：50&#xD;发表时间：2026年10月13日">10.12班级一日考核</a></li>
+<li><span class="date">2026-10-13</span><a href="/Item/23785.aspx" target="_blank" title="标题：10.13跑操量化考核反馈&#xD;点击数：63&#xD;发表时间：2026年10月13日">10.13跑操量化考核反馈</a></li>
+<li><span class="date">2026-10-13</span><a href="/Item/23784.aspx" target="_blank" title="标题：10.12班级一日考核&#xD;点击数：51&#xD;发表时间：2026年10月13日">10.12班级一日考核</a></li>
 <li><span class="date">2026-10-13</span><a href="/Item/23783.aspx" target="_blank" title="标题：关于心理教研活动的通知&#xD;点击数：88&#xD;发表时间：2026年10月13日">关于心理教研活动的通知</a></li>
-<li><span class="date">2026-10-13</span><a href="/Item/23782.aspx" target="_blank" title="标题：红旗见证，青春接力 | 绍兴一中2026届国旗队换届表彰仪式圆满举行&#xD;点击数：30&#xD;发表时间：2026年10月13日">红旗见证，青春接力 | 绍兴一中2026届国旗队换届表彰仪式圆满举行</a></li>
+<li><span class="date">2026-10-13</span><a href="/Item/23782.aspx" target="_blank" title="标题：红旗见证，青春接力 | 绍兴一中2026届国旗队换届表彰仪式圆满举行&#xD;点击数：31&#xD;发表时间：2026年10月13日">红旗见证，青春接力 | 绍兴一中2026届国旗队换届表彰仪式圆满举行</a></li>
 <li><span class="date">2026-10-13</span><a href="/Item/23781.aspx" target="_blank" title="标题：关于2026学年学生体检工作有关事项的通知&#xD;点击数：195&#xD;发表时间：2026年10月13日">关于2026学年学生体检工作有关事项的通知</a></li>
 <li><span class="date">2026-10-12</span><a href="/Item/23780.aspx" target="_blank" title="标题：10.10班级一日考核&#xD;点击数：57&#xD;发表时间：2026年10月12日">10.10班级一日考核</a></li>
 <li><span class="date">2026-10-12</span><a href="/Item/23779.aspx" target="_blank" title="标题：每周一学（2026年10月12日-10月18日）习近平总书记引领健康中国建设&#xD;点击数：6&#xD;发表时间：2026年10月12日">每周一学（2026年10月12日-10月18日）习近平总书记引领健康中国建设</a></li>
@@ -399,7 +400,6 @@ function GetUserInfo1(response){
 <li><span class="date">2026-09-30</span><a href="/Item/23746.aspx" target="_blank" title="标题：高一晚自修（10.6-10.9）&#xD;点击数：62&#xD;发表时间：2026年09月30日">高一晚自修（10.6-10.9）</a></li>
 <li><span class="date">2026-09-30</span><a href="/Item/23745.aspx" target="_blank" title="标题：高三晚自修（10.4-10.11）&#xD;点击数：102&#xD;发表时间：2026年09月30日">高三晚自修（10.4-10.11）</a></li>
 <li><span class="date">2026-09-30</span><a href="/Item/23768.aspx" target="_blank" title="标题：中共绍兴市第一中学委员会关于理科一支部委员会增补选举结果的批复&#xD;点击数：189&#xD;发表时间：2026年09月30日">中共绍兴市第一中学委员会关于理科一支部委员会增补选举结果的批复</a></li>
-<li><span class="date">2026-09-30</span><a href="/Item/23751.aspx" target="_blank" title="标题：任前公示通告&#xD;点击数：282&#xD;发表时间：2026年09月30日">任前公示通告</a></li>
   </div>
                         <div class="page"><span id="pe100_page_全站搜索按标题_普通式" class="pagecss"><!--{pe.begin.pagination}-->
  <a href="search.aspx">首页</a>
