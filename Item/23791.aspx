@@ -381,7 +381,7 @@ function GetUserInfo1(response){
                 <div class="bd">
                     <ul class="sideinfoList">
                         
-            <li class="first"><a href="/Item/23769.aspx" target="_blank" title="标题：求真实验室招新考试&#xD;点击数：122&#xD;发表时间：2026年10月09日">求真实验室招新考试</a><span class="dateRight">[10-09]</span></li><li><a href="/Item/23740.aspx" target="_blank" title="标题：两则社团课通知&#xD;点击数：121&#xD;发表时间：2026年09月29日">两则社团课通知</a><span class="dateRight">[09-29]</span></li><li><a href="/Item/23791.aspx" target="_blank" title="标题：绍兴一中微电影创作大赛剧本征集&#xD;点击数：3&#xD;发表时间：2026年10月14日">绍兴一中微电影创作大赛剧本征集</a><span class="dateRight">[10-14]</span></li><li><a href="/Item/23265.aspx" target="_blank" title="标题：2026上半年新发展团员开会通知&#xD;点击数：150&#xD;发表时间：2026年05月25日">2026上半年新发展团员开会通知</a><span class="dateRight">[05-25]</span></li><li><a href="/Item/23247.aspx" target="_blank" title="标题：周六招生考试志愿者会议&#xD;点击数：207&#xD;发表时间：2026年05月20日">周六招生考试志愿者会议</a><span class="dateRight">[05-20]</span></li><li><a href="/Item/23243.aspx" target="_blank" title="标题：学术节｜考古知识竞赛&#xD;点击数：113&#xD;发表时间：2026年05月19日">学术节｜考古知识竞赛</a><span class="dateRight">[05-19]</span></li><li class="last"><a href="/Item/23192.aspx" target="_blank" title="标题：学术节｜绍兴一中文创产品设计方案征集&#xD;点击数：146&#xD;发表时间：2026年05月13日">学术节｜绍兴一中文创产品设计方案征集</a><span class="dateRight">[05-13]</span></li>
+            <li class="first"><a href="/Item/23792.aspx" target="_blank" title="标题：求真实验室考试结果&#xD;点击数：22&#xD;发表时间：2026年10月14日">求真实验室考试结果</a><span class="dateRight">[10-14]</span></li><li><a href="/Item/23791.aspx" target="_blank" title="标题：绍兴一中微电影创作大赛剧本征集&#xD;点击数：16&#xD;发表时间：2026年10月14日">绍兴一中微电影创作大赛剧本征集</a><span class="dateRight">[10-14]</span></li><li><a href="/Item/23740.aspx" target="_blank" title="标题：两则社团课通知&#xD;点击数：121&#xD;发表时间：2026年09月29日">两则社团课通知</a><span class="dateRight">[09-29]</span></li><li><a href="/Item/23265.aspx" target="_blank" title="标题：2026上半年新发展团员开会通知&#xD;点击数：150&#xD;发表时间：2026年05月25日">2026上半年新发展团员开会通知</a><span class="dateRight">[05-25]</span></li><li><a href="/Item/23247.aspx" target="_blank" title="标题：周六招生考试志愿者会议&#xD;点击数：207&#xD;发表时间：2026年05月20日">周六招生考试志愿者会议</a><span class="dateRight">[05-20]</span></li><li><a href="/Item/23243.aspx" target="_blank" title="标题：学术节｜考古知识竞赛&#xD;点击数：113&#xD;发表时间：2026年05月19日">学术节｜考古知识竞赛</a><span class="dateRight">[05-19]</span></li><li class="last"><a href="/Item/23192.aspx" target="_blank" title="标题：学术节｜绍兴一中文创产品设计方案征集&#xD;点击数：146&#xD;发表时间：2026年05月13日">学术节｜绍兴一中文创产品设计方案征集</a><span class="dateRight">[05-13]</span></li>
           
                     </ul>
                 </div>
@@ -437,8 +437,8 @@ $(document).ready(function()
                         </div>
 
                         <div class="others">
-                            <div class="prev"><span>上一篇：</span><a href="/Item/23769.aspx" target="_self" title="标题：求真实验室招新考试&#xD;点击数：122&#xD;发表时间：26年10月09日">求真实验室招新考试</a>[ 10-09 ]</div>
-                            <div class="next"><span>下一篇：没有了！</span></div>
+                            <div class="prev"><span>上一篇：</span><a href="/Item/23769.aspx" target="_self" title="标题：求真实验室招新考试&#xD;点击数：123&#xD;发表时间：26年10月09日">求真实验室招新考试</a>[ 10-09 ]</div>
+                            <div class="next"><span>下一篇：</span><a href="/Item/23792.aspx" target="_self" title="标题：求真实验室考试结果&#xD;点击数：22&#xD;发表时间：26年10月14日">求真实验室考试结果</a>[ 10-14 ]</div>
                         </div>
                     </div>
 
