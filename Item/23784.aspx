@@ -427,7 +427,7 @@ $(document).ready(function()
 </script></span> </div>
                         <div class="conTxt"> 
       
-     <p style="text-align: center;"><img src="/UploadFiles/xwzx/2026/10/202610131517201940.png" style="max-width: 100%; " title="202610131517201940.png" /></p>
+     <p style="text-align: center;"><img src="/UploadFiles/xwzx/2026/10/202610141507491529.png" style="max-width: 100%; " title="202610141507491529.png" /></p>
     
     </div><!--endprint-->
                         <div class="userControl">
