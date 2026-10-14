@@ -381,7 +381,7 @@ function GetUserInfo1(response){
                 <div class="bd">
                     <ul class="sideinfoList">
                         
-            <li class="first"><a href="/Item/23785.aspx" target="_blank" title="标题：10.13跑操量化考核反馈&#xD;点击数：63&#xD;发表时间：2026年10月13日">10.13跑操量化考核反馈</a><span class="dateRight">[10-13]</span></li><li><a href="/Item/23698.aspx" target="_blank" title="标题：9.20班级一日考核&#xD;点击数：50&#xD;发表时间：2026年09月21日">9.20班级一日考核</a><span class="dateRight">[09-21]</span></li><li><a href="/Item/23784.aspx" target="_blank" title="标题：10.12班级一日考核&#xD;点击数：51&#xD;发表时间：2026年10月13日">10.12班级一日考核</a><span class="dateRight">[10-13]</span></li><li><a href="/Item/22444.aspx" target="_blank" title="标题：12.8班级一日考核&#xD;点击数：44&#xD;发表时间：2025年12月09日">12.8班级一日考核</a><span class="dateRight">[12-09]</span></li><li><a href="/Item/23620.aspx" target="_blank" title="标题：大课间跑操考核员招募通知&#xD;点击数：121&#xD;发表时间：2026年09月09日">大课间跑操考核员招募通知</a><span class="dateRight">[09-09]</span></li><li><a href="/Item/23013.aspx" target="_blank" title="标题：4.9班级一日考核&#xD;点击数：36&#xD;发表时间：2026年04月10日">4.9班级一日考核</a><span class="dateRight">[04-10]</span></li><li class="last"><a href="/Item/22964.aspx" target="_blank" title="标题：3.30班级一日考核&#xD;点击数：40&#xD;发表时间：2026年03月31日">3.30班级一日考核</a><span class="dateRight">[03-31]</span></li>
+            <li class="first"><a href="/Item/23785.aspx" target="_blank" title="标题：10.13跑操量化考核反馈&#xD;点击数：66&#xD;发表时间：2026年10月13日">10.13跑操量化考核反馈</a><span class="dateRight">[10-13]</span></li><li><a href="/Item/23698.aspx" target="_blank" title="标题：9.20班级一日考核&#xD;点击数：50&#xD;发表时间：2026年09月21日">9.20班级一日考核</a><span class="dateRight">[09-21]</span></li><li><a href="/Item/23784.aspx" target="_blank" title="标题：10.12班级一日考核&#xD;点击数：51&#xD;发表时间：2026年10月13日">10.12班级一日考核</a><span class="dateRight">[10-13]</span></li><li><a href="/Item/22444.aspx" target="_blank" title="标题：12.8班级一日考核&#xD;点击数：44&#xD;发表时间：2025年12月09日">12.8班级一日考核</a><span class="dateRight">[12-09]</span></li><li><a href="/Item/23620.aspx" target="_blank" title="标题：大课间跑操考核员招募通知&#xD;点击数：121&#xD;发表时间：2026年09月09日">大课间跑操考核员招募通知</a><span class="dateRight">[09-09]</span></li><li><a href="/Item/23013.aspx" target="_blank" title="标题：4.9班级一日考核&#xD;点击数：36&#xD;发表时间：2026年04月10日">4.9班级一日考核</a><span class="dateRight">[04-10]</span></li><li class="last"><a href="/Item/22964.aspx" target="_blank" title="标题：3.30班级一日考核&#xD;点击数：40&#xD;发表时间：2026年03月31日">3.30班级一日考核</a><span class="dateRight">[03-31]</span></li>
           
                     </ul>
                 </div>
@@ -437,7 +437,7 @@ $(document).ready(function()
 
                         <div class="others">
                             <div class="prev"><span>上一篇：</span><a href="/Item/23780.aspx" target="_self" title="标题：10.10班级一日考核&#xD;点击数：57&#xD;发表时间：26年10月12日">10.10班级一日考核</a>[ 10-12 ]</div>
-                            <div class="next"><span>下一篇：</span><a href="/Item/23785.aspx" target="_self" title="标题：10.13跑操量化考核反馈&#xD;点击数：63&#xD;发表时间：26年10月13日">10.13跑操量化考核反馈</a>[ 10-13 ]</div>
+                            <div class="next"><span>下一篇：</span><a href="/Item/23785.aspx" target="_self" title="标题：10.13跑操量化考核反馈&#xD;点击数：66&#xD;发表时间：26年10月13日">10.13跑操量化考核反馈</a>[ 10-13 ]</div>
                         </div>
                     </div>
 
