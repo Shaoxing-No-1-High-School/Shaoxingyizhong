@@ -350,7 +350,7 @@ function GetUserInfo1(response){
                     <h1 class="title"><b>关键词 "<i></i>"</b></h1>
                     <div class="con">
                         <div class="infoList a14" style="margin-bottom: 30px;"> 
-  <li><span class="date">2026-10-14</span><a href="/Item/23796.aspx" target="_blank" title="标题：绍兴一中“越民奖学金”逻辑学科竞赛实施暂行办法&#xD;点击数：87&#xD;发表时间：2026年10月14日">绍兴一中“越民奖学金”逻辑学科竞赛实施暂行办法</a></li>
+  <li><span class="date">2026-10-14</span><a href="/Item/23796.aspx" target="_blank" title="标题：绍兴一中“越民奖学金”逻辑学科竞赛实施暂行办法&#xD;点击数：88&#xD;发表时间：2026年10月14日">绍兴一中“越民奖学金”逻辑学科竞赛实施暂行办法</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23795.aspx" target="_blank" title="标题：10.14跑操量化考核反馈&#xD;点击数：34&#xD;发表时间：2026年10月14日">10.14跑操量化考核反馈</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23794.aspx" target="_blank" title="标题：10.13班级一日考核&#xD;点击数：38&#xD;发表时间：2026年10月14日">10.13班级一日考核</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23793.aspx" target="_blank" title="标题：化学教研活动通知&#xD;点击数：94&#xD;发表时间：2026年10月14日">化学教研活动通知</a></li>
