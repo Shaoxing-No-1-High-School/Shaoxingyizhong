@@ -350,15 +350,15 @@ function GetUserInfo1(response){
                     <h1 class="title"><b>关键词 "<i></i>"</b></h1>
                     <div class="con">
                         <div class="infoList a14" style="margin-bottom: 30px;"> 
-  <li><span class="date">2026-10-14</span><a href="/Item/23796.aspx" target="_blank" title="标题：绍兴一中“越民奖学金”逻辑学科竞赛实施暂行办法&#xD;点击数：88&#xD;发表时间：2026年10月14日">绍兴一中“越民奖学金”逻辑学科竞赛实施暂行办法</a></li>
+  <li><span class="date">2026-10-14</span><a href="/Item/23796.aspx" target="_blank" title="标题：绍兴一中“越民奖学金”逻辑学科竞赛实施暂行办法&#xD;点击数：98&#xD;发表时间：2026年10月14日">绍兴一中“越民奖学金”逻辑学科竞赛实施暂行办法</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23795.aspx" target="_blank" title="标题：10.14跑操量化考核反馈&#xD;点击数：34&#xD;发表时间：2026年10月14日">10.14跑操量化考核反馈</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23794.aspx" target="_blank" title="标题：10.13班级一日考核&#xD;点击数：38&#xD;发表时间：2026年10月14日">10.13班级一日考核</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23793.aspx" target="_blank" title="标题：化学教研活动通知&#xD;点击数：94&#xD;发表时间：2026年10月14日">化学教研活动通知</a></li>
-<li><span class="date">2026-10-14</span><a href="/Item/23792.aspx" target="_blank" title="标题：求真实验室考试结果&#xD;点击数：93&#xD;发表时间：2026年10月14日">求真实验室考试结果</a></li>
-<li><span class="date">2026-10-14</span><a href="/Item/23791.aspx" target="_blank" title="标题：绍兴一中微电影创作大赛剧本征集&#xD;点击数：71&#xD;发表时间：2026年10月14日">绍兴一中微电影创作大赛剧本征集</a></li>
+<li><span class="date">2026-10-14</span><a href="/Item/23792.aspx" target="_blank" title="标题：求真实验室考试结果&#xD;点击数：94&#xD;发表时间：2026年10月14日">求真实验室考试结果</a></li>
+<li><span class="date">2026-10-14</span><a href="/Item/23791.aspx" target="_blank" title="标题：绍兴一中微电影创作大赛剧本征集&#xD;点击数：72&#xD;发表时间：2026年10月14日">绍兴一中微电影创作大赛剧本征集</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23790.aspx" target="_blank" title="标题：sjc的会议&#xD;点击数：4&#xD;发表时间：2026年10月14日">sjc的会议</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23789.aspx" target="_blank" title="标题：论1014会议😶&#xD;点击数：4&#xD;发表时间：2026年10月14日">论1014会议😶</a></li>
-<li><span class="date">2026-10-14</span><a href="/Item/23788.aspx" target="_blank" title="标题：绍兴一中创新班学部期中学生大会&#xD;点击数：153&#xD;发表时间：2026年10月14日">绍兴一中创新班学部期中学生大会</a></li>
+<li><span class="date">2026-10-14</span><a href="/Item/23788.aspx" target="_blank" title="标题：绍兴一中创新班学部期中学生大会&#xD;点击数：154&#xD;发表时间：2026年10月14日">绍兴一中创新班学部期中学生大会</a></li>
 <li><span class="date">2026-10-13</span><a href="/Item/23786.aspx" target="_blank" title="标题：$β世纪城&#xD;点击数：6&#xD;发表时间：2026年10月13日">$β世纪城</a></li>
 <li><span class="date">2026-10-13</span><a href="/Item/23785.aspx" target="_blank" title="标题：10.13跑操量化考核反馈&#xD;点击数：67&#xD;发表时间：2026年10月13日">10.13跑操量化考核反馈</a></li>
 <li><span class="date">2026-10-13</span><a href="/Item/23784.aspx" target="_blank" title="标题：10.12班级一日考核&#xD;点击数：52&#xD;发表时间：2026年10月13日">10.12班级一日考核</a></li>
@@ -375,7 +375,7 @@ function GetUserInfo1(response){
 <li><span class="date">2026-10-10</span><a href="/Item/13310.aspx" target="_blank" title="标题：作息时间调整通知&#xD;点击数：9793&#xD;发表时间：2026年10月10日">作息时间调整通知</a></li>
 <li><span class="date">2026-10-10</span><a href="/Item/23773.aspx" target="_blank" title="标题：绍兴一中2026年国旗队交接仪式方案&#xD;点击数：100&#xD;发表时间：2026年10月10日">绍兴一中2026年国旗队交接仪式方案</a></li>
 <li><span class="date">2026-10-10</span><a href="/Item/23772.aspx" target="_blank" title="标题：绍兴一中排球队招收新队员通知&#xD;点击数：78&#xD;发表时间：2026年10月10日">绍兴一中排球队招收新队员通知</a></li>
-<li><span class="date">2026-10-10</span><a href="/Item/23771.aspx" target="_blank" title="标题：健康教育资料领取通知&#xD;点击数：66&#xD;发表时间：2026年10月10日">健康教育资料领取通知</a></li>
+<li><span class="date">2026-10-10</span><a href="/Item/23771.aspx" target="_blank" title="标题：健康教育资料领取通知&#xD;点击数：67&#xD;发表时间：2026年10月10日">健康教育资料领取通知</a></li>
 <li><span class="date">2026-10-09</span><a href="/Item/23770.aspx" target="_blank" title="标题：10.8班级一日考核&#xD;点击数：53&#xD;发表时间：2026年10月09日">10.8班级一日考核</a></li>
 <li><span class="date">2026-10-09</span><a href="/Item/23769.aspx" target="_blank" title="标题：求真实验室招新考试&#xD;点击数：123&#xD;发表时间：2026年10月09日">求真实验室招新考试</a></li>
 <li><span class="date">2026-10-08</span><a href="/Item/23767.aspx" target="_blank" title="标题：高一晚自修（10.11-10.16）&#xD;点击数：79&#xD;发表时间：2026年10月08日">高一晚自修（10.11-10.16）</a></li>
@@ -394,7 +394,7 @@ function GetUserInfo1(response){
 <li><span class="date">2026-10-07</span><a href="/Item/23754.aspx" target="_blank" title="标题：9.29班级一日考核&#xD;点击数：52&#xD;发表时间：2026年10月07日">9.29班级一日考核</a></li>
 <li><span class="date">2026-10-07</span><a href="/Item/23753.aspx" target="_blank" title="标题：9.28班级一日考核&#xD;点击数：55&#xD;发表时间：2026年10月07日">9.28班级一日考核</a></li>
 <li><span class="date">2026-10-07</span><a href="/Item/23752.aspx" target="_blank" title="标题：研究院2026年10月份市直活动安排&#xD;点击数：204&#xD;发表时间：2026年10月07日">研究院2026年10月份市直活动安排</a></li>
-<li><span class="date">2026-10-07</span><a href="/Item/23750.aspx" target="_blank" title="标题：教工趣味地滚球接力比赛成绩公告&#xD;点击数：252&#xD;发表时间：2026年10月07日">教工趣味地滚球接力比赛成绩公告</a></li>
+<li><span class="date">2026-10-07</span><a href="/Item/23750.aspx" target="_blank" title="标题：教工趣味地滚球接力比赛成绩公告&#xD;点击数：253&#xD;发表时间：2026年10月07日">教工趣味地滚球接力比赛成绩公告</a></li>
 <li><span class="date">2026-10-06</span><a href="/Item/23749.aspx" target="_blank" title="标题：高三10.08联盟考试监考安排和学生考场安排&#xD;点击数：332&#xD;发表时间：2026年10月06日">高三10.08联盟考试监考安排和学生考场安排</a></li>
 <li><span class="date">2026-10-06</span><a href="/Item/23748.aspx" target="_blank" title="标题：高三10.08联盟考试考场布置及相关要求&#xD;点击数：80&#xD;发表时间：2026年10月06日">高三10.08联盟考试考场布置及相关要求</a></li>
 <li><span class="date">2026-09-30</span><a href="/Item/23744.aspx" target="_blank" title="标题：寻物启事四则（饭卡/号码簿/筋膜枪/秋季校服）&#xD;点击数：104&#xD;发表时间：2026年09月30日">寻物启事四则（饭卡/号码簿/筋膜枪/秋季校服）</a></li>
