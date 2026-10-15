@@ -403,7 +403,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/23790.aspx">sjc的会议</a></td>
     <td>sjcnb</td>
-    <td>5</td>
+    <td>8</td>
     <td>2026-10-14</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -411,7 +411,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/23789.aspx">论1014会议😶</a></td>
     <td>sjcnb</td>
-    <td>4</td>
+    <td>6</td>
     <td>2026-10-14</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -419,7 +419,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/23786.aspx">$β世纪城</a></td>
     <td>sjcnb</td>
-    <td>6</td>
+    <td>9</td>
     <td>2026-10-13</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -427,7 +427,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/23492.aspx">d#a$k#a$r#a,QjH@gKe!X</a></td>
     <td>AS</td>
-    <td>48</td>
+    <td>49</td>
     <td>2026-07-09</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -443,7 +443,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/23460.aspx">鲁迅中学王朝了</a></td>
     <td>sjcnb</td>
-    <td>97</td>
+    <td>98</td>
     <td>2026-07-01</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -451,7 +451,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/23459.aspx">pzxnzyb</a></td>
     <td>234a</td>
-    <td>67</td>
+    <td>68</td>
     <td>2026-07-01</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -523,7 +523,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/22242.aspx">老是有人故意在三楼男厕所外面拉屎</a></td>
     <td>kouzi1001</td>
-    <td>150</td>
+    <td>151</td>
     <td>2025-11-10</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -531,7 +531,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/21982.aspx">不承认第二十六届团学联主席团选举结果</a></td>
     <td>不承认第二十六届团学联主席团选举结果</td>
-    <td>172</td>
+    <td>173</td>
     <td>2025-09-26</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -539,7 +539,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/21981.aspx">请全体学生代表和广大师生监督（监督电话：13625754497）。</a></td>
     <td>LovelyFlorrie</td>
-    <td>111</td>
+    <td>112</td>
     <td>2025-09-26</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -547,7 +547,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/21980.aspx">等额选举并且公示意义何在</a></td>
     <td>LovelyFlorrie</td>
-    <td>127</td>
+    <td>128</td>
     <td>2025-09-25</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
