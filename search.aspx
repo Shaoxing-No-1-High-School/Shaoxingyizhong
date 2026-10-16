@@ -351,10 +351,10 @@ function GetUserInfo1(response){
                     <div class="con">
                         <div class="infoList a14" style="margin-bottom: 30px;"> 
   <li><span class="date">2026-10-16</span><a href="/Item/23803.aspx" target="_blank" title="标题：周六社团课通知9则&#xD;点击数：44&#xD;发表时间：2026年10月16日">周六社团课通知9则</a></li>
-<li><span class="date">2026-10-16</span><a href="/Item/23802.aspx" target="_blank" title="标题：高二晚自习(10.18-10.23、10.25)&#xD;点击数：52&#xD;发表时间：2026年10月16日">高二晚自习(10.18-10.23、10.25)</a></li>
+<li><span class="date">2026-10-16</span><a href="/Item/23802.aspx" target="_blank" title="标题：高二晚自习(10.18-10.23、10.25)&#xD;点击数：53&#xD;发表时间：2026年10月16日">高二晚自习(10.18-10.23、10.25)</a></li>
 <li><span class="date">2026-10-15</span><a href="/Item/23801.aspx" target="_blank" title="标题：10.15跑操量化考核反馈&#xD;点击数：55&#xD;发表时间：2026年10月15日">10.15跑操量化考核反馈</a></li>
-<li><span class="date">2026-10-15</span><a href="/Item/23800.aspx" target="_blank" title="标题：10.14班级一日考核&#xD;点击数：45&#xD;发表时间：2026年10月15日">10.14班级一日考核</a></li>
-<li><span class="date">2026-10-15</span><a href="/Item/23799.aspx" target="_blank" title="标题：高一晚自修（10.18-10.23）&#xD;点击数：39&#xD;发表时间：2026年10月15日">高一晚自修（10.18-10.23）</a></li>
+<li><span class="date">2026-10-15</span><a href="/Item/23800.aspx" target="_blank" title="标题：10.14班级一日考核&#xD;点击数：46&#xD;发表时间：2026年10月15日">10.14班级一日考核</a></li>
+<li><span class="date">2026-10-15</span><a href="/Item/23799.aspx" target="_blank" title="标题：高一晚自修（10.18-10.23）&#xD;点击数：40&#xD;发表时间：2026年10月15日">高一晚自修（10.18-10.23）</a></li>
 <li><span class="date">2026-10-15</span><a href="/Item/23798.aspx" target="_blank" title="标题：关于创新学部高三强基联盟考试成绩分析会议的通知&#xD;点击数：108&#xD;发表时间：2026年10月15日">关于创新学部高三强基联盟考试成绩分析会议的通知</a></li>
 <li><span class="date">2026-10-15</span><a href="/Item/23797.aspx" target="_blank" title="标题：绍兴一中教育集团关于开展2026年绍兴市 “杰出教师培育库（教学能手）” 校内遴选推荐工作的通知&#xD;点击数：264&#xD;发表时间：2026年10月15日">绍兴一中教育集团关于开展2026年绍兴市 “杰出教师培育库（教学能手）” 校内遴选推荐工作的通知</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23796.aspx" target="_blank" title="标题：绍兴一中“越民奖学金”逻辑学科竞赛实施暂行办法&#xD;点击数：181&#xD;发表时间：2026年10月14日">绍兴一中“越民奖学金”逻辑学科竞赛实施暂行办法</a></li>
