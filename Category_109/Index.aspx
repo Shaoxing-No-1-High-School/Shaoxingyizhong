@@ -483,7 +483,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/23306.aspx">关于4楼厕所又堵了的事实</a></td>
     <td>我要吃鸡脚筋</td>
-    <td>53</td>
+    <td>54</td>
     <td>2026-05-28</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -491,7 +491,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/22895.aspx">一楼食堂部分食物明显缩小</a></td>
     <td>kouzi1001</td>
-    <td>89</td>
+    <td>90</td>
     <td>2026-03-20</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -499,7 +499,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/22890.aspx">雷霆</a></td>
     <td>kouzi1001</td>
-    <td>112</td>
+    <td>113</td>
     <td>2026-03-19</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -515,7 +515,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/22250.aspx">食堂吃到虫子</a></td>
     <td>kouzi1001</td>
-    <td>110</td>
+    <td>111</td>
     <td>2025-11-11</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -523,7 +523,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/22242.aspx">老是有人故意在三楼男厕所外面拉屎</a></td>
     <td>kouzi1001</td>
-    <td>151</td>
+    <td>152</td>
     <td>2025-11-10</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
