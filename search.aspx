@@ -350,12 +350,12 @@ function GetUserInfo1(response){
                     <h1 class="title"><b>关键词 "<i></i>"</b></h1>
                     <div class="con">
                         <div class="infoList a14" style="margin-bottom: 30px;"> 
-  <li><span class="date">2026-10-16</span><a href="/Item/23802.aspx" target="_blank" title="标题：高二晚自习(10.18-10.23、10.25)&#xD;点击数：29&#xD;发表时间：2026年10月16日">高二晚自习(10.18-10.23、10.25)</a></li>
+  <li><span class="date">2026-10-16</span><a href="/Item/23802.aspx" target="_blank" title="标题：高二晚自习(10.18-10.23、10.25)&#xD;点击数：30&#xD;发表时间：2026年10月16日">高二晚自习(10.18-10.23、10.25)</a></li>
 <li><span class="date">2026-10-15</span><a href="/Item/23801.aspx" target="_blank" title="标题：10.15跑操量化考核反馈&#xD;点击数：50&#xD;发表时间：2026年10月15日">10.15跑操量化考核反馈</a></li>
 <li><span class="date">2026-10-15</span><a href="/Item/23800.aspx" target="_blank" title="标题：10.14班级一日考核&#xD;点击数：40&#xD;发表时间：2026年10月15日">10.14班级一日考核</a></li>
 <li><span class="date">2026-10-15</span><a href="/Item/23799.aspx" target="_blank" title="标题：高一晚自修（10.18-10.23）&#xD;点击数：35&#xD;发表时间：2026年10月15日">高一晚自修（10.18-10.23）</a></li>
 <li><span class="date">2026-10-15</span><a href="/Item/23798.aspx" target="_blank" title="标题：关于创新学部高三强基联盟考试成绩分析会议的通知&#xD;点击数：89&#xD;发表时间：2026年10月15日">关于创新学部高三强基联盟考试成绩分析会议的通知</a></li>
-<li><span class="date">2026-10-15</span><a href="/Item/23797.aspx" target="_blank" title="标题：绍兴一中教育集团关于开展2026年绍兴市 “杰出教师培育库（教学能手）” 校内遴选推荐工作的通知&#xD;点击数：248&#xD;发表时间：2026年10月15日">绍兴一中教育集团关于开展2026年绍兴市 “杰出教师培育库（教学能手）” 校内遴选推荐工作的通知</a></li>
+<li><span class="date">2026-10-15</span><a href="/Item/23797.aspx" target="_blank" title="标题：绍兴一中教育集团关于开展2026年绍兴市 “杰出教师培育库（教学能手）” 校内遴选推荐工作的通知&#xD;点击数：249&#xD;发表时间：2026年10月15日">绍兴一中教育集团关于开展2026年绍兴市 “杰出教师培育库（教学能手）” 校内遴选推荐工作的通知</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23796.aspx" target="_blank" title="标题：绍兴一中“越民奖学金”逻辑学科竞赛实施暂行办法&#xD;点击数：178&#xD;发表时间：2026年10月14日">绍兴一中“越民奖学金”逻辑学科竞赛实施暂行办法</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23795.aspx" target="_blank" title="标题：10.14跑操量化考核反馈&#xD;点击数：53&#xD;发表时间：2026年10月14日">10.14跑操量化考核反馈</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23794.aspx" target="_blank" title="标题：10.13班级一日考核&#xD;点击数：52&#xD;发表时间：2026年10月14日">10.13班级一日考核</a></li>
@@ -369,8 +369,8 @@ function GetUserInfo1(response){
 <li><span class="date">2026-10-13</span><a href="/Item/23785.aspx" target="_blank" title="标题：10.13跑操量化考核反馈&#xD;点击数：71&#xD;发表时间：2026年10月13日">10.13跑操量化考核反馈</a></li>
 <li><span class="date">2026-10-13</span><a href="/Item/23784.aspx" target="_blank" title="标题：10.12班级一日考核&#xD;点击数：57&#xD;发表时间：2026年10月13日">10.12班级一日考核</a></li>
 <li><span class="date">2026-10-13</span><a href="/Item/23783.aspx" target="_blank" title="标题：关于心理教研活动的通知&#xD;点击数：98&#xD;发表时间：2026年10月13日">关于心理教研活动的通知</a></li>
-<li><span class="date">2026-10-13</span><a href="/Item/23782.aspx" target="_blank" title="标题：红旗见证，青春接力 | 绍兴一中2026届国旗队换届表彰仪式圆满举行&#xD;点击数：45&#xD;发表时间：2026年10月13日">红旗见证，青春接力 | 绍兴一中2026届国旗队换届表彰仪式圆满举行</a></li>
-<li><span class="date">2026-10-13</span><a href="/Item/23781.aspx" target="_blank" title="标题：关于2026学年学生体检工作有关事项的通知&#xD;点击数：262&#xD;发表时间：2026年10月13日">关于2026学年学生体检工作有关事项的通知</a></li>
+<li><span class="date">2026-10-13</span><a href="/Item/23782.aspx" target="_blank" title="标题：红旗见证，青春接力 | 绍兴一中2026届国旗队换届表彰仪式圆满举行&#xD;点击数：46&#xD;发表时间：2026年10月13日">红旗见证，青春接力 | 绍兴一中2026届国旗队换届表彰仪式圆满举行</a></li>
+<li><span class="date">2026-10-13</span><a href="/Item/23781.aspx" target="_blank" title="标题：关于2026学年学生体检工作有关事项的通知&#xD;点击数：263&#xD;发表时间：2026年10月13日">关于2026学年学生体检工作有关事项的通知</a></li>
 <li><span class="date">2026-10-12</span><a href="/Item/23780.aspx" target="_blank" title="标题：10.10班级一日考核&#xD;点击数：59&#xD;发表时间：2026年10月12日">10.10班级一日考核</a></li>
 <li><span class="date">2026-10-12</span><a href="/Item/23779.aspx" target="_blank" title="标题：每周一学（2026年10月12日-10月18日）习近平总书记引领健康中国建设&#xD;点击数：7&#xD;发表时间：2026年10月12日">每周一学（2026年10月12日-10月18日）习近平总书记引领健康中国建设</a></li>
 <li><span class="date">2026-10-12</span><a href="/Item/23777.aspx" target="_blank" title="标题：空军招飞宣讲会邀请函（改到4106）&#xD;点击数：150&#xD;发表时间：2026年10月12日">空军招飞宣讲会邀请函（改到4106）</a></li>
