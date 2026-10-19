@@ -9,6 +9,7 @@ import hashlib
 import importlib.util
 import io
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -168,17 +169,49 @@ def build_inventory(
     source_root: Path,
     routes: RouteConfig,
     workspace: Path,
+    hash_cache: Path | None = None,
 ) -> list[ImageEntry]:
     attachment_root = source_root / "UploadFiles"
     if not attachment_root.is_dir():
         raise FileNotFoundError(f"missing attachment directory: {attachment_root}")
+    cached_files: dict[str, dict[str, object]] = {}
+    if hash_cache is not None and hash_cache.is_file():
+        try:
+            cache_data = json.loads(hash_cache.read_text(encoding="utf-8"))
+            if (
+                cache_data.get("version") == 1
+                and cache_data.get("source_root") == str(source_root.resolve())
+                and isinstance(cache_data.get("files"), dict)
+            ):
+                cached_files = cache_data["files"]
+        except (OSError, ValueError, AttributeError):
+            pass
+    refreshed_files: dict[str, dict[str, object]] = {}
     entries: list[ImageEntry] = []
     for source in sorted(path for path in attachment_root.rglob("*") if path.is_file()):
         source_path = source.relative_to(source_root).as_posix()
         routed = routes.resolve(source_path)
         if routed is None:
             continue
-        source_digest = sha256_file(source)
+        stat = source.stat()
+        fingerprint = {
+            "size": stat.st_size,
+            "mtime_ns": stat.st_mtime_ns,
+            "ctime_ns": stat.st_ctime_ns,
+            "inode": stat.st_ino,
+        }
+        cached = cached_files.get(source_path)
+        cached_digest = cached.get("sha256") if isinstance(cached, dict) else None
+        if (
+            isinstance(cached_digest, str)
+            and len(cached_digest) == 64
+            and all(character in "0123456789abcdef" for character in cached_digest)
+            and all(cached.get(key) == value for key, value in fingerprint.items())
+        ):
+            source_digest = cached_digest
+        else:
+            source_digest = sha256_file(source)
+        refreshed_files[source_path] = {**fingerprint, "sha256": source_digest}
         prepared_path = source
         transform = ""
         if routed.transform:
@@ -215,6 +248,28 @@ def build_inventory(
                 transform=transform,
             )
         )
+    if hash_cache is not None:
+        hash_cache.parent.mkdir(parents=True, exist_ok=True)
+        temporary: Path | None = None
+        try:
+            with tempfile.NamedTemporaryFile(
+                mode="w", encoding="utf-8", dir=hash_cache.parent, delete=False
+            ) as handle:
+                temporary = Path(handle.name)
+                json.dump(
+                    {
+                        "version": 1,
+                        "source_root": str(source_root.resolve()),
+                        "files": refreshed_files,
+                    },
+                    handle,
+                    ensure_ascii=False,
+                    separators=(",", ":"),
+                )
+            os.replace(temporary, hash_cache)
+        finally:
+            if temporary is not None and temporary.exists():
+                temporary.unlink()
     return sorted(entries, key=lambda item: (item.repository, item.target_path))
 
 
@@ -642,6 +697,18 @@ def push_repository(repo: Path, attempts: int = 5, retry_delay: int = 10) -> Non
     raise RuntimeError(
         f"Git push failed after {attempts} attempts in {repo}: {last_error}"
     )
+
+
+def push_pending_repository(repo: Path) -> bool:
+    """Retry a local commit from an earlier run without contacting clean shards."""
+    local = _git(repo, "rev-parse", "HEAD").stdout.strip()
+    tracking = _git(
+        repo, "rev-parse", "--verify", "refs/remotes/origin/main", check=False
+    )
+    if tracking.returncode == 0 and tracking.stdout.strip() == local:
+        return False
+    push_repository(repo)
+    return True
 
 
 def _git_add_paths(
@@ -1093,7 +1160,13 @@ def main(argv: list[str] | None = None) -> int:
             materialized_thumbnails = materialize_missing_thumbnails(
                 args.source, routes, args.workspace
             )
-        entries = build_inventory(args.source, routes, args.workspace)
+        entries = build_inventory(
+            args.source,
+            routes,
+            args.workspace,
+            hash_cache=(args.workspace / ".cache" / "source_hashes.json")
+            if args.command == "sync" else None,
+        )
         validate_casefold_paths(entries)
         _validate_git_object_sizes(entries)
         validate_repository_sizes(entries, routes.max_repository_bytes)
@@ -1103,7 +1176,7 @@ def main(argv: list[str] | None = None) -> int:
         results: dict[str, dict[str, int]] = {}
         for repository in repositories:
             repo = bootstrap_repository(routes, repository, args.workspace)
-            push_repository(repo)
+            push_pending_repository(repo)
             results[repository] = sync_repository(
                 _inventory_for_repository(entries, repository),
                 repo,

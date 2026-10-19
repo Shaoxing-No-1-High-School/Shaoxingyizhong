@@ -1,6 +1,8 @@
 import contextlib
+import hashlib
 import io
 import json
+import os
 import threading
 import shutil
 import subprocess
@@ -193,6 +195,44 @@ class ImageShardSyncTests(unittest.TestCase):
                 build_inventory(source, self.routes, workspace)
 
             self.assertEqual(digest.call_count, 1)
+
+    def test_inventory_reuses_hash_for_unchanged_source_file(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            source = Path(tmp) / "source"
+            workspace = Path(tmp) / "workspace"
+            cache = workspace / ".cache" / "source_hashes.json"
+            image = source / "UploadFiles/xwzx/2026/7/a.jpg"
+            image.parent.mkdir(parents=True)
+            image.write_bytes(b"image")
+
+            first = build_inventory(source, self.routes, workspace, hash_cache=cache)
+            with mock.patch(
+                "tools.sync_image_shards.sha256_file",
+                side_effect=AssertionError("unchanged file was rehashed"),
+            ):
+                second = build_inventory(source, self.routes, workspace, hash_cache=cache)
+
+            self.assertEqual(second, first)
+            self.assertTrue(cache.is_file())
+
+    def test_inventory_rehashes_same_size_file_after_replacement(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            source = Path(tmp) / "source"
+            workspace = Path(tmp) / "workspace"
+            cache = workspace / ".cache" / "source_hashes.json"
+            image = source / "UploadFiles/xwzx/2026/7/a.jpg"
+            image.parent.mkdir(parents=True)
+            image.write_bytes(b"image")
+            build_inventory(source, self.routes, workspace, hash_cache=cache)
+            original_mtime = image.stat().st_mtime_ns
+
+            replacement = image.with_name("replacement.jpg")
+            replacement.write_bytes(b"other")
+            replacement.replace(image)
+            os.utime(image, ns=(image.stat().st_atime_ns, original_mtime))
+
+            entries = build_inventory(source, self.routes, workspace, hash_cache=cache)
+            self.assertEqual(entries[0].source_sha256, hashlib.sha256(b"other").hexdigest())
 
     def test_batches_are_deterministic_and_never_exceed_limit(self):
         entries = [
@@ -575,6 +615,37 @@ class ImageShardSyncTests(unittest.TestCase):
 
             self.assertEqual(result, repo)
             run.assert_not_called()
+
+    def test_clean_shard_skips_remote_push_but_pending_commit_is_uploaded(self):
+        from tools.sync_image_shards import push_pending_repository
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            origin = root / "origin.git"
+            subprocess.run(
+                ["git", "init", "--bare", str(origin)], check=True, capture_output=True
+            )
+            repo = root / "repo"
+            self._init_repo(repo)
+            (repo / "README.md").write_text("initial", encoding="utf-8")
+            self._git(repo, "add", "README.md")
+            self._git(repo, "commit", "-m", "initial")
+            self._git(repo, "remote", "add", "origin", str(origin))
+            self._git(repo, "push", "-u", "origin", "main")
+
+            disconnected = root / "disconnected.git"
+            origin.rename(disconnected)
+            self.assertFalse(push_pending_repository(repo))
+            disconnected.rename(origin)
+
+            (repo / "README.md").write_text("updated", encoding="utf-8")
+            self._git(repo, "add", "README.md")
+            self._git(repo, "commit", "-m", "updated")
+            self.assertTrue(push_pending_repository(repo))
+            self.assertEqual(
+                self._git(repo, "rev-parse", "HEAD"),
+                self._git(origin, "rev-parse", "refs/heads/main"),
+            )
 
     def test_bootstrap_repairs_clone_with_truncated_git_metadata(self):
         with tempfile.TemporaryDirectory() as tmp:
