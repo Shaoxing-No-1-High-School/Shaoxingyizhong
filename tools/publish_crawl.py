@@ -635,6 +635,9 @@ def pending_crawl_paths(source_root: Path, repo_root: Path) -> list[str]:
 
     def expected_source_bytes(source: Path, relative: Path) -> bytes:
         content = source.read_bytes()
+        if len(relative.parts) == 1 and relative.name.casefold() == "default.aspx":
+            # Root ASPX aliases are copied verbatim by sync_crawl_paths.
+            return content
         if relative.suffix.lower() not in REWRITABLE_TEXT_SUFFIXES:
             return content
         try:

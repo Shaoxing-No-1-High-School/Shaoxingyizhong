@@ -51,6 +51,30 @@ class UpdateCommandTests(unittest.TestCase):
 
 
 class PublishRecoveryStateTests(unittest.TestCase):
+    def test_interrupted_homepage_with_download_recovers_all_aliases(self):
+        from tools.publish_crawl import pending_crawl_paths, sync_crawl_paths
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            source, repo = root / "crawl", root / "repo"
+            source.mkdir()
+            repo.mkdir()
+            subprocess.run(["git", "init", "-b", "main"], cwd=repo, check=True, capture_output=True)
+            subprocess.run(["git", "config", "user.name", "Test"], cwd=repo, check=True)
+            subprocess.run(["git", "config", "user.email", "test@example.invalid"], cwd=repo, check=True)
+            (repo / "seed.txt").write_text("seed")
+            subprocess.run(["git", "add", "seed.txt"], cwd=repo, check=True)
+            subprocess.run(["git", "commit", "-m", "seed"], cwd=repo, check=True, capture_output=True)
+            (source / "default.aspx").write_text('<html><a href="/UploadFiles/x.zip">download</a></html>')
+            (source / "UploadFiles").mkdir()
+            (source / "UploadFiles/x.zip").write_bytes(b"attachment")
+            sync_crawl_paths(source, repo, ["http://example.test/"])
+            self.assertEqual(sync_crawl_paths(source, repo, ["http://example.test/"]), [])
+            self.assertEqual(set(pending_crawl_paths(source, repo)), {
+                "Default.aspx", "default.aspx", "downloads/x.zip",
+                "index.html", "Default.html", "default.html",
+            })
+
     def test_normal_publish_skips_full_recovery_scan_but_interrupted_run_recovers(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
