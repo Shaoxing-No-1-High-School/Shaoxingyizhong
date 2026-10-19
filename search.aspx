@@ -350,11 +350,11 @@ function GetUserInfo1(response){
                     <h1 class="title"><b>关键词 "<i></i>"</b></h1>
                     <div class="con">
                         <div class="infoList a14" style="margin-bottom: 30px;"> 
-  <li><span class="date">2026-10-19</span><a href="/Item/23814.aspx" target="_blank" title="标题：10.16班级一日考核&#xD;点击数：29&#xD;发表时间：2026年10月19日">10.16班级一日考核</a></li>
-<li><span class="date">2026-10-19</span><a href="/Item/23813.aspx" target="_blank" title="标题：10.17班级一日考核&#xD;点击数：27&#xD;发表时间：2026年10月19日">10.17班级一日考核</a></li>
-<li><span class="date">2026-10-19</span><a href="/Item/23812.aspx" target="_blank" title="标题：体育教研及体育课调整通知&#xD;点击数：85&#xD;发表时间：2026年10月19日">体育教研及体育课调整通知</a></li>
-<li><span class="date">2026-10-19</span><a href="/Item/23811.aspx" target="_blank" title="标题：高三诊断性考试时间安排&#xD;点击数：89&#xD;发表时间：2026年10月19日">高三诊断性考试时间安排</a></li>
-<li><span class="date">2026-10-19</span><a href="/Item/23810.aspx" target="_blank" title="标题：关于美术教研活动的通知&#xD;点击数：97&#xD;发表时间：2026年10月19日">关于美术教研活动的通知</a></li>
+  <li><span class="date">2026-10-19</span><a href="/Item/23814.aspx" target="_blank" title="标题：10.16班级一日考核&#xD;点击数：32&#xD;发表时间：2026年10月19日">10.16班级一日考核</a></li>
+<li><span class="date">2026-10-19</span><a href="/Item/23813.aspx" target="_blank" title="标题：10.17班级一日考核&#xD;点击数：29&#xD;发表时间：2026年10月19日">10.17班级一日考核</a></li>
+<li><span class="date">2026-10-19</span><a href="/Item/23812.aspx" target="_blank" title="标题：体育教研及体育课调整通知&#xD;点击数：86&#xD;发表时间：2026年10月19日">体育教研及体育课调整通知</a></li>
+<li><span class="date">2026-10-19</span><a href="/Item/23811.aspx" target="_blank" title="标题：高三诊断性考试时间安排&#xD;点击数：90&#xD;发表时间：2026年10月19日">高三诊断性考试时间安排</a></li>
+<li><span class="date">2026-10-19</span><a href="/Item/23810.aspx" target="_blank" title="标题：关于美术教研活动的通知&#xD;点击数：99&#xD;发表时间：2026年10月19日">关于美术教研活动的通知</a></li>
 <li><span class="date">2026-10-19</span><a href="/Item/23809.aspx" target="_blank" title="标题：大扫除通知&#xD;点击数：65&#xD;发表时间：2026年10月19日">大扫除通知</a></li>
 <li><span class="date">2026-10-19</span><a href="/Item/23808.aspx" target="_blank" title="标题：教工大会通知&#xD;点击数：119&#xD;发表时间：2026年10月19日">教工大会通知</a></li>
 <li><span class="date">2026-10-19</span><a href="/Item/23807.aspx" target="_blank" title="标题：文明办公室检查通知&#xD;点击数：101&#xD;发表时间：2026年10月19日">文明办公室检查通知</a></li>
@@ -384,7 +384,7 @@ function GetUserInfo1(response){
 <li><span class="date">2026-10-13</span><a href="/Item/23782.aspx" target="_blank" title="标题：红旗见证，青春接力 | 绍兴一中2026届国旗队换届表彰仪式圆满举行&#xD;点击数：58&#xD;发表时间：2026年10月13日">红旗见证，青春接力 | 绍兴一中2026届国旗队换届表彰仪式圆满举行</a></li>
 <li><span class="date">2026-10-13</span><a href="/Item/23781.aspx" target="_blank" title="标题：关于2026学年学生体检工作有关事项的通知&#xD;点击数：295&#xD;发表时间：2026年10月13日">关于2026学年学生体检工作有关事项的通知</a></li>
 <li><span class="date">2026-10-12</span><a href="/Item/23780.aspx" target="_blank" title="标题：10.10班级一日考核&#xD;点击数：59&#xD;发表时间：2026年10月12日">10.10班级一日考核</a></li>
-<li><span class="date">2026-10-12</span><a href="/Item/23779.aspx" target="_blank" title="标题：每周一学（2026年10月12日-10月18日）习近平总书记引领健康中国建设&#xD;点击数：14&#xD;发表时间：2026年10月12日">每周一学（2026年10月12日-10月18日）习近平总书记引领健康中国建设</a></li>
+<li><span class="date">2026-10-12</span><a href="/Item/23779.aspx" target="_blank" title="标题：每周一学（2026年10月12日-10月18日）习近平总书记引领健康中国建设&#xD;点击数：15&#xD;发表时间：2026年10月12日">每周一学（2026年10月12日-10月18日）习近平总书记引领健康中国建设</a></li>
 <li><span class="date">2026-10-12</span><a href="/Item/23777.aspx" target="_blank" title="标题：空军招飞宣讲会邀请函（改到4106）&#xD;点击数：153&#xD;发表时间：2026年10月12日">空军招飞宣讲会邀请函（改到4106）</a></li>
 <li><span class="date">2026-10-12</span><a href="/Item/23778.aspx" target="_blank" title="标题：高三晚自修（10.12-10.25）&#xD;点击数：89&#xD;发表时间：2026年10月12日">高三晚自修（10.12-10.25）</a></li>
 <li><span class="date">2026-10-12</span><a href="/Item/23776.aspx" target="_blank" title="标题：大扫除通知&#xD;点击数：63&#xD;发表时间：2026年10月12日">大扫除通知</a></li>
