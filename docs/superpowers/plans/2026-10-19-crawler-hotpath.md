@@ -12,7 +12,9 @@ and scratch-file writes remain avoidable local costs.
 2. Compare incoming chunks against the existing file before allocating a
    scratch file. At the first difference, copy the matching prefix and append
    the new stream, then atomically replace the destination. Failed streams
-   leave the existing file intact, with bounded memory usage.
+   leave the existing file intact, with bounded memory usage. Validate any
+   reused prefix against the incoming bytes so concurrent in-place edits
+   cannot create a mixed file.
 3. Cover dependency formats, character entities, script/comment content,
    unchanged writes, truncation, extension, empty files, and interrupted
    streams. Verify existing parallelism, deduplication, and resume tests.
@@ -22,5 +24,5 @@ and scratch-file writes remain avoidable local costs.
 
 Measured locally: all 104 extracted results matched exactly; median
 extraction time was 3.153 s before and 1.146 s after. A complete local replay
-visited the same 152 URLs: second-run times were 4.467 s before and 1.839 s
+visited the same 152 URLs: second-run times were 5.927 s before and 1.877 s
 after. These measurements exclude live intranet latency and Git publication.

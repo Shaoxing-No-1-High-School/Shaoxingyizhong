@@ -103,3 +103,21 @@ class FileSaveTests(unittest.TestCase):
                 self.assertFalse(crawler.save_chunks(chunks(), str(target), "http://example.test/asset"))
             self.assertEqual(target.read_bytes(), b"old content")
             self.assertEqual(list(Path(tmp).iterdir()), [target])
+
+    def test_concurrent_prefix_edit_never_creates_a_mixed_download(self):
+        prefix = b"a" * 16_384
+        with tempfile.TemporaryDirectory() as tmp:
+            target = Path(tmp) / "asset.bin"
+            target.write_bytes(prefix + b"old")
+
+            def chunks():
+                yield prefix
+                with target.open("r+b") as handle:
+                    handle.write(b"X")
+                yield b"new"
+
+            with mock.patch.object(crawler.logging, "error"):
+                saved = crawler.save_chunks(chunks(), str(target), "http://example.test/asset")
+            expected = prefix + b"new" if saved else b"X" + prefix[1:] + b"old"
+            self.assertEqual(target.read_bytes(), expected)
+            self.assertEqual(list(Path(tmp).iterdir()), [target])

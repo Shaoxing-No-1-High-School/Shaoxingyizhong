@@ -11,6 +11,7 @@ import sys
 import logging
 from collections import deque
 import argparse
+import hashlib
 import math
 import re
 import tempfile
@@ -158,6 +159,7 @@ def _save_chunks(chunks, save_path, url):
     temporary = None
     temp_path = None
     matched_bytes = 0
+    matched_digest = hashlib.sha256()
 
     def begin_write():
         nonlocal temp_path
@@ -171,12 +173,16 @@ def _save_chunks(chunks, save_path, url):
             if matched_bytes:
                 existing.seek(0)
                 remaining = matched_bytes
+                copied_digest = hashlib.sha256()
                 while remaining:
                     prefix = existing.read(min(remaining, 1024 * 1024))
                     if not prefix:
                         raise OSError("existing file changed during comparison")
+                    copied_digest.update(prefix)
                     handle.write(prefix)
                     remaining -= len(prefix)
+                if copied_digest.digest() != matched_digest.digest():
+                    raise OSError("existing file changed during comparison")
             return handle
         except BaseException:
             handle.close()
@@ -192,6 +198,7 @@ def _save_chunks(chunks, save_path, url):
                 continue
             if temporary is None and existing is not None and existing.read(len(chunk)) == chunk:
                 matched_bytes += len(chunk)
+                matched_digest.update(chunk)
                 continue
             if temporary is None:
                 temporary = begin_write()
