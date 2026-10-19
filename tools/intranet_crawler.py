@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import requests
 from bs4 import BeautifulSoup
+from html.parser import HTMLParser
 from urllib.parse import urljoin, urlparse
 import time
 import os
@@ -153,41 +154,77 @@ def save_chunks(chunks, save_path, url):
 
 
 def _save_chunks(chunks, save_path, url):
-    """保存响应内容；内容未变化时保留原文件，变化时原子替换。"""
+    """Compare the stream first; write atomically only when bytes differ."""
+    existing = None
+    temporary = None
     temp_path = None
-    try:
-        os.makedirs(os.path.dirname(save_path), exist_ok=True)
-        digest = hashlib.sha256()
-        with tempfile.NamedTemporaryFile(
-            mode='wb', dir=os.path.dirname(save_path),
-            prefix='.' + os.path.basename(save_path) + '.', delete=False
-        ) as temp_file:
-            temp_path = temp_file.name
-            for chunk in chunks:
-                if chunk:
-                    digest.update(chunk)
-                    temp_file.write(chunk)
+    matched_bytes = 0
+    matched_digest = hashlib.sha256()
 
-        new_hash = digest.hexdigest()
-        if os.path.exists(save_path):
-            old_digest = hashlib.sha256()
-            with open(save_path, 'rb') as old_file:
-                for chunk in iter(lambda: old_file.read(1024 * 1024), b''):
-                    old_digest.update(chunk)
-            if old_digest.hexdigest() == new_hash:
-                os.unlink(temp_path)
-                temp_path = None
+    def begin_write():
+        nonlocal temp_path
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
+        handle = tempfile.NamedTemporaryFile(
+            mode='wb', dir=os.path.dirname(save_path),
+            prefix='.' + os.path.basename(save_path) + '.', delete=False,
+        )
+        temp_path = handle.name
+        try:
+            if matched_bytes:
+                existing.seek(0)
+                remaining = matched_bytes
+                copied_digest = hashlib.sha256()
+                while remaining:
+                    prefix = existing.read(min(remaining, 1024 * 1024))
+                    if not prefix:
+                        raise OSError("existing file changed during comparison")
+                    copied_digest.update(prefix)
+                    handle.write(prefix)
+                    remaining -= len(prefix)
+                if copied_digest.digest() != matched_digest.digest():
+                    raise OSError("existing file changed during comparison")
+            return handle
+        except BaseException:
+            handle.close()
+            raise
+
+    try:
+        try:
+            existing = open(save_path, 'rb')
+        except FileNotFoundError:
+            pass
+        for chunk in chunks:
+            if not chunk:
+                continue
+            if temporary is None and existing is not None and existing.read(len(chunk)) == chunk:
+                matched_bytes += len(chunk)
+                matched_digest.update(chunk)
+                continue
+            if temporary is None:
+                temporary = begin_write()
+            temporary.write(chunk)
+        if temporary is None:
+            if existing is not None and not existing.read(1):
                 logging.info(f"⏭️ 内容未变化: {url}")
                 return True
-
+            temporary = begin_write()
+        temporary.close()
+        temporary = None
+        if existing is not None:
+            existing.close()
+            existing = None
         os.replace(temp_path, save_path)
         temp_path = None
         logging.info(f"✅ 已更新: {url}")
         return True
-    except Exception as e:
-        logging.error(f"❌ 异常 {url}: {e}")
+    except Exception as error:
+        logging.error(f"❌ 异常 {url}: {error}")
         return False
     finally:
+        if existing is not None:
+            existing.close()
+        if temporary is not None:
+            temporary.close()
         if temp_path and os.path.exists(temp_path):
             os.unlink(temp_path)
 
@@ -308,6 +345,71 @@ def extract_all_links(html, base_url):
                 absolute_urls.append(clean)
     return absolute_urls
 
+class PageLinks(HTMLParser):
+    """Collect dependency attributes without building or traversing a DOM."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.raw_navigation = {name: [] for name in ('a', 'img', 'script', 'link')}
+        self.raw_attachments = []
+        self.directory_links = []
+        self.navigation = []
+        self.attachments = []
+
+    def handle_starttag(self, name, attributes):
+        attrs = dict(attributes)
+        navigation_attr = {'a': 'href', 'img': 'src', 'script': 'src', 'link': 'href'}.get(name)
+        if navigation_attr and attrs.get(navigation_attr):
+            self.raw_navigation[name].append(attrs[navigation_attr])
+        if name == 'a' and 'href' in attrs:
+            self.directory_links.append(attrs['href'] or '')
+        for attribute in ATTACHMENT_ATTRS:
+            value = attrs.get(attribute)
+            if value:
+                self.raw_attachments.append(value)
+        self.raw_attachments.extend(re.findall(
+            r"url\(\s*[\"']?([^\"')]+)", attrs.get('style') or '', re.IGNORECASE,
+        ))
+
+
+def extract_page_links(html, base_url):
+    links = PageLinks()
+    links.feed(html)
+    links.close()
+    own_host = urlparse(BASE_URL).netloc
+    resolved = {}
+
+    def resolve(value):
+        if value not in resolved:
+            absolute = urljoin(base_url, value.replace('\\', '/'))
+            parsed = urlparse(absolute)
+            resolved[value] = (
+                (parsed._replace(fragment='', query='').geturl(), parsed.path)
+                if parsed.netloc == own_host else None
+            )
+        return resolved[value]
+
+    seen = set()
+    for value in dict.fromkeys(links.raw_attachments):
+        result = resolve(value)
+        if result is not None:
+            clean, path = result
+            if '/UploadFiles/' in path and clean not in seen:
+                links.attachments.append(clean)
+                seen.add(clean)
+    seen = set()
+    for values in links.raw_navigation.values():
+        for value in dict.fromkeys(values):
+            if value.startswith(('javascript:', 'mailto:', '#')):
+                continue
+            result = resolve(value)
+            if result is not None:
+                clean, path = result
+                if should_follow_path(path) and clean not in seen:
+                    links.navigation.append(clean)
+                    seen.add(clean)
+    return links
+
+
 # ========== 并发抓取 ==========
 def signal_handler(sig, frame):
     global stop_requested
@@ -336,13 +438,12 @@ def process_page(current_url, page_delay):
                         download_file(asset, get_save_path(asset))
                 return []
             html = resp.text
-            soup = BeautifulSoup(html, 'html.parser')
+            page_links = extract_page_links(html, current_url)
             if '索引' in html or 'Index of' in html:
                 links = []
-                for a in soup.find_all('a', href=True):
+                for href in page_links.directory_links:
                     if stop_requested:
                         break
-                    href = a['href']
                     if href in ('../', '..'):
                         continue
                     absolute = urljoin(current_url, href)
@@ -356,11 +457,11 @@ def process_page(current_url, page_delay):
                         download_file(absolute, get_save_path(absolute))
                 return links
             save_response(resp, get_save_path(current_url), current_url)
-            for attachment in extract_attachment_links(soup, current_url):
+            for attachment in page_links.attachments:
                 if stop_requested:
                     break
                 download_file(attachment, get_save_path(attachment))
-            return extract_all_links(soup, current_url)
+            return page_links.navigation
     except Exception as error:
         logging.error(f"❌ 处理失败 {current_url}: {error}")
         return []

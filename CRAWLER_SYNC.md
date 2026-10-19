@@ -2,7 +2,7 @@
 
 `tools/intranet_crawler.py` 运行在能访问 `10.176.17.2` 的内网机器上，GitHub Actions 无法直接访问这个地址。因此同步分为两段：
 
-1. `tools/intranet_crawler.py` 检查首页、分类页等枝干节点，并根据 `Item/数字.aspx` 的编号水位线只抓取新叶子节点。默认以 GitHub 仓库中最大的 Item 编号为基准，再回溯 20 个编号，避免少量临近旧页面漏更新。每个文件先计算 SHA-256，内容没有变化就保留原文件，变化时才原子替换。
+1. `tools/intranet_crawler.py` 检查首页、分类页等枝干节点，并根据 `Item/数字.aspx` 的编号水位线只抓取新叶子节点。默认以 GitHub 仓库中最大的 Item 编号为基准，再回溯 20 个编号，避免少量临近旧页面漏更新。下载内容按字节与本地文件比较；相同时不创建临时文件，有变化时原子替换。
 2. `tools/sync_image_shards.py` 把 `UploadFiles` 下的图片按分片仓库同步并校验。
 3. `tools/publish_crawl.py` 比较爬虫目录和仓库目录，复制内容变化的页面、脚本和非图片附件；非图片附件会从 `UploadFiles` 镜像到主仓库的 `downloads/`。每个发生变化的 `.aspx` 页面会同时刷新对应的已提交 `.html` 别名（根首页同步 `index.html`、`Default.html`、`default.html`），然后自动 commit 和 push。原始 `UploadFiles`、图片、爬虫状态和日志不会进入主仓库。
 4. push 后，GitHub Pages Action 仍会把完整 `.aspx` 页面树转换为部署用的 `.html`；仓库内的页面 HTML 与发布源同步，避免只更新 `.aspx` 而留下旧页面。
@@ -64,6 +64,11 @@ python3 tools/update_from_intranet.py --workers 128 --page-delay 0
 一键更新结束时会分别输出 `crawl_seconds`、`image_sync_seconds` 和
 `publish_seconds`，便于定位下一轮的耗时。爬虫在同一轮只下载一次成功获取的附件；
 请求失败的附件仍会在后续页面再次引用时重试。
+
+页面链接使用标准库 HTMLParser 单次流式提取，并复用本页已解析的 URL。
+导航、懒加载图片、内联样式、视频封面和目录链接均保留；原有 Python 文件、
+运行入口和链接提取辅助函数继续可用。内容未变的下载不再重复写入临时文件，
+发生变化时只复制已匹配的前缀并继续写入，下载中断仍保留原文件。
 
 图片同步把源文件哈希缓存在分片工作目录的 `.cache/source_hashes.json` 中，
 文件大小、修改时间、元数据变更时间或文件标识发生变化时重新计算哈希。
