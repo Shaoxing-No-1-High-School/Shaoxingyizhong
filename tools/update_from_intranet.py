@@ -4,15 +4,17 @@
 from __future__ import annotations
 
 import argparse
+import math
 import re
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 PROJECTS_ROOT = REPO_ROOT.parent
-CRAWLER = PROJECTS_ROOT / "a.py"
+CRAWLER = REPO_ROOT / "tools" / "intranet_crawler.py"
 CRAWL_OUTPUT = PROJECTS_ROOT / "内网备份"
 INCREMENTAL_STATE = PROJECTS_ROOT / ".crawl_state_incremental"
 IMAGE_SHARD_WORKSPACE = PROJECTS_ROOT / "Shaoxingyizhong-image-shards"
@@ -36,6 +38,18 @@ def image_sync_command(
         str(workspace),
         "--prune-missing",
     ]
+
+
+def run_step(command: list[str], cwd: Path) -> None:
+    """Run one pipeline step and turn Ctrl-C into a clean interrupted exit."""
+    try:
+        subprocess.run(command, cwd=cwd, check=True)
+    except KeyboardInterrupt:
+        print(
+            "\n🛑 更新流程已中断；如需从上次抓取进度继续，请再次使用 --resume。",
+            file=sys.stderr,
+        )
+        raise SystemExit(130) from None
 
 
 def latest_published_item_id() -> int:
@@ -79,10 +93,13 @@ def build_recent_branch_seed(min_item_id: int, lookback: int) -> Path:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--resume", action="store_true", help="从 a.py 上次中断的位置继续")
-    parser.add_argument("--base-url", default=None, help="覆盖 a.py 的内网站点地址")
+    parser.add_argument("--resume", action="store_true", help="从上次中断的抓取队列继续")
+    parser.add_argument("--base-url", default=None, help="覆盖爬虫的内网站点地址")
     parser.add_argument("--item-lookback", type=int, default=20, help="向前回溯的 Item 编号数量")
     parser.add_argument("--full-crawl", action="store_true", help="忽略编号水位线，执行完整爬取")
+    parser.add_argument("--page-delay", type=float, default=None, help="每个工作线程的页面请求间隔秒数；增量默认 0，完整抓取默认 0.2")
+    parser.add_argument("--workers", type=int, default=None, help="并发处理的页面数；增量默认 128，完整抓取默认 1")
+    parser.add_argument("--verbose", action="store_true", help="在终端显示逐文件抓取日志")
     parser.add_argument("--message", default="chore: update crawled site files")
     args = parser.parse_args()
 
@@ -91,6 +108,13 @@ def main() -> int:
 
     crawler_args = [sys.executable, str(CRAWLER)]
     crawler_args.extend(["--state-dir", str(INCREMENTAL_STATE)])
+    page_delay = args.page_delay if args.page_delay is not None else (0.2 if args.full_crawl else 0.0)
+    if not math.isfinite(page_delay) or page_delay < 0:
+        parser.error("--page-delay 必须是非负有限数")
+    workers = args.workers if args.workers is not None else (1 if args.full_crawl else 128)
+    if workers < 1:
+        parser.error("--workers 必须是正整数")
+    crawler_args.extend(["--page-delay", str(page_delay), "--workers", str(workers)])
     if not args.full_crawl:
         min_item_id = latest_published_item_id()
         seed_file = build_recent_branch_seed(min_item_id, args.item_lookback)
@@ -102,23 +126,29 @@ def main() -> int:
             "--seed-file",
             str(seed_file),
         ])
+    if args.verbose:
+        crawler_args.append("--verbose")
     if args.resume:
         crawler_args.append("--resume")
     if args.base_url:
         crawler_args.extend(["--base-url", args.base_url])
-    subprocess.run(crawler_args, cwd=PROJECTS_ROOT, check=True)
+    started = time.monotonic()
+    run_step(crawler_args, PROJECTS_ROOT)
+    print(f"crawl_seconds={time.monotonic() - started:.1f}", flush=True)
 
-    subprocess.run(
+    started = time.monotonic()
+    run_step(
         image_sync_command(
             REPO_ROOT,
             CRAWL_OUTPUT,
             IMAGE_SHARD_WORKSPACE,
             sys.executable,
         ),
-        cwd=REPO_ROOT,
-        check=True,
+        REPO_ROOT,
     )
+    print(f"image_sync_seconds={time.monotonic() - started:.1f}", flush=True)
 
+    started = time.monotonic()
     publish_args = [
         sys.executable,
         str(REPO_ROOT / "tools" / "publish_crawl.py"),
@@ -128,13 +158,16 @@ def main() -> int:
         str(REPO_ROOT),
         "--visited-file",
         str(INCREMENTAL_STATE / "visited.json"),
+        "--state-file",
+        str(INCREMENTAL_STATE / "publish_state.txt"),
         "--commit",
         "--push",
         "--include-deletions",
         "--message",
         args.message,
     ]
-    subprocess.run(publish_args, cwd=REPO_ROOT, check=True)
+    run_step(publish_args, REPO_ROOT)
+    print(f"publish_seconds={time.monotonic() - started:.1f}", flush=True)
     return 0
 
 
