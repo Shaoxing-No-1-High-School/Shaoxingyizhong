@@ -350,18 +350,19 @@ function GetUserInfo1(response){
                     <h1 class="title"><b>关键词 "<i></i>"</b></h1>
                     <div class="con">
                         <div class="infoList a14" style="margin-bottom: 30px;"> 
-  <li><span class="date">2026-10-20</span><a href="/Item/23815.aspx" target="_blank" title="标题：高三年级表彰暨动员大会通知&#xD;点击数：60&#xD;发表时间：2026年10月20日">高三年级表彰暨动员大会通知</a></li>
-<li><span class="date">2026-10-19</span><a href="/Item/23814.aspx" target="_blank" title="标题：10.16班级一日考核&#xD;点击数：41&#xD;发表时间：2026年10月19日">10.16班级一日考核</a></li>
-<li><span class="date">2026-10-19</span><a href="/Item/23813.aspx" target="_blank" title="标题：10.17班级一日考核&#xD;点击数：38&#xD;发表时间：2026年10月19日">10.17班级一日考核</a></li>
-<li><span class="date">2026-10-19</span><a href="/Item/23812.aspx" target="_blank" title="标题：体育教研及体育课调整通知&#xD;点击数：112&#xD;发表时间：2026年10月19日">体育教研及体育课调整通知</a></li>
-<li><span class="date">2026-10-19</span><a href="/Item/23811.aspx" target="_blank" title="标题：高三诊断性考试时间安排&#xD;点击数：106&#xD;发表时间：2026年10月19日">高三诊断性考试时间安排</a></li>
+  <li><span class="date">2026-10-20</span><a href="/Item/23816.aspx" target="_blank" title="标题：潮哥&#xD;点击数：0&#xD;发表时间：2026年10月20日">潮哥</a></li>
+<li><span class="date">2026-10-20</span><a href="/Item/23815.aspx" target="_blank" title="标题：高三年级表彰暨动员大会通知&#xD;点击数：71&#xD;发表时间：2026年10月20日">高三年级表彰暨动员大会通知</a></li>
+<li><span class="date">2026-10-19</span><a href="/Item/23814.aspx" target="_blank" title="标题：10.16班级一日考核&#xD;点击数：42&#xD;发表时间：2026年10月19日">10.16班级一日考核</a></li>
+<li><span class="date">2026-10-19</span><a href="/Item/23813.aspx" target="_blank" title="标题：10.17班级一日考核&#xD;点击数：39&#xD;发表时间：2026年10月19日">10.17班级一日考核</a></li>
+<li><span class="date">2026-10-19</span><a href="/Item/23812.aspx" target="_blank" title="标题：体育教研及体育课调整通知&#xD;点击数：113&#xD;发表时间：2026年10月19日">体育教研及体育课调整通知</a></li>
+<li><span class="date">2026-10-19</span><a href="/Item/23811.aspx" target="_blank" title="标题：高三诊断性考试时间安排&#xD;点击数：110&#xD;发表时间：2026年10月19日">高三诊断性考试时间安排</a></li>
 <li><span class="date">2026-10-19</span><a href="/Item/23810.aspx" target="_blank" title="标题：关于美术教研活动的通知&#xD;点击数：107&#xD;发表时间：2026年10月19日">关于美术教研活动的通知</a></li>
 <li><span class="date">2026-10-19</span><a href="/Item/23809.aspx" target="_blank" title="标题：大扫除通知&#xD;点击数：66&#xD;发表时间：2026年10月19日">大扫除通知</a></li>
 <li><span class="date">2026-10-19</span><a href="/Item/23808.aspx" target="_blank" title="标题：教工大会通知&#xD;点击数：119&#xD;发表时间：2026年10月19日">教工大会通知</a></li>
 <li><span class="date">2026-10-19</span><a href="/Item/23807.aspx" target="_blank" title="标题：文明办公室检查通知&#xD;点击数：104&#xD;发表时间：2026年10月19日">文明办公室检查通知</a></li>
 <li><span class="date">2026-10-16</span><a href="/Item/23806.aspx" target="_blank" title="标题：创新班学部10月18日至10月30日晚自习安排&#xD;点击数：93&#xD;发表时间：2026年10月16日">创新班学部10月18日至10月30日晚自习安排</a></li>
 <li><span class="date">2026-10-16</span><a href="/Item/23805.aspx" target="_blank" title="标题：10.15班级一日考核&#xD;点击数：59&#xD;发表时间：2026年10月16日">10.15班级一日考核</a></li>
-<li><span class="date">2026-10-16</span><a href="/Item/23804.aspx" target="_blank" title="标题：高一、高二期中考时间和考试范围&#xD;点击数：243&#xD;发表时间：2026年10月16日">高一、高二期中考时间和考试范围</a></li>
+<li><span class="date">2026-10-16</span><a href="/Item/23804.aspx" target="_blank" title="标题：高一、高二期中考时间和考试范围&#xD;点击数：244&#xD;发表时间：2026年10月16日">高一、高二期中考时间和考试范围</a></li>
 <li><span class="date">2026-10-16</span><a href="/Item/23803.aspx" target="_blank" title="标题：周六社团课通知9则&#xD;点击数：181&#xD;发表时间：2026年10月16日">周六社团课通知9则</a></li>
 <li><span class="date">2026-10-16</span><a href="/Item/23802.aspx" target="_blank" title="标题：高二晚自习(10.18-10.23、10.25)&#xD;点击数：91&#xD;发表时间：2026年10月16日">高二晚自习(10.18-10.23、10.25)</a></li>
 <li><span class="date">2026-10-15</span><a href="/Item/23801.aspx" target="_blank" title="标题：10.15跑操量化考核反馈&#xD;点击数：64&#xD;发表时间：2026年10月15日">10.15跑操量化考核反馈</a></li>
@@ -399,7 +400,6 @@ function GetUserInfo1(response){
 <li><span class="date">2026-10-09</span><a href="/Item/23769.aspx" target="_blank" title="标题：求真实验室招新考试&#xD;点击数：128&#xD;发表时间：2026年10月09日">求真实验室招新考试</a></li>
 <li><span class="date">2026-10-08</span><a href="/Item/23767.aspx" target="_blank" title="标题：高一晚自修（10.11-10.16）&#xD;点击数：85&#xD;发表时间：2026年10月08日">高一晚自修（10.11-10.16）</a></li>
 <li><span class="date">2026-10-08</span><a href="/Item/23766.aspx" target="_blank" title="标题：学生证领取和注册通知&#xD;点击数：198&#xD;发表时间：2026年10月08日">学生证领取和注册通知</a></li>
-<li><span class="date">2026-10-08</span><a href="/Item/23765.aspx" target="_blank" title="标题：10.7班级一日考核&#xD;点击数：52&#xD;发表时间：2026年10月08日">10.7班级一日考核</a></li>
   </div>
                         <div class="page"><span id="pe100_page_全站搜索按标题_普通式" class="pagecss"><!--{pe.begin.pagination}-->
  <a href="search.aspx">首页</a>
