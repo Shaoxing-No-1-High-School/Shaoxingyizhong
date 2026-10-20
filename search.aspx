@@ -350,23 +350,23 @@ function GetUserInfo1(response){
                     <h1 class="title"><b>关键词 "<i></i>"</b></h1>
                     <div class="con">
                         <div class="infoList a14" style="margin-bottom: 30px;"> 
-  <li><span class="date">2026-10-20</span><a href="/Item/23824.aspx" target="_blank" title="标题：10.20跑操量化考核反馈&#xD;点击数：7&#xD;发表时间：2026年10月20日">10.20跑操量化考核反馈</a></li>
-<li><span class="date">2026-10-20</span><a href="/Item/23823.aspx" target="_blank" title="标题：关于高三英语教研活动的通知&#xD;点击数：7&#xD;发表时间：2026年10月20日">关于高三英语教研活动的通知</a></li>
-<li><span class="date">2026-10-20</span><a href="/Item/23822.aspx" target="_blank" title="标题：10.19班级一日考核&#xD;点击数：10&#xD;发表时间：2026年10月20日">10.19班级一日考核</a></li>
-<li><span class="date">2026-10-20</span><a href="/Item/23821.aspx" target="_blank" title="标题：绍兴市（直）“杰出教师培育库（教学能手）” 校内评议结果公示&#xD;点击数：108&#xD;发表时间：2026年10月20日">绍兴市（直）“杰出教师培育库（教学能手）” 校内评议结果公示</a></li>
-<li><span class="date">2026-10-20</span><a href="/Item/23820.aspx" target="_blank" title="标题：榜样领航，奋楫争先 | 绍兴一中创新班学部举行期中学生大会&#xD;点击数：42&#xD;发表时间：2026年10月20日">榜样领航，奋楫争先 | 绍兴一中创新班学部举行期中学生大会</a></li>
+  <li><span class="date">2026-10-20</span><a href="/Item/23824.aspx" target="_blank" title="标题：10.20跑操量化考核反馈&#xD;点击数：10&#xD;发表时间：2026年10月20日">10.20跑操量化考核反馈</a></li>
+<li><span class="date">2026-10-20</span><a href="/Item/23823.aspx" target="_blank" title="标题：关于高三英语教研活动的通知&#xD;点击数：14&#xD;发表时间：2026年10月20日">关于高三英语教研活动的通知</a></li>
+<li><span class="date">2026-10-20</span><a href="/Item/23822.aspx" target="_blank" title="标题：10.19班级一日考核&#xD;点击数：12&#xD;发表时间：2026年10月20日">10.19班级一日考核</a></li>
+<li><span class="date">2026-10-20</span><a href="/Item/23821.aspx" target="_blank" title="标题：绍兴市（直）“杰出教师培育库（教学能手）” 校内评议结果公示&#xD;点击数：109&#xD;发表时间：2026年10月20日">绍兴市（直）“杰出教师培育库（教学能手）” 校内评议结果公示</a></li>
+<li><span class="date">2026-10-20</span><a href="/Item/23820.aspx" target="_blank" title="标题：榜样领航，奋楫争先 | 绍兴一中创新班学部举行期中学生大会&#xD;点击数：43&#xD;发表时间：2026年10月20日">榜样领航，奋楫争先 | 绍兴一中创新班学部举行期中学生大会</a></li>
 <li><span class="date">2026-10-20</span><a href="/Item/23819.aspx" target="_blank" title="标题：博雅启思促成长，养新笃行育芳华  ——绍兴一中教育集团2026学年“博雅·养新”班主任成长工作坊开班仪式暨专题培训&#xD;点击数：31&#xD;发表时间：2026年10月20日">博雅启思促成长，养新笃行育芳华  ——绍兴一中教育集团2026学年“博雅·养新”班主任成长工作坊开班仪式…</a></li>
-<li><span class="date">2026-10-20</span><a href="/Item/23818.aspx" target="_blank" title="标题：关于举办第十四届“瀚辰杯”辩论赛的通知&#xD;点击数：82&#xD;发表时间：2026年10月20日">关于举办第十四届“瀚辰杯”辩论赛的通知</a></li>
-<li><span class="date">2026-10-20</span><a href="/Item/23817.aspx" target="_blank" title="标题：每周一学（2026年10月19日-10月25日）习近平：以更高标准、更实举措推进全面从严治党&#xD;点击数：4&#xD;发表时间：2026年10月20日">每周一学（2026年10月19日-10月25日）习近平：以更高标准、更实举措推进全面从严治党</a></li>
+<li><span class="date">2026-10-20</span><a href="/Item/23818.aspx" target="_blank" title="标题：关于举办第十四届“瀚辰杯”辩论赛的通知&#xD;点击数：83&#xD;发表时间：2026年10月20日">关于举办第十四届“瀚辰杯”辩论赛的通知</a></li>
+<li><span class="date">2026-10-20</span><a href="/Item/23817.aspx" target="_blank" title="标题：每周一学（2026年10月19日-10月25日）习近平：以更高标准、更实举措推进全面从严治党&#xD;点击数：5&#xD;发表时间：2026年10月20日">每周一学（2026年10月19日-10月25日）习近平：以更高标准、更实举措推进全面从严治党</a></li>
 <li><span class="date">2026-10-20</span><a href="/Item/23816.aspx" target="_blank" title="标题：潮哥&#xD;点击数：5&#xD;发表时间：2026年10月20日">潮哥</a></li>
-<li><span class="date">2026-10-20</span><a href="/Item/23815.aspx" target="_blank" title="标题：高三年级表彰暨动员大会通知&#xD;点击数：168&#xD;发表时间：2026年10月20日">高三年级表彰暨动员大会通知</a></li>
+<li><span class="date">2026-10-20</span><a href="/Item/23815.aspx" target="_blank" title="标题：高三年级表彰暨动员大会通知&#xD;点击数：170&#xD;发表时间：2026年10月20日">高三年级表彰暨动员大会通知</a></li>
 <li><span class="date">2026-10-19</span><a href="/Item/23814.aspx" target="_blank" title="标题：10.16班级一日考核&#xD;点击数：49&#xD;发表时间：2026年10月19日">10.16班级一日考核</a></li>
 <li><span class="date">2026-10-19</span><a href="/Item/23813.aspx" target="_blank" title="标题：10.17班级一日考核&#xD;点击数：46&#xD;发表时间：2026年10月19日">10.17班级一日考核</a></li>
-<li><span class="date">2026-10-19</span><a href="/Item/23812.aspx" target="_blank" title="标题：体育教研及体育课调整通知&#xD;点击数：144&#xD;发表时间：2026年10月19日">体育教研及体育课调整通知</a></li>
+<li><span class="date">2026-10-19</span><a href="/Item/23812.aspx" target="_blank" title="标题：体育教研及体育课调整通知&#xD;点击数：146&#xD;发表时间：2026年10月19日">体育教研及体育课调整通知</a></li>
 <li><span class="date">2026-10-19</span><a href="/Item/23811.aspx" target="_blank" title="标题：高三诊断性考试时间安排&#xD;点击数：124&#xD;发表时间：2026年10月19日">高三诊断性考试时间安排</a></li>
 <li><span class="date">2026-10-19</span><a href="/Item/23810.aspx" target="_blank" title="标题：关于美术教研活动的通知&#xD;点击数：115&#xD;发表时间：2026年10月19日">关于美术教研活动的通知</a></li>
 <li><span class="date">2026-10-19</span><a href="/Item/23809.aspx" target="_blank" title="标题：大扫除通知&#xD;点击数：68&#xD;发表时间：2026年10月19日">大扫除通知</a></li>
-<li><span class="date">2026-10-19</span><a href="/Item/23808.aspx" target="_blank" title="标题：教工大会通知&#xD;点击数：119&#xD;发表时间：2026年10月19日">教工大会通知</a></li>
+<li><span class="date">2026-10-19</span><a href="/Item/23808.aspx" target="_blank" title="标题：教工大会通知&#xD;点击数：120&#xD;发表时间：2026年10月19日">教工大会通知</a></li>
 <li><span class="date">2026-10-19</span><a href="/Item/23807.aspx" target="_blank" title="标题：文明办公室检查通知&#xD;点击数：109&#xD;发表时间：2026年10月19日">文明办公室检查通知</a></li>
 <li><span class="date">2026-10-16</span><a href="/Item/23806.aspx" target="_blank" title="标题：创新班学部10月18日至10月30日晚自习安排&#xD;点击数：95&#xD;发表时间：2026年10月16日">创新班学部10月18日至10月30日晚自习安排</a></li>
 <li><span class="date">2026-10-16</span><a href="/Item/23805.aspx" target="_blank" title="标题：10.15班级一日考核&#xD;点击数：61&#xD;发表时间：2026年10月16日">10.15班级一日考核</a></li>
@@ -383,7 +383,7 @@ function GetUserInfo1(response){
 <li><span class="date">2026-10-14</span><a href="/Item/23794.aspx" target="_blank" title="标题：10.13班级一日考核&#xD;点击数：56&#xD;发表时间：2026年10月14日">10.13班级一日考核</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23793.aspx" target="_blank" title="标题：化学教研活动通知&#xD;点击数：139&#xD;发表时间：2026年10月14日">化学教研活动通知</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23792.aspx" target="_blank" title="标题：求真实验室考试结果&#xD;点击数：149&#xD;发表时间：2026年10月14日">求真实验室考试结果</a></li>
-<li><span class="date">2026-10-14</span><a href="/Item/23791.aspx" target="_blank" title="标题：绍兴一中微电影创作大赛剧本征集&#xD;点击数：107&#xD;发表时间：2026年10月14日">绍兴一中微电影创作大赛剧本征集</a></li>
+<li><span class="date">2026-10-14</span><a href="/Item/23791.aspx" target="_blank" title="标题：绍兴一中微电影创作大赛剧本征集&#xD;点击数：108&#xD;发表时间：2026年10月14日">绍兴一中微电影创作大赛剧本征集</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23790.aspx" target="_blank" title="标题：sjc的会议&#xD;点击数：19&#xD;发表时间：2026年10月14日">sjc的会议</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23789.aspx" target="_blank" title="标题：论1014会议😶&#xD;点击数：18&#xD;发表时间：2026年10月14日">论1014会议😶</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23788.aspx" target="_blank" title="标题：绍兴一中创新班学部期中学生大会&#xD;点击数：232&#xD;发表时间：2026年10月14日">绍兴一中创新班学部期中学生大会</a></li>
