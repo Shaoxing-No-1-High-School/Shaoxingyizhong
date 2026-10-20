@@ -403,7 +403,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/23816.aspx">潮哥</a></td>
     <td>时间长</td>
-    <td>5</td>
+    <td>10</td>
     <td>2026-10-20</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -411,7 +411,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/23790.aspx">sjc的会议</a></td>
     <td>sjcnb</td>
-    <td>19</td>
+    <td>20</td>
     <td>2026-10-14</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
