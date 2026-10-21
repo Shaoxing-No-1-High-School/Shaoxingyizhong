@@ -467,7 +467,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/21983.aspx">不承认第二十六届团学联主席团选举结果</a></td>
     <td>不承认第二十六届团学联主席团选举结果</td>
-    <td>30</td>
+    <td>31</td>
     <td>2025-09-26</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
