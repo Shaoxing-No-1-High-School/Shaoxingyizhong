@@ -350,8 +350,8 @@ function GetUserInfo1(response){
                     <h1 class="title"><b>关键词 "<i></i>"</b></h1>
                     <div class="con">
                         <div class="infoList a14" style="margin-bottom: 30px;"> 
-  <li><span class="date">2026-10-22</span><a href="/Item/23829.aspx" target="_blank" title="标题：中共绍兴市第一中学委员会关于王青同志职务任免的通知&#xD;点击数：135&#xD;发表时间：2026年10月22日">中共绍兴市第一中学委员会关于王青同志职务任免的通知</a></li>
-<li><span class="date">2026-10-21</span><a href="/Item/23828.aspx" target="_blank" title="标题：10.20班级一日考核&#xD;点击数：57&#xD;发表时间：2026年10月21日">10.20班级一日考核</a></li>
+  <li><span class="date">2026-10-22</span><a href="/Item/23829.aspx" target="_blank" title="标题：中共绍兴市第一中学委员会关于王青同志职务任免的通知&#xD;点击数：138&#xD;发表时间：2026年10月22日">中共绍兴市第一中学委员会关于王青同志职务任免的通知</a></li>
+<li><span class="date">2026-10-21</span><a href="/Item/23828.aspx" target="_blank" title="标题：10.20班级一日考核&#xD;点击数：58&#xD;发表时间：2026年10月21日">10.20班级一日考核</a></li>
 <li><span class="date">2026-10-21</span><a href="/Item/23827.aspx" target="_blank" title="标题：高二晚自修（10.26-11.1）&#xD;点击数：51&#xD;发表时间：2026年10月21日">高二晚自修（10.26-11.1）</a></li>
 <li><span class="date">2026-10-21</span><a href="/Item/23826.aspx" target="_blank" title="标题：中共绍兴市第一中学委员会关于马丹娜等同志职务任免的通知&#xD;点击数：245&#xD;发表时间：2026年10月21日">中共绍兴市第一中学委员会关于马丹娜等同志职务任免的通知</a></li>
 <li><span class="date">2026-10-21</span><a href="/Item/23825.aspx" target="_blank" title="标题：第十八期团校上课通知&#xD;点击数：139&#xD;发表时间：2026年10月21日">第十八期团校上课通知</a></li>
@@ -365,7 +365,7 @@ function GetUserInfo1(response){
 <li><span class="date">2026-10-20</span><a href="/Item/23817.aspx" target="_blank" title="标题：每周一学（2026年10月19日-10月25日）习近平：以更高标准、更实举措推进全面从严治党&#xD;点击数：12&#xD;发表时间：2026年10月20日">每周一学（2026年10月19日-10月25日）习近平：以更高标准、更实举措推进全面从严治党</a></li>
 <li><span class="date">2026-10-20</span><a href="/Item/23816.aspx" target="_blank" title="标题：潮哥&#xD;点击数：18&#xD;发表时间：2026年10月20日">潮哥</a></li>
 <li><span class="date">2026-10-20</span><a href="/Item/23815.aspx" target="_blank" title="标题：高三年级表彰暨动员大会通知&#xD;点击数：194&#xD;发表时间：2026年10月20日">高三年级表彰暨动员大会通知</a></li>
-<li><span class="date">2026-10-19</span><a href="/Item/23814.aspx" target="_blank" title="标题：10.16班级一日考核&#xD;点击数：58&#xD;发表时间：2026年10月19日">10.16班级一日考核</a></li>
+<li><span class="date">2026-10-19</span><a href="/Item/23814.aspx" target="_blank" title="标题：10.16班级一日考核&#xD;点击数：59&#xD;发表时间：2026年10月19日">10.16班级一日考核</a></li>
 <li><span class="date">2026-10-19</span><a href="/Item/23813.aspx" target="_blank" title="标题：10.17班级一日考核&#xD;点击数：52&#xD;发表时间：2026年10月19日">10.17班级一日考核</a></li>
 <li><span class="date">2026-10-19</span><a href="/Item/23812.aspx" target="_blank" title="标题：体育教研及体育课调整通知&#xD;点击数：177&#xD;发表时间：2026年10月19日">体育教研及体育课调整通知</a></li>
 <li><span class="date">2026-10-19</span><a href="/Item/23811.aspx" target="_blank" title="标题：高三诊断性考试时间安排&#xD;点击数：156&#xD;发表时间：2026年10月19日">高三诊断性考试时间安排</a></li>
