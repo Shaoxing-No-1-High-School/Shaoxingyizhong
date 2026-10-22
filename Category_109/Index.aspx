@@ -427,7 +427,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/23786.aspx">$β世纪城</a></td>
     <td>sjcnb</td>
-    <td>21</td>
+    <td>22</td>
     <td>2026-10-13</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -435,7 +435,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/23492.aspx">d#a$k#a$r#a,QjH@gKe!X</a></td>
     <td>AS</td>
-    <td>56</td>
+    <td>57</td>
     <td>2026-07-09</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -451,7 +451,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/23460.aspx">鲁迅中学王朝了</a></td>
     <td>sjcnb</td>
-    <td>100</td>
+    <td>101</td>
     <td>2026-07-01</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -475,7 +475,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/23415.aspx">我不要一栋楼创新班的男的，我不要滂臭的厕所</a></td>
     <td>jing</td>
-    <td>87</td>
+    <td>88</td>
     <td>2026-06-22</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -483,7 +483,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/23413.aspx">Ypqnmsl</a></td>
     <td>ypqnmsl</td>
-    <td>82</td>
+    <td>83</td>
     <td>2026-06-22</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -491,7 +491,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/23306.aspx">关于4楼厕所又堵了的事实</a></td>
     <td>我要吃鸡脚筋</td>
-    <td>55</td>
+    <td>56</td>
     <td>2026-05-28</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
@@ -499,7 +499,7 @@ function GetUserInfo1(response){
 <tr class="tableCont">
     <td class="msgT"><a href="/Item/22895.aspx">一楼食堂部分食物明显缩小</a></td>
     <td>kouzi1001</td>
-    <td>92</td>
+    <td>93</td>
     <td>2026-03-20</td>
     <td><span class="msg_wait">待回复</span></td>
   </tr>
