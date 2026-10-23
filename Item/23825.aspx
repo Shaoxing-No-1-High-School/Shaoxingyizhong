@@ -381,7 +381,7 @@ function GetUserInfo1(response){
                 <div class="bd">
                     <ul class="sideinfoList">
                         
-            <li class="first"><a href="/Item/23838.aspx" target="_blank" title="标题：周六社团课通知5则&#xD;点击数：38&#xD;发表时间：2026年10月23日">周六社团课通知5则</a><span class="dateRight">[10-23]</span></li><li><a href="/Item/23825.aspx" target="_blank" title="标题：第十八期团校上课通知&#xD;点击数：147&#xD;发表时间：2026年10月21日">第十八期团校上课通知</a><span class="dateRight">[10-21]</span></li><li><a href="/Item/23769.aspx" target="_blank" title="标题：求真实验室招新考试&#xD;点击数：128&#xD;发表时间：2026年10月09日">求真实验室招新考试</a><span class="dateRight">[10-09]</span></li><li><a href="/Item/23803.aspx" target="_blank" title="标题：周六社团课通知9则&#xD;点击数：190&#xD;发表时间：2026年10月16日">周六社团课通知9则</a><span class="dateRight">[10-16]</span></li><li><a href="/Item/23792.aspx" target="_blank" title="标题：求真实验室考试结果&#xD;点击数：149&#xD;发表时间：2026年10月14日">求真实验室考试结果</a><span class="dateRight">[10-14]</span></li><li><a href="/Item/23247.aspx" target="_blank" title="标题：周六招生考试志愿者会议&#xD;点击数：207&#xD;发表时间：2026年05月20日">周六招生考试志愿者会议</a><span class="dateRight">[05-20]</span></li><li class="last"><a href="/Item/23243.aspx" target="_blank" title="标题：学术节｜考古知识竞赛&#xD;点击数：113&#xD;发表时间：2026年05月19日">学术节｜考古知识竞赛</a><span class="dateRight">[05-19]</span></li>
+            <li class="first"><a href="/Item/23838.aspx" target="_blank" title="标题：周六社团课通知8则&#xD;点击数：47&#xD;发表时间：2026年10月23日">周六社团课通知8则</a><span class="dateRight">[10-23]</span></li><li><a href="/Item/23825.aspx" target="_blank" title="标题：第十八期团校上课通知&#xD;点击数：147&#xD;发表时间：2026年10月21日">第十八期团校上课通知</a><span class="dateRight">[10-21]</span></li><li><a href="/Item/23769.aspx" target="_blank" title="标题：求真实验室招新考试&#xD;点击数：128&#xD;发表时间：2026年10月09日">求真实验室招新考试</a><span class="dateRight">[10-09]</span></li><li><a href="/Item/23818.aspx" target="_blank" title="标题：关于举办第十四届“瀚辰杯”辩论赛的通知&#xD;点击数：113&#xD;发表时间：2026年10月20日">关于举办第十四届“瀚辰杯”辩论赛的通知</a><span class="dateRight">[10-20]</span></li><li><a href="/Item/23803.aspx" target="_blank" title="标题：周六社团课通知9则&#xD;点击数：190&#xD;发表时间：2026年10月16日">周六社团课通知9则</a><span class="dateRight">[10-16]</span></li><li><a href="/Item/23792.aspx" target="_blank" title="标题：求真实验室考试结果&#xD;点击数：149&#xD;发表时间：2026年10月14日">求真实验室考试结果</a><span class="dateRight">[10-14]</span></li><li class="last"><a href="/Item/23247.aspx" target="_blank" title="标题：周六招生考试志愿者会议&#xD;点击数：207&#xD;发表时间：2026年05月20日">周六招生考试志愿者会议</a><span class="dateRight">[05-20]</span></li>
           
                     </ul>
                 </div>
@@ -437,8 +437,8 @@ $(document).ready(function()
                         </div>
 
                         <div class="others">
-                            <div class="prev"><span>上一篇：</span><a href="/Item/23818.aspx" target="_self" title="标题：关于举办第十四届“瀚辰杯”辩论赛的通知&#xD;点击数：112&#xD;发表时间：26年10月20日">关于举办第十四届“瀚辰杯”辩论赛的通知</a>[ 10-20 ]</div>
-                            <div class="next"><span>下一篇：</span><a href="/Item/23838.aspx" target="_self" title="标题：周六社团课通知5则&#xD;点击数：38&#xD;发表时间：26年10月23日">周六社团课通知5则</a>[ 10-23 ]</div>
+                            <div class="prev"><span>上一篇：</span><a href="/Item/23818.aspx" target="_self" title="标题：关于举办第十四届“瀚辰杯”辩论赛的通知&#xD;点击数：113&#xD;发表时间：26年10月20日">关于举办第十四届“瀚辰杯”辩论赛的通知</a>[ 10-20 ]</div>
+                            <div class="next"><span>下一篇：</span><a href="/Item/23838.aspx" target="_self" title="标题：周六社团课通知8则&#xD;点击数：47&#xD;发表时间：26年10月23日">周六社团课通知8则</a>[ 10-23 ]</div>
                         </div>
                     </div>
 
