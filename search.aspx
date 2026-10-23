@@ -350,7 +350,8 @@ function GetUserInfo1(response){
                     <h1 class="title"><b>关键词 "<i></i>"</b></h1>
                     <div class="con">
                         <div class="infoList a14" style="margin-bottom: 30px;"> 
-  <li><span class="date">2026-10-23</span><a href="/Item/23837.aspx" target="_blank" title="标题：绍兴一中“2026年家长开放日”暨第八届家委会成立活动方案&#xD;点击数：12&#xD;发表时间：2026年10月23日">绍兴一中“2026年家长开放日”暨第八届家委会成立活动方案</a></li>
+  <li><span class="date">2026-10-23</span><a href="/Item/23838.aspx" target="_blank" title="标题：周六社团课通知5则&#xD;点击数：1&#xD;发表时间：2026年10月23日">周六社团课通知5则</a></li>
+<li><span class="date">2026-10-23</span><a href="/Item/23837.aspx" target="_blank" title="标题：绍兴一中“2026年家长开放日”暨第八届家委会成立活动方案&#xD;点击数：13&#xD;发表时间：2026年10月23日">绍兴一中“2026年家长开放日”暨第八届家委会成立活动方案</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23836.aspx" target="_blank" title="标题：【考古社】社团课通知&#xD;点击数：1&#xD;发表时间：2026年10月23日">【考古社】社团课通知</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23835.aspx" target="_blank" title="标题：【文学社】社团课通知&#xD;点击数：1&#xD;发表时间：2026年10月23日">【文学社】社团课通知</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23834.aspx" target="_blank" title="标题：【摄影社】社团课通知&#xD;点击数：1&#xD;发表时间：2026年10月23日">【摄影社】社团课通知</a></li>
@@ -399,7 +400,6 @@ function GetUserInfo1(response){
 <li><span class="date">2026-10-14</span><a href="/Item/23791.aspx" target="_blank" title="标题：绍兴一中微电影创作大赛剧本征集&#xD;点击数：109&#xD;发表时间：2026年10月14日">绍兴一中微电影创作大赛剧本征集</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23790.aspx" target="_blank" title="标题：sjc的会议&#xD;点击数：24&#xD;发表时间：2026年10月14日">sjc的会议</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23789.aspx" target="_blank" title="标题：论1014会议😶&#xD;点击数：22&#xD;发表时间：2026年10月14日">论1014会议😶</a></li>
-<li><span class="date">2026-10-14</span><a href="/Item/23788.aspx" target="_blank" title="标题：绍兴一中创新班学部期中学生大会&#xD;点击数：236&#xD;发表时间：2026年10月14日">绍兴一中创新班学部期中学生大会</a></li>
   </div>
                         <div class="page"><span id="pe100_page_全站搜索按标题_普通式" class="pagecss"><!--{pe.begin.pagination}-->
  <a href="search.aspx">首页</a>
