@@ -350,7 +350,7 @@ function GetUserInfo1(response){
                     <h1 class="title"><b>关键词 "<i></i>"</b></h1>
                     <div class="con">
                         <div class="infoList a14" style="margin-bottom: 30px;"> 
-  <li><span class="date">2026-10-23</span><a href="/Item/23837.aspx" target="_blank" title="标题：绍兴一中“2026年家长开放日”暨第八届家委会成立活动方案&#xD;点击数：5&#xD;发表时间：2026年10月23日">绍兴一中“2026年家长开放日”暨第八届家委会成立活动方案</a></li>
+  <li><span class="date">2026-10-23</span><a href="/Item/23837.aspx" target="_blank" title="标题：绍兴一中“2026年家长开放日”暨第八届家委会成立活动方案&#xD;点击数：12&#xD;发表时间：2026年10月23日">绍兴一中“2026年家长开放日”暨第八届家委会成立活动方案</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23836.aspx" target="_blank" title="标题：【考古社】社团课通知&#xD;点击数：1&#xD;发表时间：2026年10月23日">【考古社】社团课通知</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23835.aspx" target="_blank" title="标题：【文学社】社团课通知&#xD;点击数：1&#xD;发表时间：2026年10月23日">【文学社】社团课通知</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23834.aspx" target="_blank" title="标题：【摄影社】社团课通知&#xD;点击数：1&#xD;发表时间：2026年10月23日">【摄影社】社团课通知</a></li>
