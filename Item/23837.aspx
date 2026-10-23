@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta content="绍兴市第一中学" name="Keywords" />
     <meta content="绍兴市第一中学" name="Description" />
-    <title>绍兴一中“2026年家长开放日”暨第八届家委会成立活动方案--德育处-绍兴市第一中学</title>
+    <title>绍兴一中教育集团“2026年家长开放日”暨第八届家委会成立活动方案--德育处-绍兴市第一中学</title>
     <link href="/Template/Default/Skin/erms/css/module.css" rel="stylesheet" type="text/css" />
     <link href="/Template/Default/Skin/erms/css/default.css" rel="stylesheet" type="text/css" />
     <link href="/Template/Default/Skin/erms/css/page.css" rel="stylesheet" type="text/css" />
@@ -381,7 +381,7 @@ function GetUserInfo1(response){
                 <div class="bd">
                     <ul class="sideinfoList">
                         
-            <li class="first"><a href="/Item/23837.aspx" target="_blank" title="标题：绍兴一中“2026年家长开放日”暨第八届家委会成立活动方案&#xD;点击数：13&#xD;发表时间：2026年10月23日">绍兴一中“2026年家长开放日”暨第八届家委会成立活动方案</a><span class="dateRight">[10-23]</span></li><li><a href="/Item/23831.aspx" target="_blank" title="标题：10.22跑操量化考核反馈&#xD;点击数：52&#xD;发表时间：2026年10月22日">10.22跑操量化考核反馈</a><span class="dateRight">[10-22]</span></li><li><a href="/Item/23824.aspx" target="_blank" title="标题：10.20跑操量化考核反馈&#xD;点击数：75&#xD;发表时间：2026年10月20日">10.20跑操量化考核反馈</a><span class="dateRight">[10-20]</span></li><li><a href="/Item/23830.aspx" target="_blank" title="标题：10.21班级一日考核&#xD;点击数：44&#xD;发表时间：2026年10月22日">10.21班级一日考核</a><span class="dateRight">[10-22]</span></li><li><a href="/Item/22444.aspx" target="_blank" title="标题：12.8班级一日考核&#xD;点击数：44&#xD;发表时间：2025年12月09日">12.8班级一日考核</a><span class="dateRight">[12-09]</span></li><li><a href="/Item/23620.aspx" target="_blank" title="标题：大课间跑操考核员招募通知&#xD;点击数：121&#xD;发表时间：2026年09月09日">大课间跑操考核员招募通知</a><span class="dateRight">[09-09]</span></li><li class="last"><a href="/Item/23013.aspx" target="_blank" title="标题：4.9班级一日考核&#xD;点击数：36&#xD;发表时间：2026年04月10日">4.9班级一日考核</a><span class="dateRight">[04-10]</span></li>
+            <li class="first"><a href="/Item/23837.aspx" target="_blank" title="标题：绍兴一中教育集团“2026年家长开放日”暨第八届家委会成立活动方案&#xD;点击数：14&#xD;发表时间：2026年10月23日">绍兴一中教育集团“2026年家长开放日”暨第八届家委会成…</a><span class="dateRight">[10-23]</span></li><li><a href="/Item/23831.aspx" target="_blank" title="标题：10.22跑操量化考核反馈&#xD;点击数：52&#xD;发表时间：2026年10月22日">10.22跑操量化考核反馈</a><span class="dateRight">[10-22]</span></li><li><a href="/Item/23824.aspx" target="_blank" title="标题：10.20跑操量化考核反馈&#xD;点击数：75&#xD;发表时间：2026年10月20日">10.20跑操量化考核反馈</a><span class="dateRight">[10-20]</span></li><li><a href="/Item/23830.aspx" target="_blank" title="标题：10.21班级一日考核&#xD;点击数：44&#xD;发表时间：2026年10月22日">10.21班级一日考核</a><span class="dateRight">[10-22]</span></li><li><a href="/Item/22444.aspx" target="_blank" title="标题：12.8班级一日考核&#xD;点击数：44&#xD;发表时间：2025年12月09日">12.8班级一日考核</a><span class="dateRight">[12-09]</span></li><li><a href="/Item/23620.aspx" target="_blank" title="标题：大课间跑操考核员招募通知&#xD;点击数：121&#xD;发表时间：2026年09月09日">大课间跑操考核员招募通知</a><span class="dateRight">[09-09]</span></li><li class="last"><a href="/Item/23013.aspx" target="_blank" title="标题：4.9班级一日考核&#xD;点击数：36&#xD;发表时间：2026年04月10日">4.9班级一日考核</a><span class="dateRight">[04-10]</span></li>
           
                     </ul>
                 </div>
@@ -405,7 +405,7 @@ function GetUserInfo1(response){
                     <!--startprint-->
                     <div class="printArea">
                         <!-- 标题 -->
-                        <h2 class="title">绍兴一中“2026年家长开放日”暨第八届家委会成立活动方案</h2>
+                        <h2 class="title">绍兴一中教育集团“2026年家长开放日”暨第八届家委会成立活动方案</h2>
                         <!-- 副标题 -->
                         <h3 class="subTitle"><span></span></h3>
                         <script>
