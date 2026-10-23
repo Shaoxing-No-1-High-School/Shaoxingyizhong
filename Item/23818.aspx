@@ -473,7 +473,7 @@ $(document).ready(function()
                         </div>
 
                         <div class="others">
-                            <div class="prev"><span>上一篇：</span><a href="/Item/23803.aspx" target="_self" title="标题：周六社团课通知9则&#xD;点击数：188&#xD;发表时间：26年10月16日">周六社团课通知9则</a>[ 10-16 ]</div>
+                            <div class="prev"><span>上一篇：</span><a href="/Item/23803.aspx" target="_self" title="标题：周六社团课通知9则&#xD;点击数：189&#xD;发表时间：26年10月16日">周六社团课通知9则</a>[ 10-16 ]</div>
                             <div class="next"><span>下一篇：</span><a href="/Item/23825.aspx" target="_self" title="标题：第十八期团校上课通知&#xD;点击数：144&#xD;发表时间：26年10月21日">第十八期团校上课通知</a>[ 10-21 ]</div>
                         </div>
                     </div>

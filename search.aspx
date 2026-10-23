@@ -350,7 +350,8 @@ function GetUserInfo1(response){
                     <h1 class="title"><b>关键词 "<i></i>"</b></h1>
                     <div class="con">
                         <div class="infoList a14" style="margin-bottom: 30px;"> 
-  <li><span class="date">2026-10-23</span><a href="/Item/23836.aspx" target="_blank" title="标题：【考古社】社团课通知&#xD;点击数：1&#xD;发表时间：2026年10月23日">【考古社】社团课通知</a></li>
+  <li><span class="date">2026-10-23</span><a href="/Item/23837.aspx" target="_blank" title="标题：绍兴一中“2026年家长开放日”暨第八届家委会成立活动方案&#xD;点击数：2&#xD;发表时间：2026年10月23日">绍兴一中“2026年家长开放日”暨第八届家委会成立活动方案</a></li>
+<li><span class="date">2026-10-23</span><a href="/Item/23836.aspx" target="_blank" title="标题：【考古社】社团课通知&#xD;点击数：1&#xD;发表时间：2026年10月23日">【考古社】社团课通知</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23835.aspx" target="_blank" title="标题：【文学社】社团课通知&#xD;点击数：1&#xD;发表时间：2026年10月23日">【文学社】社团课通知</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23834.aspx" target="_blank" title="标题：【摄影社】社团课通知&#xD;点击数：1&#xD;发表时间：2026年10月23日">【摄影社】社团课通知</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23833.aspx" target="_blank" title="标题：【模拟联合国社】社团课通知&#xD;点击数：3&#xD;发表时间：2026年10月23日">【模拟联合国社】社团课通知</a></li>
@@ -383,7 +384,7 @@ function GetUserInfo1(response){
 <li><span class="date">2026-10-16</span><a href="/Item/23806.aspx" target="_blank" title="标题：创新班学部10月18日至10月30日晚自习安排&#xD;点击数：113&#xD;发表时间：2026年10月16日">创新班学部10月18日至10月30日晚自习安排</a></li>
 <li><span class="date">2026-10-16</span><a href="/Item/23805.aspx" target="_blank" title="标题：10.15班级一日考核&#xD;点击数：65&#xD;发表时间：2026年10月16日">10.15班级一日考核</a></li>
 <li><span class="date">2026-10-16</span><a href="/Item/23804.aspx" target="_blank" title="标题：高一、高二期中考时间和考试范围&#xD;点击数：267&#xD;发表时间：2026年10月16日">高一、高二期中考时间和考试范围</a></li>
-<li><span class="date">2026-10-16</span><a href="/Item/23803.aspx" target="_blank" title="标题：周六社团课通知9则&#xD;点击数：188&#xD;发表时间：2026年10月16日">周六社团课通知9则</a></li>
+<li><span class="date">2026-10-16</span><a href="/Item/23803.aspx" target="_blank" title="标题：周六社团课通知9则&#xD;点击数：189&#xD;发表时间：2026年10月16日">周六社团课通知9则</a></li>
 <li><span class="date">2026-10-16</span><a href="/Item/23802.aspx" target="_blank" title="标题：高二晚自习(10.18-10.23、10.25)&#xD;点击数：111&#xD;发表时间：2026年10月16日">高二晚自习(10.18-10.23、10.25)</a></li>
 <li><span class="date">2026-10-15</span><a href="/Item/23801.aspx" target="_blank" title="标题：10.15跑操量化考核反馈&#xD;点击数：66&#xD;发表时间：2026年10月15日">10.15跑操量化考核反馈</a></li>
 <li><span class="date">2026-10-15</span><a href="/Item/23800.aspx" target="_blank" title="标题：10.14班级一日考核&#xD;点击数：61&#xD;发表时间：2026年10月15日">10.14班级一日考核</a></li>
@@ -399,7 +400,6 @@ function GetUserInfo1(response){
 <li><span class="date">2026-10-14</span><a href="/Item/23790.aspx" target="_blank" title="标题：sjc的会议&#xD;点击数：24&#xD;发表时间：2026年10月14日">sjc的会议</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23789.aspx" target="_blank" title="标题：论1014会议😶&#xD;点击数：22&#xD;发表时间：2026年10月14日">论1014会议😶</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23788.aspx" target="_blank" title="标题：绍兴一中创新班学部期中学生大会&#xD;点击数：236&#xD;发表时间：2026年10月14日">绍兴一中创新班学部期中学生大会</a></li>
-<li><span class="date">2026-10-13</span><a href="/Item/23786.aspx" target="_blank" title="标题：$β世纪城&#xD;点击数：22&#xD;发表时间：2026年10月13日">$β世纪城</a></li>
   </div>
                         <div class="page"><span id="pe100_page_全站搜索按标题_普通式" class="pagecss"><!--{pe.begin.pagination}-->
  <a href="search.aspx">首页</a>
