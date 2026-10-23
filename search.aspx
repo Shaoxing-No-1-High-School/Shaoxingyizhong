@@ -350,8 +350,9 @@ function GetUserInfo1(response){
                     <h1 class="title"><b>关键词 "<i></i>"</b></h1>
                     <div class="con">
                         <div class="infoList a14" style="margin-bottom: 30px;"> 
-  <li><span class="date">2026-10-23</span><a href="/Item/23833.aspx" target="_blank" title="标题：【模拟联合国社】社团课通知&#xD;点击数：0&#xD;发表时间：2026年10月23日">【模拟联合国社】社团课通知</a></li>
-<li><span class="date">2026-10-23</span><a href="/Item/23832.aspx" target="_blank" title="标题：文明办公室检查反馈&#xD;点击数：48&#xD;发表时间：2026年10月23日">文明办公室检查反馈</a></li>
+  <li><span class="date">2026-10-23</span><a href="/Item/23834.aspx" target="_blank" title="标题：【摄影社】社团课通知&#xD;点击数：0&#xD;发表时间：2026年10月23日">【摄影社】社团课通知</a></li>
+<li><span class="date">2026-10-23</span><a href="/Item/23833.aspx" target="_blank" title="标题：【模拟联合国社】社团课通知&#xD;点击数：1&#xD;发表时间：2026年10月23日">【模拟联合国社】社团课通知</a></li>
+<li><span class="date">2026-10-23</span><a href="/Item/23832.aspx" target="_blank" title="标题：文明办公室检查反馈&#xD;点击数：50&#xD;发表时间：2026年10月23日">文明办公室检查反馈</a></li>
 <li><span class="date">2026-10-22</span><a href="/Item/23831.aspx" target="_blank" title="标题：10.22跑操量化考核反馈&#xD;点击数：52&#xD;发表时间：2026年10月22日">10.22跑操量化考核反馈</a></li>
 <li><span class="date">2026-10-22</span><a href="/Item/23830.aspx" target="_blank" title="标题：10.21班级一日考核&#xD;点击数：44&#xD;发表时间：2026年10月22日">10.21班级一日考核</a></li>
 <li><span class="date">2026-10-22</span><a href="/Item/23829.aspx" target="_blank" title="标题：中共绍兴市第一中学委员会关于王青同志职务任免的通知&#xD;点击数：211&#xD;发表时间：2026年10月22日">中共绍兴市第一中学委员会关于王青同志职务任免的通知</a></li>
@@ -399,7 +400,6 @@ function GetUserInfo1(response){
 <li><span class="date">2026-10-13</span><a href="/Item/23786.aspx" target="_blank" title="标题：$β世纪城&#xD;点击数：22&#xD;发表时间：2026年10月13日">$β世纪城</a></li>
 <li><span class="date">2026-10-13</span><a href="/Item/23785.aspx" target="_blank" title="标题：10.13跑操量化考核反馈&#xD;点击数：73&#xD;发表时间：2026年10月13日">10.13跑操量化考核反馈</a></li>
 <li><span class="date">2026-10-13</span><a href="/Item/23784.aspx" target="_blank" title="标题：10.12班级一日考核&#xD;点击数：59&#xD;发表时间：2026年10月13日">10.12班级一日考核</a></li>
-<li><span class="date">2026-10-13</span><a href="/Item/23783.aspx" target="_blank" title="标题：关于心理教研活动的通知&#xD;点击数：99&#xD;发表时间：2026年10月13日">关于心理教研活动的通知</a></li>
   </div>
                         <div class="page"><span id="pe100_page_全站搜索按标题_普通式" class="pagecss"><!--{pe.begin.pagination}-->
  <a href="search.aspx">首页</a>
