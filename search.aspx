@@ -350,15 +350,16 @@ function GetUserInfo1(response){
                     <h1 class="title"><b>关键词 "<i></i>"</b></h1>
                     <div class="con">
                         <div class="infoList a14" style="margin-bottom: 30px;"> 
-  <li><span class="date">2026-10-23</span><a href="/Item/23840.aspx" target="_blank" title="标题：高三晚自修（10.26-11.8）&#xD;点击数：13&#xD;发表时间：2026年10月23日">高三晚自修（10.26-11.8）</a></li>
-<li><span class="date">2026-10-23</span><a href="/Item/23839.aspx" target="_blank" title="标题：青年教师会议&#xD;点击数：106&#xD;发表时间：2026年10月23日">青年教师会议</a></li>
-<li><span class="date">2026-10-23</span><a href="/Item/23838.aspx" target="_blank" title="标题：周六社团课通知8则&#xD;点击数：61&#xD;发表时间：2026年10月23日">周六社团课通知8则</a></li>
-<li><span class="date">2026-10-23</span><a href="/Item/23837.aspx" target="_blank" title="标题：绍兴一中教育集团“2026年家长开放日”暨第八届家委会成立活动方案&#xD;点击数：137&#xD;发表时间：2026年10月23日">绍兴一中教育集团“2026年家长开放日”暨第八届家委会成立活动方案</a></li>
+  <li><span class="date">2026-10-23</span><a href="/Item/23841.aspx" target="_blank" title="标题：关于2026年中高级职称评审申报的通知&#xD;点击数：1&#xD;发表时间：2026年10月23日">关于2026年中高级职称评审申报的通知</a></li>
+<li><span class="date">2026-10-23</span><a href="/Item/23840.aspx" target="_blank" title="标题：高三晚自修（10.26-11.8）&#xD;点击数：15&#xD;发表时间：2026年10月23日">高三晚自修（10.26-11.8）</a></li>
+<li><span class="date">2026-10-23</span><a href="/Item/23839.aspx" target="_blank" title="标题：青年教师会议&#xD;点击数：111&#xD;发表时间：2026年10月23日">青年教师会议</a></li>
+<li><span class="date">2026-10-23</span><a href="/Item/23838.aspx" target="_blank" title="标题：周六社团课通知8则&#xD;点击数：63&#xD;发表时间：2026年10月23日">周六社团课通知8则</a></li>
+<li><span class="date">2026-10-23</span><a href="/Item/23837.aspx" target="_blank" title="标题：绍兴一中教育集团“2026年家长开放日”暨第八届家委会成立活动方案&#xD;点击数：143&#xD;发表时间：2026年10月23日">绍兴一中教育集团“2026年家长开放日”暨第八届家委会成立活动方案</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23836.aspx" target="_blank" title="标题：【考古社】社团课通知&#xD;点击数：3&#xD;发表时间：2026年10月23日">【考古社】社团课通知</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23835.aspx" target="_blank" title="标题：【文学社】社团课通知&#xD;点击数：2&#xD;发表时间：2026年10月23日">【文学社】社团课通知</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23834.aspx" target="_blank" title="标题：【摄影社】社团课通知&#xD;点击数：3&#xD;发表时间：2026年10月23日">【摄影社】社团课通知</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23833.aspx" target="_blank" title="标题：【模拟联合国社】社团课通知&#xD;点击数：4&#xD;发表时间：2026年10月23日">【模拟联合国社】社团课通知</a></li>
-<li><span class="date">2026-10-23</span><a href="/Item/23832.aspx" target="_blank" title="标题：文明办公室检查反馈&#xD;点击数：98&#xD;发表时间：2026年10月23日">文明办公室检查反馈</a></li>
+<li><span class="date">2026-10-23</span><a href="/Item/23832.aspx" target="_blank" title="标题：文明办公室检查反馈&#xD;点击数：100&#xD;发表时间：2026年10月23日">文明办公室检查反馈</a></li>
 <li><span class="date">2026-10-22</span><a href="/Item/23831.aspx" target="_blank" title="标题：10.22跑操量化考核反馈&#xD;点击数：63&#xD;发表时间：2026年10月22日">10.22跑操量化考核反馈</a></li>
 <li><span class="date">2026-10-22</span><a href="/Item/23830.aspx" target="_blank" title="标题：10.21班级一日考核&#xD;点击数：48&#xD;发表时间：2026年10月22日">10.21班级一日考核</a></li>
 <li><span class="date">2026-10-22</span><a href="/Item/23829.aspx" target="_blank" title="标题：中共绍兴市第一中学委员会关于王青同志职务任免的通知&#xD;点击数：220&#xD;发表时间：2026年10月22日">中共绍兴市第一中学委员会关于王青同志职务任免的通知</a></li>
@@ -399,7 +400,6 @@ function GetUserInfo1(response){
 <li><span class="date">2026-10-14</span><a href="/Item/23794.aspx" target="_blank" title="标题：10.13班级一日考核&#xD;点击数：59&#xD;发表时间：2026年10月14日">10.13班级一日考核</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23793.aspx" target="_blank" title="标题：化学教研活动通知&#xD;点击数：140&#xD;发表时间：2026年10月14日">化学教研活动通知</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23792.aspx" target="_blank" title="标题：求真实验室考试结果&#xD;点击数：149&#xD;发表时间：2026年10月14日">求真实验室考试结果</a></li>
-<li><span class="date">2026-10-14</span><a href="/Item/23791.aspx" target="_blank" title="标题：绍兴一中微电影创作大赛剧本征集&#xD;点击数：109&#xD;发表时间：2026年10月14日">绍兴一中微电影创作大赛剧本征集</a></li>
   </div>
                         <div class="page"><span id="pe100_page_全站搜索按标题_普通式" class="pagecss"><!--{pe.begin.pagination}-->
  <a href="search.aspx">首页</a>
