@@ -431,7 +431,7 @@ $(document).ready(function()
 
                         <div class="others">
                             <div class="prev"><span>上一篇：</span><a href="/Item/23834.aspx" target="_self" title="标题：【摄影社】社团课通知&#xD;点击数：1&#xD;发表时间：26年10月23日">【摄影社】社团课通知</a>[ 10-23 ]</div>
-                            <div class="next"><span>下一篇：没有了！</span></div>
+                            <div class="next"><span>下一篇：</span><a href="/Item/23836.aspx" target="_self" title="标题：【考古社】社团课通知&#xD;点击数：0&#xD;发表时间：26年10月23日">【考古社】社团课通知</a>[ 10-23 ]</div>
                         </div>
                     </div>
 
