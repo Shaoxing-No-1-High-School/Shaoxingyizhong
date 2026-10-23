@@ -376,7 +376,7 @@ function GetUserInfo1(response){
                 <div class="bd">
                     <ul class="sideinfoList">
                         
-            <li class="first"><a href="/Item/23833.aspx" target="_blank" title="标题：【模拟联合国社】社团课通知&#xD;点击数：5&#xD;发表时间：2026年10月23日">【模拟联合国社】社团课通知</a><span class="dateRight">[10-23]</span></li><li><a href="/Item/23834.aspx" target="_blank" title="标题：【摄影社】社团课通知&#xD;点击数：4&#xD;发表时间：2026年10月23日">【摄影社】社团课通知</a><span class="dateRight">[10-23]</span></li><li><a href="/Item/23836.aspx" target="_blank" title="标题：【考古社】社团课通知&#xD;点击数：3&#xD;发表时间：2026年10月23日">【考古社】社团课通知</a><span class="dateRight">[10-23]</span></li><li><a href="/Item/23835.aspx" target="_blank" title="标题：【文学社】社团课通知&#xD;点击数：2&#xD;发表时间：2026年10月23日">【文学社】社团课通知</a><span class="dateRight">[10-23]</span></li><li><a href="/Item/23213.aspx" target="_blank" title="标题：【日研社】社团课通知&#xD;点击数：50&#xD;发表时间：2026年05月15日">【日研社】社团课通知</a><span class="dateRight">[05-15]</span></li><li><a href="/Item/23207.aspx" target="_blank" title="标题：【商社】社团课通知&#xD;点击数：23&#xD;发表时间：2026年05月15日">【商社】社团课通知</a><span class="dateRight">[05-15]</span></li><li class="last"><a href="/Item/23205.aspx" target="_blank" title="标题：【求真社】社团课通知&#xD;点击数：18&#xD;发表时间：2026年05月15日">【求真社】社团课通知</a><span class="dateRight">[05-15]</span></li>
+            <li class="first"><a href="/Item/23833.aspx" target="_blank" title="标题：【模拟联合国社】社团课通知&#xD;点击数：6&#xD;发表时间：2026年10月23日">【模拟联合国社】社团课通知</a><span class="dateRight">[10-23]</span></li><li><a href="/Item/23834.aspx" target="_blank" title="标题：【摄影社】社团课通知&#xD;点击数：4&#xD;发表时间：2026年10月23日">【摄影社】社团课通知</a><span class="dateRight">[10-23]</span></li><li><a href="/Item/23836.aspx" target="_blank" title="标题：【考古社】社团课通知&#xD;点击数：3&#xD;发表时间：2026年10月23日">【考古社】社团课通知</a><span class="dateRight">[10-23]</span></li><li><a href="/Item/23835.aspx" target="_blank" title="标题：【文学社】社团课通知&#xD;点击数：2&#xD;发表时间：2026年10月23日">【文学社】社团课通知</a><span class="dateRight">[10-23]</span></li><li><a href="/Item/23213.aspx" target="_blank" title="标题：【日研社】社团课通知&#xD;点击数：50&#xD;发表时间：2026年05月15日">【日研社】社团课通知</a><span class="dateRight">[05-15]</span></li><li><a href="/Item/23207.aspx" target="_blank" title="标题：【商社】社团课通知&#xD;点击数：23&#xD;发表时间：2026年05月15日">【商社】社团课通知</a><span class="dateRight">[05-15]</span></li><li class="last"><a href="/Item/23205.aspx" target="_blank" title="标题：【求真社】社团课通知&#xD;点击数：18&#xD;发表时间：2026年05月15日">【求真社】社团课通知</a><span class="dateRight">[05-15]</span></li>
           
                     </ul>
                 </div>
@@ -430,7 +430,7 @@ $(document).ready(function()
                         </div>
 
                         <div class="others">
-                            <div class="prev"><span>上一篇：</span><a href="/Item/23833.aspx" target="_self" title="标题：【模拟联合国社】社团课通知&#xD;点击数：5&#xD;发表时间：26年10月23日">【模拟联合国社】社团课通知</a>[ 10-23 ]</div>
+                            <div class="prev"><span>上一篇：</span><a href="/Item/23833.aspx" target="_self" title="标题：【模拟联合国社】社团课通知&#xD;点击数：6&#xD;发表时间：26年10月23日">【模拟联合国社】社团课通知</a>[ 10-23 ]</div>
                             <div class="next"><span>下一篇：</span><a href="/Item/23835.aspx" target="_self" title="标题：【文学社】社团课通知&#xD;点击数：2&#xD;发表时间：26年10月23日">【文学社】社团课通知</a>[ 10-23 ]</div>
                         </div>
                     </div>
