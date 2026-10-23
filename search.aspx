@@ -350,27 +350,27 @@ function GetUserInfo1(response){
                     <h1 class="title"><b>关键词 "<i></i>"</b></h1>
                     <div class="con">
                         <div class="infoList a14" style="margin-bottom: 30px;"> 
-  <li><span class="date">2026-10-23</span><a href="/Item/23841.aspx" target="_blank" title="标题：关于2026年中高级职称评审申报的通知&#xD;点击数：35&#xD;发表时间：2026年10月23日">关于2026年中高级职称评审申报的通知</a></li>
-<li><span class="date">2026-10-23</span><a href="/Item/23840.aspx" target="_blank" title="标题：高三晚自修（10.26-11.8）&#xD;点击数：21&#xD;发表时间：2026年10月23日">高三晚自修（10.26-11.8）</a></li>
-<li><span class="date">2026-10-23</span><a href="/Item/23839.aspx" target="_blank" title="标题：青年教师会议&#xD;点击数：125&#xD;发表时间：2026年10月23日">青年教师会议</a></li>
+  <li><span class="date">2026-10-23</span><a href="/Item/23841.aspx" target="_blank" title="标题：关于2026年中高级职称评审申报的通知&#xD;点击数：50&#xD;发表时间：2026年10月23日">关于2026年中高级职称评审申报的通知</a></li>
+<li><span class="date">2026-10-23</span><a href="/Item/23840.aspx" target="_blank" title="标题：高三晚自修（10.26-11.8）&#xD;点击数：26&#xD;发表时间：2026年10月23日">高三晚自修（10.26-11.8）</a></li>
+<li><span class="date">2026-10-23</span><a href="/Item/23839.aspx" target="_blank" title="标题：青年教师会议&#xD;点击数：130&#xD;发表时间：2026年10月23日">青年教师会议</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23838.aspx" target="_blank" title="标题：周六社团课通知8则&#xD;点击数：68&#xD;发表时间：2026年10月23日">周六社团课通知8则</a></li>
-<li><span class="date">2026-10-23</span><a href="/Item/23837.aspx" target="_blank" title="标题：绍兴一中教育集团“2026年家长开放日”暨第八届家委会成立活动方案&#xD;点击数：154&#xD;发表时间：2026年10月23日">绍兴一中教育集团“2026年家长开放日”暨第八届家委会成立活动方案</a></li>
+<li><span class="date">2026-10-23</span><a href="/Item/23837.aspx" target="_blank" title="标题：绍兴一中教育集团“2026年家长开放日”暨第八届家委会成立活动方案&#xD;点击数：161&#xD;发表时间：2026年10月23日">绍兴一中教育集团“2026年家长开放日”暨第八届家委会成立活动方案</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23836.aspx" target="_blank" title="标题：【考古社】社团课通知&#xD;点击数：3&#xD;发表时间：2026年10月23日">【考古社】社团课通知</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23835.aspx" target="_blank" title="标题：【文学社】社团课通知&#xD;点击数：2&#xD;发表时间：2026年10月23日">【文学社】社团课通知</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23834.aspx" target="_blank" title="标题：【摄影社】社团课通知&#xD;点击数：3&#xD;发表时间：2026年10月23日">【摄影社】社团课通知</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23833.aspx" target="_blank" title="标题：【模拟联合国社】社团课通知&#xD;点击数：4&#xD;发表时间：2026年10月23日">【模拟联合国社】社团课通知</a></li>
-<li><span class="date">2026-10-23</span><a href="/Item/23832.aspx" target="_blank" title="标题：文明办公室检查反馈&#xD;点击数：105&#xD;发表时间：2026年10月23日">文明办公室检查反馈</a></li>
+<li><span class="date">2026-10-23</span><a href="/Item/23832.aspx" target="_blank" title="标题：文明办公室检查反馈&#xD;点击数：109&#xD;发表时间：2026年10月23日">文明办公室检查反馈</a></li>
 <li><span class="date">2026-10-22</span><a href="/Item/23831.aspx" target="_blank" title="标题：10.22跑操量化考核反馈&#xD;点击数：64&#xD;发表时间：2026年10月22日">10.22跑操量化考核反馈</a></li>
 <li><span class="date">2026-10-22</span><a href="/Item/23830.aspx" target="_blank" title="标题：10.21班级一日考核&#xD;点击数：48&#xD;发表时间：2026年10月22日">10.21班级一日考核</a></li>
-<li><span class="date">2026-10-22</span><a href="/Item/23829.aspx" target="_blank" title="标题：中共绍兴市第一中学委员会关于王青同志职务任免的通知&#xD;点击数：223&#xD;发表时间：2026年10月22日">中共绍兴市第一中学委员会关于王青同志职务任免的通知</a></li>
+<li><span class="date">2026-10-22</span><a href="/Item/23829.aspx" target="_blank" title="标题：中共绍兴市第一中学委员会关于王青同志职务任免的通知&#xD;点击数：224&#xD;发表时间：2026年10月22日">中共绍兴市第一中学委员会关于王青同志职务任免的通知</a></li>
 <li><span class="date">2026-10-21</span><a href="/Item/23828.aspx" target="_blank" title="标题：10.20班级一日考核&#xD;点击数：62&#xD;发表时间：2026年10月21日">10.20班级一日考核</a></li>
 <li><span class="date">2026-10-21</span><a href="/Item/23827.aspx" target="_blank" title="标题：高二晚自修（10.26-11.1）&#xD;点击数：55&#xD;发表时间：2026年10月21日">高二晚自修（10.26-11.1）</a></li>
-<li><span class="date">2026-10-21</span><a href="/Item/23826.aspx" target="_blank" title="标题：中共绍兴市第一中学委员会关于马丹娜等同志职务任免的通知&#xD;点击数：279&#xD;发表时间：2026年10月21日">中共绍兴市第一中学委员会关于马丹娜等同志职务任免的通知</a></li>
-<li><span class="date">2026-10-21</span><a href="/Item/23825.aspx" target="_blank" title="标题：第十八期团校上课通知&#xD;点击数：147&#xD;发表时间：2026年10月21日">第十八期团校上课通知</a></li>
+<li><span class="date">2026-10-21</span><a href="/Item/23826.aspx" target="_blank" title="标题：中共绍兴市第一中学委员会关于马丹娜等同志职务任免的通知&#xD;点击数：280&#xD;发表时间：2026年10月21日">中共绍兴市第一中学委员会关于马丹娜等同志职务任免的通知</a></li>
+<li><span class="date">2026-10-21</span><a href="/Item/23825.aspx" target="_blank" title="标题：第十八期团校上课通知&#xD;点击数：148&#xD;发表时间：2026年10月21日">第十八期团校上课通知</a></li>
 <li><span class="date">2026-10-20</span><a href="/Item/23824.aspx" target="_blank" title="标题：10.20跑操量化考核反馈&#xD;点击数：75&#xD;发表时间：2026年10月20日">10.20跑操量化考核反馈</a></li>
-<li><span class="date">2026-10-20</span><a href="/Item/23823.aspx" target="_blank" title="标题：关于高三英语教研活动的通知&#xD;点击数：114&#xD;发表时间：2026年10月20日">关于高三英语教研活动的通知</a></li>
+<li><span class="date">2026-10-20</span><a href="/Item/23823.aspx" target="_blank" title="标题：关于高三英语教研活动的通知&#xD;点击数：115&#xD;发表时间：2026年10月20日">关于高三英语教研活动的通知</a></li>
 <li><span class="date">2026-10-20</span><a href="/Item/23822.aspx" target="_blank" title="标题：10.19班级一日考核&#xD;点击数：53&#xD;发表时间：2026年10月20日">10.19班级一日考核</a></li>
-<li><span class="date">2026-10-20</span><a href="/Item/23821.aspx" target="_blank" title="标题：绍兴市（直）“杰出教师培育库（教学能手）” 校内评议结果公示&#xD;点击数：247&#xD;发表时间：2026年10月20日">绍兴市（直）“杰出教师培育库（教学能手）” 校内评议结果公示</a></li>
+<li><span class="date">2026-10-20</span><a href="/Item/23821.aspx" target="_blank" title="标题：绍兴市（直）“杰出教师培育库（教学能手）” 校内评议结果公示&#xD;点击数：248&#xD;发表时间：2026年10月20日">绍兴市（直）“杰出教师培育库（教学能手）” 校内评议结果公示</a></li>
 <li><span class="date">2026-10-20</span><a href="/Item/23820.aspx" target="_blank" title="标题：榜样领航，奋楫争先 | 绍兴一中创新班学部举行期中学生大会&#xD;点击数：81&#xD;发表时间：2026年10月20日">榜样领航，奋楫争先 | 绍兴一中创新班学部举行期中学生大会</a></li>
 <li><span class="date">2026-10-20</span><a href="/Item/23819.aspx" target="_blank" title="标题：博雅启思促成长，养新笃行育芳华  ——绍兴一中教育集团2026学年“博雅·养新”班主任成长工作坊开班仪式暨专题培训&#xD;点击数：73&#xD;发表时间：2026年10月20日">博雅启思促成长，养新笃行育芳华  ——绍兴一中教育集团2026学年“博雅·养新”班主任成长工作坊开班仪式…</a></li>
 <li><span class="date">2026-10-20</span><a href="/Item/23818.aspx" target="_blank" title="标题：关于举办第十四届“瀚辰杯”辩论赛的通知&#xD;点击数：113&#xD;发表时间：2026年10月20日">关于举办第十四届“瀚辰杯”辩论赛的通知</a></li>
@@ -379,8 +379,8 @@ function GetUserInfo1(response){
 <li><span class="date">2026-10-20</span><a href="/Item/23815.aspx" target="_blank" title="标题：高三年级表彰暨动员大会通知&#xD;点击数：198&#xD;发表时间：2026年10月20日">高三年级表彰暨动员大会通知</a></li>
 <li><span class="date">2026-10-19</span><a href="/Item/23814.aspx" target="_blank" title="标题：10.16班级一日考核&#xD;点击数：60&#xD;发表时间：2026年10月19日">10.16班级一日考核</a></li>
 <li><span class="date">2026-10-19</span><a href="/Item/23813.aspx" target="_blank" title="标题：10.17班级一日考核&#xD;点击数：53&#xD;发表时间：2026年10月19日">10.17班级一日考核</a></li>
-<li><span class="date">2026-10-19</span><a href="/Item/23812.aspx" target="_blank" title="标题：体育教研及体育课调整通知&#xD;点击数：179&#xD;发表时间：2026年10月19日">体育教研及体育课调整通知</a></li>
-<li><span class="date">2026-10-19</span><a href="/Item/23811.aspx" target="_blank" title="标题：高三诊断性考试时间安排&#xD;点击数：162&#xD;发表时间：2026年10月19日">高三诊断性考试时间安排</a></li>
+<li><span class="date">2026-10-19</span><a href="/Item/23812.aspx" target="_blank" title="标题：体育教研及体育课调整通知&#xD;点击数：180&#xD;发表时间：2026年10月19日">体育教研及体育课调整通知</a></li>
+<li><span class="date">2026-10-19</span><a href="/Item/23811.aspx" target="_blank" title="标题：高三诊断性考试时间安排&#xD;点击数：163&#xD;发表时间：2026年10月19日">高三诊断性考试时间安排</a></li>
 <li><span class="date">2026-10-19</span><a href="/Item/23810.aspx" target="_blank" title="标题：关于美术教研活动的通知&#xD;点击数：135&#xD;发表时间：2026年10月19日">关于美术教研活动的通知</a></li>
 <li><span class="date">2026-10-19</span><a href="/Item/23809.aspx" target="_blank" title="标题：大扫除通知&#xD;点击数：71&#xD;发表时间：2026年10月19日">大扫除通知</a></li>
 <li><span class="date">2026-10-19</span><a href="/Item/23808.aspx" target="_blank" title="标题：教工大会通知&#xD;点击数：121&#xD;发表时间：2026年10月19日">教工大会通知</a></li>
@@ -392,7 +392,7 @@ function GetUserInfo1(response){
 <li><span class="date">2026-10-16</span><a href="/Item/23802.aspx" target="_blank" title="标题：高二晚自习(10.18-10.23、10.25)&#xD;点击数：112&#xD;发表时间：2026年10月16日">高二晚自习(10.18-10.23、10.25)</a></li>
 <li><span class="date">2026-10-15</span><a href="/Item/23801.aspx" target="_blank" title="标题：10.15跑操量化考核反馈&#xD;点击数：66&#xD;发表时间：2026年10月15日">10.15跑操量化考核反馈</a></li>
 <li><span class="date">2026-10-15</span><a href="/Item/23800.aspx" target="_blank" title="标题：10.14班级一日考核&#xD;点击数：61&#xD;发表时间：2026年10月15日">10.14班级一日考核</a></li>
-<li><span class="date">2026-10-15</span><a href="/Item/23799.aspx" target="_blank" title="标题：高一晚自修（10.18-10.23）&#xD;点击数：67&#xD;发表时间：2026年10月15日">高一晚自修（10.18-10.23）</a></li>
+<li><span class="date">2026-10-15</span><a href="/Item/23799.aspx" target="_blank" title="标题：高一晚自修（10.18-10.23）&#xD;点击数：68&#xD;发表时间：2026年10月15日">高一晚自修（10.18-10.23）</a></li>
 <li><span class="date">2026-10-15</span><a href="/Item/23798.aspx" target="_blank" title="标题：关于创新学部高三强基联盟考试成绩分析会议的通知&#xD;点击数：151&#xD;发表时间：2026年10月15日">关于创新学部高三强基联盟考试成绩分析会议的通知</a></li>
 <li><span class="date">2026-10-15</span><a href="/Item/23797.aspx" target="_blank" title="标题：绍兴一中教育集团关于开展2026年绍兴市 “杰出教师培育库（教学能手）” 校内遴选推荐工作的通知&#xD;点击数：362&#xD;发表时间：2026年10月15日">绍兴一中教育集团关于开展2026年绍兴市 “杰出教师培育库（教学能手）” 校内遴选推荐工作的通知</a></li>
 <li><span class="date">2026-10-14</span><a href="/Item/23796.aspx" target="_blank" title="标题：绍兴一中“越民奖学金”逻辑学科竞赛实施暂行办法&#xD;点击数：206&#xD;发表时间：2026年10月14日">绍兴一中“越民奖学金”逻辑学科竞赛实施暂行办法</a></li>
