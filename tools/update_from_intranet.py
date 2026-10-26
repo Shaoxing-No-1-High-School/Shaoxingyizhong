@@ -36,6 +36,7 @@ def image_sync_command(
         str(repo_root / "attachment_routes.json"),
         "--workspace",
         str(workspace),
+        "--allow-missing-external-images",
     ]
 
 

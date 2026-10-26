@@ -65,6 +65,26 @@ class AttachmentRoutingTests(unittest.TestCase):
         self.assertIsNone(self.routes.resolve("/UploadFiles/dw/2024/3/notice.pdf"))
         self.assertIsNone(self.routes.resolve("/Item/23550.aspx"))
 
+    def test_large_image_can_use_raw_github_without_changing_other_image_routes(self):
+        data = json.loads((ROOT / "attachment_routes.json").read_text(encoding="utf-8"))
+        path = "UploadFiles/jsfc/2026/9/large.jpg"
+        repository = data["fallback_repository"]
+        data["overrides"][path] = {
+            "repository": repository,
+            "target_path": path,
+            "raw_base": "https://raw.githubusercontent.com/",
+        }
+        routes = RouteConfig(data)
+
+        routed = routes.resolve("/" + path)
+
+        self.assertEqual(
+            routed.raw_url,
+            f"https://raw.githubusercontent.com/{data['owner']}/{repository}/"
+            f"{data['repository_refs'][repository]}/{path}",
+        )
+        self.assertTrue(routes.resolve("/UploadFiles/jsfc/2026/9/small.jpg").raw_url.startswith("https://cdn.jsdelivr.net/gh/"))
+
     def test_rejects_path_traversal(self):
         with self.assertRaisesRegex(RouteError, "traversal"):
             self.routes.resolve("/UploadFiles/xwzx/2026/../secret.jpg")

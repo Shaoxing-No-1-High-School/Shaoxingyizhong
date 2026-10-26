@@ -6,9 +6,9 @@
     <meta content="绍兴市第一中学" name="Keywords" />
     <meta content="绍兴市第一中学" name="Description" />
     <title>德育处-绍兴市第一中学</title>
-    <link href="/Shaoxingyizhong/Template/Default/Skin/erms/css/module.css" rel="stylesheet" type="text/css" />
-    <link href="/Shaoxingyizhong/Template/Default/Skin/erms/css/default.css" rel="stylesheet" type="text/css" />
-    <link href="/Shaoxingyizhong/Template/Default/Skin/erms/css/page.css" rel="stylesheet" type="text/css" />
+    <link href="/Template/Default/Skin/erms/css/module.css" rel="stylesheet" type="text/css" />
+    <link href="/Template/Default/Skin/erms/css/default.css" rel="stylesheet" type="text/css" />
+    <link href="/Template/Default/Skin/erms/css/page.css" rel="stylesheet" type="text/css" />
     <!-- 网站变灰
 <style>
 *{
@@ -26,10 +26,10 @@ filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
 <script type="text/javascript">
     var siteSetup = {sitePath: '/',ajaxPath: '/ajax.aspx',skinPath: '/Template/Default/Skin/'};
 </script>
-<script language="javascript" type="text/javascript" src="/Shaoxingyizhong/js/jquery.pack.js"></script>
-<script language="javascript" type="text/javascript" src="/Shaoxingyizhong/js/jquery.peex.js"></script>
-<script language="javascript" type="text/javascript" src="/Shaoxingyizhong/Template/Default/Skin/erms/js/jquery.SuperSlide.js"></script>
-<script language="javascript" type="text/javascript" src="/Shaoxingyizhong/Template/Default/Skin/erms/js/jquery.qrcode.min.js"></script>
+<script language="javascript" type="text/javascript" src="/js/jquery.pack.js"></script>
+<script language="javascript" type="text/javascript" src="/js/jquery.peex.js"></script>
+<script language="javascript" type="text/javascript" src="/Template/Default/Skin/erms/js/jquery.SuperSlide.js"></script>
+<script language="javascript" type="text/javascript" src="/Template/Default/Skin/erms/js/jquery.qrcode.min.js"></script>
 
 
 
@@ -39,12 +39,12 @@ filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
 <body>
     <div id="top">
 	<div class="siteWidth">
-		<div class="date">今天是<script language="javascript" type="text/javascript" src="/Shaoxingyizhong/Template/Default/Skin/erms/js/show_date.js?type=1"></script></div>
-<div class="toplink"><a href="/Shaoxingyizhong/Category_370/Index.aspx" target="_blank">公共文件夹</a> | 
+		<div class="date">今天是<script language="javascript" type="text/javascript" src="/Template/Default/Skin/erms/js/show_date.js?type=1"></script></div>
+<div class="toplink"><a href="/Category_370/Index.aspx" target="_blank">公共文件夹</a> | 
                             <a href="http://220.187.224.238:20000/" target="_blank">智慧校园</a> | 
                             <a href="http://10.176.17.15:8443/portal" target="_blank">教学平台</a> | 
-                            <a href="/Shaoxingyizhong/Item/1380.aspx" target="_blank">办公电话</a> | 
-                            <a href="/Shaoxingyizhong/Item/13310.aspx" target="_blank">作息时间</a> | 
+                            <a href="/Item/1380.aspx" target="_blank">办公电话</a> | 
+                            <a href="/Item/13310.aspx" target="_blank">作息时间</a> | 
                             <a href="http://10.176.17.63/" target="_blank">图书馆</a> | 
                             <a href="ftp://10.176.17.3:2121" target="_blank">软件下载</a> | 
                             <a href="http://10.176.17.2:99/" target="_blank">网上报修</a></div>
@@ -54,10 +54,10 @@ filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
 <div id="header">
     <div class="siteWidth">
 			<h1 class="logo" title="@CurrentSite.Instance.SiteTitle">
-					<a href="/Shaoxingyizhong/"><img src="/Shaoxingyizhong/Template/Default/Skin/erms/img/logo.png" /></a>
+					<a href="/"><img src="/Template/Default/Skin/erms/img/logo.png" /></a>
 			</h1>
 			<div class="link">
-        <span id="topLoginFrom" style="display: none"><a href="/Shaoxingyizhong/User/index.aspx">登录</a>|<a href="/Shaoxingyizhong/User/Register.aspx" title="注册" class="reg">注册</a></span>
+        <span id="topLoginFrom" style="display: none"><a href="/User/index.aspx">登录</a>|<a href="/User/Register.aspx" title="注册" class="reg">注册</a></span>
 <span id="topLoginStatus">
 </span>
 <script language="javascript" type="text/javascript">
@@ -126,167 +126,167 @@ function GetUserInfo1(response){
 <!-- header E -->
 <div class="nav">
 	<div class="siteWidth">
-      <ul id="mainNav" class="mainNav"><li class="li1 first1" id="liID-2"><h4 class="h1" id="hID-2"><a target="_self" class="a1" id="aID-2" href="/Shaoxingyizhong/Default.aspx">首页</a></h4></li><li class="li1 hasUl1 on1" id="liID1"><h4 class="h1" id="hID1"><a target="_self" class="a1" id="aID1" href="/Shaoxingyizhong/Category_1/Index.aspx">新闻中心</a></h4><ul class="ul1" id="ulID1">
+      <ul id="mainNav" class="mainNav"><li class="li1 first1" id="liID-2"><h4 class="h1" id="hID-2"><a target="_self" class="a1" id="aID-2" href="/Default.aspx">首页</a></h4></li><li class="li1 hasUl1 on1" id="liID1"><h4 class="h1" id="hID1"><a target="_self" class="a1" id="aID1" href="/Category_1/Index.aspx">新闻中心</a></h4><ul class="ul1" id="ulID1">
 				<li class="li2 first2 on2" id="liID20">
-  <h4 class="h2" id="hID20"><a target="_self" class="a2" id="aID20" href="/Shaoxingyizhong/Category_20/Index.aspx">学校公告</a></h4>
+  <h4 class="h2" id="hID20"><a target="_self" class="a2" id="aID20" href="/Category_20/Index.aspx">学校公告</a></h4>
 </li>
 <li class="li2" id="liID21">
-  <h4 class="h2" id="hID21"><a target="_self" class="a2" id="aID21" href="/Shaoxingyizhong/Category_21/Index.aspx">一中新闻</a></h4>
+  <h4 class="h2" id="hID21"><a target="_self" class="a2" id="aID21" href="/Category_21/Index.aspx">一中新闻</a></h4>
 </li>
 <li class="li2" id="liID22">
-  <h4 class="h2" id="hID22"><a target="_self" class="a2" id="aID22" href="/Shaoxingyizhong/Category_22/Index.aspx">工作安排</a></h4>
+  <h4 class="h2" id="hID22"><a target="_self" class="a2" id="aID22" href="/Category_22/Index.aspx">工作安排</a></h4>
 </li>
 <li class="li2" id="liID23">
-  <h4 class="h2" id="hID23"><a target="_self" class="a2" id="aID23" href="/Shaoxingyizhong/Category_23/Index.aspx">校长专栏</a></h4>
+  <h4 class="h2" id="hID23"><a target="_self" class="a2" id="aID23" href="/Category_23/Index.aspx">校长专栏</a></h4>
 </li>
 <li class="li2 last2" id="liID24">
-  <h4 class="h2" id="hID24"><a target="_self" class="a2" id="aID24" href="/Shaoxingyizhong/Category_24/Index.aspx">校务公开</a></h4>
+  <h4 class="h2" id="hID24"><a target="_self" class="a2" id="aID24" href="/Category_24/Index.aspx">校务公开</a></h4>
 </li>
-			</ul></li><li class="li1 hasUl1" id="liID3"><h4 class="h1" id="hID3"><a target="_self" class="a1" id="aID3" href="/Shaoxingyizhong/Category_3/Index.aspx">百年芳华</a></h4><ul class="ul1" id="ulID3">
+			</ul></li><li class="li1 hasUl1" id="liID3"><h4 class="h1" id="hID3"><a target="_self" class="a1" id="aID3" href="/Category_3/Index.aspx">百年芳华</a></h4><ul class="ul1" id="ulID3">
 				<li class="li2 first2" id="liID112">
-  <h4 class="h2" id="hID112"><a target="_self" class="a2" id="aID112" href="/Shaoxingyizhong/Category_112/Index.aspx">建校史略</a></h4>
+  <h4 class="h2" id="hID112"><a target="_self" class="a2" id="aID112" href="/Category_112/Index.aspx">建校史略</a></h4>
 </li>
 <li class="li2" id="liID113">
-  <h4 class="h2" id="hID113"><a target="_self" class="a2" id="aID113" href="/Shaoxingyizhong/Category_113/Index.aspx">昔日校园</a></h4>
+  <h4 class="h2" id="hID113"><a target="_self" class="a2" id="aID113" href="/Category_113/Index.aspx">昔日校园</a></h4>
 </li>
 <li class="li2" id="liID376">
   <h4 class="h2" id="hID376"><a target="_blank" class="a2" id="aID376" href="http://10.176.17.2:8080/bnxs/mingrenlu/index.htm">—中骄傲</a></h4>
 </li>
 <li class="li2 last2" id="liID389">
-  <h4 class="h2" id="hID389"><a target="_self" class="a2" id="aID389" href="/Shaoxingyizhong/Category_389/Index.aspx">校友之家</a></h4>
+  <h4 class="h2" id="hID389"><a target="_self" class="a2" id="aID389" href="/Category_389/Index.aspx">校友之家</a></h4>
 </li>
-			</ul></li><li class="li1 hasUl1" id="liID4"><h4 class="h1" id="hID4"><a target="_self" class="a1" id="aID4" href="/Shaoxingyizhong/Category_4/Index.aspx">走进一中</a></h4><ul class="ul1" id="ulID4">
+			</ul></li><li class="li1 hasUl1" id="liID4"><h4 class="h1" id="hID4"><a target="_self" class="a1" id="aID4" href="/Category_4/Index.aspx">走进一中</a></h4><ul class="ul1" id="ulID4">
 				<li class="li2 first2" id="liID43">
-  <h4 class="h2" id="hID43"><a target="_self" class="a2" id="aID43" href="/Shaoxingyizhong/Category_43/Index.aspx">学校概览</a></h4>
+  <h4 class="h2" id="hID43"><a target="_self" class="a2" id="aID43" href="/Category_43/Index.aspx">学校概览</a></h4>
 </li>
 <li class="li2" id="liID44">
-  <h4 class="h2" id="hID44"><a target="_self" class="a2" id="aID44" href="/Shaoxingyizhong/Category_44/Index.aspx">组织机构</a></h4>
+  <h4 class="h2" id="hID44"><a target="_self" class="a2" id="aID44" href="/Category_44/Index.aspx">组织机构</a></h4>
 </li>
 <li class="li2" id="liID45">
-  <h4 class="h2" id="hID45"><a target="_self" class="a2" id="aID45" href="/Shaoxingyizhong/Category_45/Index.aspx">管理团队</a></h4>
+  <h4 class="h2" id="hID45"><a target="_self" class="a2" id="aID45" href="/Category_45/Index.aspx">管理团队</a></h4>
 </li>
 <li class="li2" id="liID49">
-  <h4 class="h2" id="hID49"><a target="_self" class="a2" id="aID49" href="/Shaoxingyizhong/Category_49/Index.aspx">—中校歌</a></h4>
+  <h4 class="h2" id="hID49"><a target="_self" class="a2" id="aID49" href="/Category_49/Index.aspx">—中校歌</a></h4>
 </li>
 <li class="li2" id="liID41">
-  <h4 class="h2" id="hID41"><a target="_self" class="a2" id="aID41" href="/Shaoxingyizhong/Category_41/Index.aspx">校园风光</a></h4>
+  <h4 class="h2" id="hID41"><a target="_self" class="a2" id="aID41" href="/Category_41/Index.aspx">校园风光</a></h4>
 </li>
 <li class="li2" id="liID10">
-  <h4 class="h2" id="hID10"><a target="_self" class="a2" id="aID10" href="/Shaoxingyizhong/Category_10/Index.aspx">奖教奖学</a></h4>
+  <h4 class="h2" id="hID10"><a target="_self" class="a2" id="aID10" href="/Category_10/Index.aspx">奖教奖学</a></h4>
 </li>
 <li class="li2" id="liID42">
-  <h4 class="h2" id="hID42"><a target="_self" class="a2" id="aID42" href="/Shaoxingyizhong/Category_42/Index.aspx">学校荣誉</a></h4>
+  <h4 class="h2" id="hID42"><a target="_self" class="a2" id="aID42" href="/Category_42/Index.aspx">学校荣誉</a></h4>
 </li>
 <li class="li2 last2" id="liID379">
-  <h4 class="h2" id="hID379"><a target="_self" class="a2" id="aID379" href="/Shaoxingyizhong/Category_379/Index.aspx">领导关怀</a></h4>
+  <h4 class="h2" id="hID379"><a target="_self" class="a2" id="aID379" href="/Category_379/Index.aspx">领导关怀</a></h4>
 </li>
-			</ul></li><li class="li1 hasUl1" id="liID50"><h4 class="h1" id="hID50"><a target="_self" class="a1" id="aID50" href="/Shaoxingyizhong/Category_50/Index.aspx">党建引领</a></h4><ul class="ul1" id="ulID50">
+			</ul></li><li class="li1 hasUl1" id="liID50"><h4 class="h1" id="hID50"><a target="_self" class="a1" id="aID50" href="/Category_50/Index.aspx">党建引领</a></h4><ul class="ul1" id="ulID50">
 				<li class="li2 first2" id="liID53">
-  <h4 class="h2" id="hID53"><a target="_self" class="a2" id="aID53" href="/Shaoxingyizhong/Category_53/Index.aspx">组织架构</a></h4>
+  <h4 class="h2" id="hID53"><a target="_self" class="a2" id="aID53" href="/Category_53/Index.aspx">组织架构</a></h4>
 </li>
 <li class="li2" id="liID54">
-  <h4 class="h2" id="hID54"><a target="_self" class="a2" id="aID54" href="/Shaoxingyizhong/Category_54/Index.aspx">清廉学校</a></h4>
+  <h4 class="h2" id="hID54"><a target="_self" class="a2" id="aID54" href="/Category_54/Index.aspx">清廉学校</a></h4>
 </li>
 <li class="li2" id="liID55">
-  <h4 class="h2" id="hID55"><a target="_self" class="a2" id="aID55" href="/Shaoxingyizhong/Category_55/Index.aspx">学习专栏</a></h4>
+  <h4 class="h2" id="hID55"><a target="_self" class="a2" id="aID55" href="/Category_55/Index.aspx">学习专栏</a></h4>
 </li>
 <li class="li2" id="liID56">
-  <h4 class="h2" id="hID56"><a target="_self" class="a2" id="aID56" href="/Shaoxingyizhong/Category_56/Index.aspx">先锋故事</a></h4>
+  <h4 class="h2" id="hID56"><a target="_self" class="a2" id="aID56" href="/Category_56/Index.aspx">先锋故事</a></h4>
 </li>
 <li class="li2" id="liID58">
-  <h4 class="h2" id="hID58"><a target="_self" class="a2" id="aID58" href="/Shaoxingyizhong/Category_58/Index.aspx">课余党校</a></h4>
+  <h4 class="h2" id="hID58"><a target="_self" class="a2" id="aID58" href="/Category_58/Index.aspx">课余党校</a></h4>
 </li>
 <li class="li2 last2" id="liID60">
-  <h4 class="h2" id="hID60"><a target="_self" class="a2" id="aID60" href="/Shaoxingyizhong/Category_60/Index.aspx">党建网站</a></h4>
+  <h4 class="h2" id="hID60"><a target="_self" class="a2" id="aID60" href="/Category_60/Index.aspx">党建网站</a></h4>
 </li>
-			</ul></li><li class="li1 hasUl1" id="liID6"><h4 class="h1" id="hID6"><a target="_self" class="a1" id="aID6" href="/Shaoxingyizhong/Category_6/Index.aspx">教师风采</a></h4><ul class="ul1" id="ulID6">
+			</ul></li><li class="li1 hasUl1" id="liID6"><h4 class="h1" id="hID6"><a target="_self" class="a1" id="aID6" href="/Category_6/Index.aspx">教师风采</a></h4><ul class="ul1" id="ulID6">
 				<li class="li2 first2" id="liID377">
-  <h4 class="h2" id="hID377"><a target="_self" class="a2" id="aID377" href="/Shaoxingyizhong/Category_377/Index.aspx">荣誉报道</a></h4>
+  <h4 class="h2" id="hID377"><a target="_self" class="a2" id="aID377" href="/Category_377/Index.aspx">荣誉报道</a></h4>
 </li>
 <li class="li2" id="liID68">
-  <h4 class="h2" id="hID68"><a target="_self" class="a2" id="aID68" href="/Shaoxingyizhong/Category_68/Index.aspx">正高特级教师</a></h4>
+  <h4 class="h2" id="hID68"><a target="_self" class="a2" id="aID68" href="/Category_68/Index.aspx">正高特级教师</a></h4>
 </li>
 <li class="li2" id="liID69">
-  <h4 class="h2" id="hID69"><a target="_self" class="a2" id="aID69" href="/Shaoxingyizhong/Category_69/Index.aspx">优秀教师</a></h4>
+  <h4 class="h2" id="hID69"><a target="_self" class="a2" id="aID69" href="/Category_69/Index.aspx">优秀教师</a></h4>
 </li>
 <li class="li2 last2" id="liID71">
-  <h4 class="h2" id="hID71"><a target="_self" class="a2" id="aID71" href="/Shaoxingyizhong/Category_71/Index.aspx">名师工作室</a></h4>
+  <h4 class="h2" id="hID71"><a target="_self" class="a2" id="aID71" href="/Category_71/Index.aspx">名师工作室</a></h4>
 </li>
-			</ul></li><li class="li1 hasUl1" id="liID385"><h4 class="h1" id="hID385"><a target="_self" class="a1" id="aID385" href="/Shaoxingyizhong/Category_385/Index.aspx">德育之窗</a></h4><ul class="ul1" id="ulID385">
+			</ul></li><li class="li1 hasUl1" id="liID385"><h4 class="h1" id="hID385"><a target="_self" class="a1" id="aID385" href="/Category_385/Index.aspx">德育之窗</a></h4><ul class="ul1" id="ulID385">
 				<li class="li2 first2" id="liID381">
-  <h4 class="h2" id="hID381"><a target="_self" class="a2" id="aID381" href="/Shaoxingyizhong/Category_381/Index.aspx">家校合力</a></h4>
+  <h4 class="h2" id="hID381"><a target="_self" class="a2" id="aID381" href="/Category_381/Index.aspx">家校合力</a></h4>
 </li>
 <li class="li2" id="liID386">
-  <h4 class="h2" id="hID386"><a target="_self" class="a2" id="aID386" href="/Shaoxingyizhong/Category_386/Index.aspx">德育活动</a></h4>
+  <h4 class="h2" id="hID386"><a target="_self" class="a2" id="aID386" href="/Category_386/Index.aspx">德育活动</a></h4>
 </li>
 <li class="li2" id="liID102">
-  <h4 class="h2" id="hID102"><a target="_self" class="a2" id="aID102" href="/Shaoxingyizhong/Category_102/Index.aspx">博雅讲座</a></h4>
+  <h4 class="h2" id="hID102"><a target="_self" class="a2" id="aID102" href="/Category_102/Index.aspx">博雅讲座</a></h4>
 </li>
 <li class="li2 last2" id="liID104">
-  <h4 class="h2" id="hID104"><a target="_self" class="a2" id="aID104" href="/Shaoxingyizhong/Category_104/Index.aspx">学缘心语</a></h4>
+  <h4 class="h2" id="hID104"><a target="_self" class="a2" id="aID104" href="/Category_104/Index.aspx">学缘心语</a></h4>
 </li>
-			</ul></li><li class="li1 hasUl1" id="liID7"><h4 class="h1" id="hID7"><a target="_self" class="a1" id="aID7" href="/Shaoxingyizhong/Category_7/Index.aspx">学科竞赛</a></h4><ul class="ul1" id="ulID7">
+			</ul></li><li class="li1 hasUl1" id="liID7"><h4 class="h1" id="hID7"><a target="_self" class="a1" id="aID7" href="/Category_7/Index.aspx">学科竞赛</a></h4><ul class="ul1" id="ulID7">
 				<li class="li2 first2" id="liID72">
-  <h4 class="h2" id="hID72"><a target="_self" class="a2" id="aID72" href="/Shaoxingyizhong/Category_72/Index.aspx">信息学竞赛</a></h4>
+  <h4 class="h2" id="hID72"><a target="_self" class="a2" id="aID72" href="/Category_72/Index.aspx">信息学竞赛</a></h4>
 </li>
 <li class="li2" id="liID73">
-  <h4 class="h2" id="hID73"><a target="_self" class="a2" id="aID73" href="/Shaoxingyizhong/Category_73/Index.aspx">数学竞赛</a></h4>
+  <h4 class="h2" id="hID73"><a target="_self" class="a2" id="aID73" href="/Category_73/Index.aspx">数学竞赛</a></h4>
 </li>
 <li class="li2" id="liID74">
-  <h4 class="h2" id="hID74"><a target="_self" class="a2" id="aID74" href="/Shaoxingyizhong/Category_74/Index.aspx">物理竞赛</a></h4>
+  <h4 class="h2" id="hID74"><a target="_self" class="a2" id="aID74" href="/Category_74/Index.aspx">物理竞赛</a></h4>
 </li>
 <li class="li2" id="liID75">
-  <h4 class="h2" id="hID75"><a target="_self" class="a2" id="aID75" href="/Shaoxingyizhong/Category_75/Index.aspx">化学竞赛</a></h4>
+  <h4 class="h2" id="hID75"><a target="_self" class="a2" id="aID75" href="/Category_75/Index.aspx">化学竞赛</a></h4>
 </li>
 <li class="li2" id="liID76">
-  <h4 class="h2" id="hID76"><a target="_self" class="a2" id="aID76" href="/Shaoxingyizhong/Category_76/Index.aspx">生物竞赛</a></h4>
+  <h4 class="h2" id="hID76"><a target="_self" class="a2" id="aID76" href="/Category_76/Index.aspx">生物竞赛</a></h4>
 </li>
 <li class="li2" id="liID373">
-  <h4 class="h2" id="hID373"><a target="_self" class="a2" id="aID373" href="/Shaoxingyizhong/Category_373/Index.aspx">天文竞赛</a></h4>
+  <h4 class="h2" id="hID373"><a target="_self" class="a2" id="aID373" href="/Category_373/Index.aspx">天文竞赛</a></h4>
 </li>
 <li class="li2 last2" id="liID378">
-  <h4 class="h2" id="hID378"><a target="_self" class="a2" id="aID378" href="/Shaoxingyizhong/Category_378/Index.aspx">其他竞赛</a></h4>
+  <h4 class="h2" id="hID378"><a target="_self" class="a2" id="aID378" href="/Category_378/Index.aspx">其他竞赛</a></h4>
 </li>
-			</ul></li><li class="li1 hasUl1" id="liID8"><h4 class="h1" id="hID8"><a target="_self" class="a1" id="aID8" href="/Shaoxingyizhong/Category_8/Index.aspx">教学科研</a></h4><ul class="ul1" id="ulID8">
+			</ul></li><li class="li1 hasUl1" id="liID8"><h4 class="h1" id="hID8"><a target="_self" class="a1" id="aID8" href="/Category_8/Index.aspx">教学科研</a></h4><ul class="ul1" id="ulID8">
 				<li class="li2 first2" id="liID77">
-  <h4 class="h2" id="hID77"><a target="_self" class="a2" id="aID77" href="/Shaoxingyizhong/Category_77/Index.aspx">教研成果</a></h4>
+  <h4 class="h2" id="hID77"><a target="_self" class="a2" id="aID77" href="/Category_77/Index.aspx">教研成果</a></h4>
 </li>
 <li class="li2" id="liID383">
-  <h4 class="h2" id="hID383"><a target="_self" class="a2" id="aID383" href="/Shaoxingyizhong/Category_383/Index.aspx">教师成长</a></h4>
+  <h4 class="h2" id="hID383"><a target="_self" class="a2" id="aID383" href="/Category_383/Index.aspx">教师成长</a></h4>
 </li>
 <li class="li2" id="liID387">
-  <h4 class="h2" id="hID387"><a target="_self" class="a2" id="aID387" href="/Shaoxingyizhong/Category_387/Index.aspx">教科动态</a></h4>
+  <h4 class="h2" id="hID387"><a target="_self" class="a2" id="aID387" href="/Category_387/Index.aspx">教科动态</a></h4>
 </li>
 <li class="li2 last2" id="liID380">
-  <h4 class="h2" id="hID380"><a target="_self" class="a2" id="aID380" href="/Shaoxingyizhong/Category_380/Index.aspx">校际交流</a></h4>
+  <h4 class="h2" id="hID380"><a target="_self" class="a2" id="aID380" href="/Category_380/Index.aspx">校际交流</a></h4>
 </li>
-			</ul></li><li class="li1 last1 hasUl1" id="liID9"><h4 class="h1" id="hID9"><a target="_self" class="a1" id="aID9" href="/Shaoxingyizhong/Category_9/Index.aspx">莘莘学子</a></h4><ul class="ul1" id="ulID9">
+			</ul></li><li class="li1 last1 hasUl1" id="liID9"><h4 class="h1" id="hID9"><a target="_self" class="a1" id="aID9" href="/Category_9/Index.aspx">莘莘学子</a></h4><ul class="ul1" id="ulID9">
 				<li class="li2 first2" id="liID98">
-  <h4 class="h2" id="hID98"><a target="_self" class="a2" id="aID98" href="/Shaoxingyizhong/Category_98/Index.aspx">学生之星</a></h4>
+  <h4 class="h2" id="hID98"><a target="_self" class="a2" id="aID98" href="/Category_98/Index.aspx">学生之星</a></h4>
 </li>
 <li class="li2" id="liID99">
-  <h4 class="h2" id="hID99"><a target="_self" class="a2" id="aID99" href="/Shaoxingyizhong/Category_99/Index.aspx">团学动态</a></h4>
+  <h4 class="h2" id="hID99"><a target="_self" class="a2" id="aID99" href="/Category_99/Index.aspx">团学动态</a></h4>
 </li>
 <li class="li2" id="liID100">
-  <h4 class="h2" id="hID100"><a target="_self" class="a2" id="aID100" href="/Shaoxingyizhong/Category_100/Index.aspx">社团风采</a></h4>
+  <h4 class="h2" id="hID100"><a target="_self" class="a2" id="aID100" href="/Category_100/Index.aspx">社团风采</a></h4>
 </li>
 <li class="li2" id="liID103">
-  <h4 class="h2" id="hID103"><a target="_self" class="a2" id="aID103" href="/Shaoxingyizhong/Category_103/Index.aspx">艺术教育</a></h4>
+  <h4 class="h2" id="hID103"><a target="_self" class="a2" id="aID103" href="/Category_103/Index.aspx">艺术教育</a></h4>
 </li>
 <li class="li2" id="liID105">
-  <h4 class="h2" id="hID105"><a target="_self" class="a2" id="aID105" href="/Shaoxingyizhong/Category_105/Index.aspx">校园安全</a></h4>
+  <h4 class="h2" id="hID105"><a target="_self" class="a2" id="aID105" href="/Category_105/Index.aspx">校园安全</a></h4>
 </li>
 <li class="li2" id="liID368">
-  <h4 class="h2" id="hID368"><a target="_self" class="a2" id="aID368" href="/Shaoxingyizhong/Category_368/Index.aspx">实践学分</a></h4>
+  <h4 class="h2" id="hID368"><a target="_self" class="a2" id="aID368" href="/Category_368/Index.aspx">实践学分</a></h4>
 </li>
 <li class="li2" id="liID369">
-  <h4 class="h2" id="hID369"><a target="_self" class="a2" id="aID369" href="/Shaoxingyizhong/Category_369/Index.aspx">饮水思源</a></h4>
+  <h4 class="h2" id="hID369"><a target="_self" class="a2" id="aID369" href="/Category_369/Index.aspx">饮水思源</a></h4>
 </li>
 <li class="li2" id="liID388">
-  <h4 class="h2" id="hID388"><a target="_self" class="a2" id="aID388" href="/Shaoxingyizhong/Category_388/Index.aspx">志愿活动</a></h4>
+  <h4 class="h2" id="hID388"><a target="_self" class="a2" id="aID388" href="/Category_388/Index.aspx">志愿活动</a></h4>
 </li>
 <li class="li2 last2" id="liID382">
-  <h4 class="h2" id="hID382"><a target="_self" class="a2" id="aID382" href="/Shaoxingyizhong/Category_382/Index.aspx">校园活动</a></h4>
+  <h4 class="h2" id="hID382"><a target="_self" class="a2" id="aID382" href="/Category_382/Index.aspx">校园活动</a></h4>
 </li>
 			</ul></li></ul><script type="text/javascript">
 			jQuery(function($){
@@ -342,31 +342,31 @@ function GetUserInfo1(response){
 
 
     <div class="banner">        
-        <a href="" style="background:url(/Shaoxingyizhong/UploadFiles/202206251242160350.jpg) no-repeat center;"></a>
+        <a href="" style="background:url(/UploadFiles/202206251242160350.jpg) no-repeat center;"></a>
     </div>
 <div id="content">
     <div class="siteWidth">
         <div class="side">
             <div id="sideMenu">
         <div class="hd">
-        <h3><a href="/Shaoxingyizhong/Category_20/Index.aspx">学校公告</a></h3>
+        <h3><a href="/Category_20/Index.aspx">学校公告</a></h3>
       </div>
 	<div class="bd">
 		<ul class="">
-			<li class="li1 first"><a href="/Shaoxingyizhong/Category_25/Index.aspx">党政办</a></li>
-<li class="li2"><a href="/Shaoxingyizhong/Category_26/Index.aspx">教学处</a></li>
-<li class="li3"><a href="/Shaoxingyizhong/Category_36/Index.aspx">教科室</a></li>
-<li class="li4 on"><a href="/Shaoxingyizhong/Category_27/Index.aspx">德育处</a></li>
-<li class="li5"><a href="/Shaoxingyizhong/Category_30/Index.aspx">团委</a></li>
-<li class="li6"><a href="/Shaoxingyizhong/Category_31/Index.aspx">总务处</a></li>
-<li class="li7"><a href="/Shaoxingyizhong/Category_28/Index.aspx">安全处</a></li>
-<li class="li8"><a href="/Shaoxingyizhong/Category_29/Index.aspx">信息处</a></li>
-<li class="li9"><a href="/Shaoxingyizhong/Category_32/Index.aspx">工会</a></li>
-<li class="li10"><a href="/Shaoxingyizhong/Category_392/Index.aspx">龙山书院</a></li>
-<li class="li11"><a href="/Shaoxingyizhong/Category_393/Index.aspx">创新学部</a></li>
-<li class="li12"><a href="/Shaoxingyizhong/Category_33/Index.aspx">高一</a></li>
-<li class="li13"><a href="/Shaoxingyizhong/Category_34/Index.aspx">高二</a></li>
-<li class="li14 last"><a href="/Shaoxingyizhong/Category_35/Index.aspx">高三</a></li>
+			<li class="li1 first"><a href="/Category_25/Index.aspx">党政办</a></li>
+<li class="li2"><a href="/Category_26/Index.aspx">教学处</a></li>
+<li class="li3"><a href="/Category_36/Index.aspx">教科室</a></li>
+<li class="li4 on"><a href="/Category_27/Index.aspx">德育处</a></li>
+<li class="li5"><a href="/Category_30/Index.aspx">团委</a></li>
+<li class="li6"><a href="/Category_31/Index.aspx">总务处</a></li>
+<li class="li7"><a href="/Category_28/Index.aspx">安全处</a></li>
+<li class="li8"><a href="/Category_29/Index.aspx">信息处</a></li>
+<li class="li9"><a href="/Category_32/Index.aspx">工会</a></li>
+<li class="li10"><a href="/Category_392/Index.aspx">龙山书院</a></li>
+<li class="li11"><a href="/Category_393/Index.aspx">创新学部</a></li>
+<li class="li12"><a href="/Category_33/Index.aspx">高一</a></li>
+<li class="li13"><a href="/Category_34/Index.aspx">高二</a></li>
+<li class="li14 last"><a href="/Category_35/Index.aspx">高三</a></li>
 		</ul>
 	</div>
 </div>
@@ -381,7 +381,7 @@ function GetUserInfo1(response){
 	<div class="bd">
 		<ul class="sideinfoList">
 			
-            <li class="first"><a href="/Shaoxingyizhong/Item/23024.aspx" target="_blank" title="标题：4.10班级一日考核&#xD;点击数：34&#xD;发表时间：2026年04月13日">4.10班级一日考核</a><span class="dateRight">[04-13]</span></li><li><a href="/Shaoxingyizhong/Item/22444.aspx" target="_blank" title="标题：12.8班级一日考核&#xD;点击数：44&#xD;发表时间：2025年12月09日">12.8班级一日考核</a><span class="dateRight">[12-09]</span></li><li><a href="/Shaoxingyizhong/Item/23435.aspx" target="_blank" title="标题：6.25班级一日考核&#xD;点击数：29&#xD;发表时间：2026年06月26日">6.25班级一日考核</a><span class="dateRight">[06-26]</span></li><li><a href="/Shaoxingyizhong/Item/23013.aspx" target="_blank" title="标题：4.9班级一日考核&#xD;点击数：36&#xD;发表时间：2026年04月10日">4.9班级一日考核</a><span class="dateRight">[04-10]</span></li><li><a href="/Shaoxingyizhong/Item/22964.aspx" target="_blank" title="标题：3.30班级一日考核&#xD;点击数：40&#xD;发表时间：2026年03月31日">3.30班级一日考核</a><span class="dateRight">[03-31]</span></li><li><a href="/Shaoxingyizhong/Item/22667.aspx" target="_blank" title="标题：1.16班级一日考核&#xD;点击数：39&#xD;发表时间：2026年01月19日">1.16班级一日考核</a><span class="dateRight">[01-19]</span></li><li class="last"><a href="/Shaoxingyizhong/Item/22320.aspx" target="_blank" title="标题：大扫除通知&#xD;点击数：46&#xD;发表时间：2025年11月24日">大扫除通知</a><span class="dateRight">[11-24]</span></li>
+            <li class="first"><a href="/Item/23837.aspx" target="_blank" title="标题：绍兴一中教育集团“2026年家长开放日”暨第八届家委会成立活动方案&#xD;点击数：233&#xD;发表时间：2026年10月23日">绍兴一中教育集团“2026年家长开放日”暨第八届家委会成…</a><span class="dateRight">[10-23]</span></li><li><a href="/Item/23849.aspx" target="_blank" title="标题：失物招领（手表）&#xD;点击数：26&#xD;发表时间：2026年10月26日">失物招领（手表）</a><span class="dateRight">[10-26]</span></li><li><a href="/Item/23843.aspx" target="_blank" title="标题：10.22班级一日考核&#xD;点击数：47&#xD;发表时间：2026年10月23日">10.22班级一日考核</a><span class="dateRight">[10-23]</span></li><li><a href="/Item/23824.aspx" target="_blank" title="标题：10.20跑操量化考核反馈&#xD;点击数：75&#xD;发表时间：2026年10月20日">10.20跑操量化考核反馈</a><span class="dateRight">[10-20]</span></li><li><a href="/Item/22444.aspx" target="_blank" title="标题：12.8班级一日考核&#xD;点击数：44&#xD;发表时间：2025年12月09日">12.8班级一日考核</a><span class="dateRight">[12-09]</span></li><li><a href="/Item/23842.aspx" target="_blank" title="标题：10.23跑操量化考核反馈&#xD;点击数：45&#xD;发表时间：2026年10月23日">10.23跑操量化考核反馈</a><span class="dateRight">[10-23]</span></li><li class="last"><a href="/Item/23013.aspx" target="_blank" title="标题：4.9班级一日考核&#xD;点击数：36&#xD;发表时间：2026年04月10日">4.9班级一日考核</a><span class="dateRight">[04-10]</span></li>
           
 		</ul>
 	</div>
@@ -406,7 +406,7 @@ function GetUserInfo1(response){
     </select></label><label><input id="keyword_PowerEasy" class="inputxt" onfocus="this.value='';" maxlength="100" size="30" value="" name="Keyword" /></label>
    <label> <input id="Submit"  type="button"  class="input_button" value="搜索" name="Button" onclick="OnSearchCheckAndSubmit2();" /></label>
    <label> 
-   <!--<input type="button" class="input_button" value="高级搜索" onclick="location.href='/Shaoxingyizhong/search.aspx?searchtype=2&ModelId=1'" />--></label>
+   <!--<input type="button" class="input_button" value="高级搜索" onclick="location.href='/search.aspx?searchtype=2&ModelId=1'" />--></label>
     <script type="text/javascript">$('#keyword_PowerEasy').useKeypressSubmit($('#Submit'));</script>
     <script language="javascript" type="text/javascript">
     function OnSearchCheckAndSubmit2(){
@@ -428,20 +428,20 @@ function GetUserInfo1(response){
 </div>
 
                 <div class="mHd">
-                    <div class="path"><span>当前位置：</span><a href="/Shaoxingyizhong/">首页</a> &gt; 
+                    <div class="path"><span>当前位置：</span><a href="/">首页</a> &gt; 
     
     
     
-    <a href="/Shaoxingyizhong/Category_1/Index.aspx" target="_self">新闻中心</a>&gt;
-    <a href="/Shaoxingyizhong/Category_20/Index.aspx" target="_self">学校公告</a>&gt;
-    <a href="/Shaoxingyizhong/Category_27/Index.aspx" target="_self">德育处</a></div>
+    <a href="/Category_1/Index.aspx" target="_self">新闻中心</a>&gt;
+    <a href="/Category_20/Index.aspx" target="_self">学校公告</a>&gt;
+    <a href="/Category_27/Index.aspx" target="_self">德育处</a></div>
                     <h3>德育处</h3>
                 </div>
                 <div class="mBd">
                     <!-- 正文内容 S -->
                     <ul class="infoList">
                         
-            <li class="first"><span class="date">2011-01-21</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3286.aspx" target="_self" title="标题：关于组织学生观看电影的注意事项&#xD;点击数：655&#xD;发表时间：2011年01月21日"><font style=";">关于组织学生观看电影的注意事项</font></a></li><li><span class="date">2011-01-21</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3285.aspx" target="_self" title="标题：表扬&#xD;点击数：532&#xD;发表时间：2011年01月21日"><font style=";">表扬</font></a></li><li><span class="date">2011-01-19</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3279.aspx" target="_self" title="标题：全校各班主任请注意（关于下发假期材料）&#xD;点击数：643&#xD;发表时间：2011年01月19日"><font style=";">全校各班主任请注意（关于下发假期材料）</font></a></li><li><span class="date">2011-01-19</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3272.aspx" target="_self" title="标题：关于做好期末考前教育与卫生工作的通知&#xD;点击数：503&#xD;发表时间：2011年01月19日"><font style=";">关于做好期末考前教育与卫生工作的通知</font></a></li><li><span class="date">2011-01-18</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3271.aspx" target="_self" title="标题：关于交住校生登记表的通知&#xD;点击数：325&#xD;发表时间：2011年01月18日"><font style=";">关于交住校生登记表的通知</font></a></li><li class="split"></li><li><span class="date">2011-01-18</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3267.aspx" target="_self" title="标题：期末德育处主要工作安排&#xD;点击数：711&#xD;发表时间：2011年01月18日"><font style=";">期末德育处主要工作安排</font></a></li><li><span class="date">2011-01-18</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3265.aspx" target="_self" title="标题：关于学生品德考核公示的通知&#xD;点击数：573&#xD;发表时间：2011年01月18日"><font style=";">关于学生品德考核公示的通知</font></a></li><li><span class="date">2011-01-18</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3262.aspx" target="_self" title="标题：通知&#xD;点击数：623&#xD;发表时间：2011年01月18日"><font style=";">通知</font></a></li><li><span class="date">2011-01-17</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3258.aspx" target="_self" title="标题：关于在严重冰冻天气下打扫卫生的提醒&#xD;点击数：968&#xD;发表时间：2011年01月17日"><font style=";">关于在严重冰冻天气下打扫卫生的提醒</font></a></li><li><span class="date">2011-01-17</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3256.aspx" target="_self" title="标题：关于升旗仪式暂停的通知&#xD;点击数：388&#xD;发表时间：2011年01月17日"><font style=";">关于升旗仪式暂停的通知</font></a></li><li class="split"></li><li><span class="date">2011-01-15</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3255.aspx" target="_self" title="标题：绍兴一中2010年国庆美术作品展结果（更正）&#xD;点击数：450&#xD;发表时间：2011年01月15日"><font style=";">绍兴一中2010年国庆美术作品展结果（更正）</font></a></li><li><span class="date">2011-01-15</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3254.aspx" target="_self" title="标题：温馨提示：德育考评&#xD;点击数：497&#xD;发表时间：2011年01月15日"><font style=";">温馨提示：德育考评</font></a></li><li><span class="date">2011-01-14</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3251.aspx" target="_self" title="标题：值周检查情况汇总（1月13日星期四）&#xD;点击数：352&#xD;发表时间：2011年01月14日"><font style=";">值周检查情况汇总（1月13日星期四）</font></a></li><li><span class="date">2011-01-13</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3248.aspx" target="_self" title="标题：值周检查情况汇总（1月12日星期三）&#xD;点击数：368&#xD;发表时间：2011年01月13日"><font style=";">值周检查情况汇总（1月12日星期三）</font></a></li><li><span class="date">2011-01-12</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3245.aspx" target="_self" title="标题：颂国庆丹青美术展结果&#xD;点击数：652&#xD;发表时间：2011年01月12日"><font style=";">颂国庆丹青美术展结果</font></a></li><li class="split"></li><li><span class="date">2011-01-10</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3240.aspx" target="_self" title="标题：批评&#xD;点击数：799&#xD;发表时间：2011年01月10日"><font style=";">批评</font></a></li><li><span class="date">2011-01-08</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3236.aspx" target="_self" title="标题：值周检查情况汇总（1月7日星期五）&#xD;点击数：299&#xD;发表时间：2011年01月08日"><font style=";">值周检查情况汇总（1月7日星期五）</font></a></li><li><span class="date">2011-01-07</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3234.aspx" target="_self" title="标题：冬季长跑接力比赛成绩&#xD;点击数：679&#xD;发表时间：2011年01月07日"><font style=";">冬季长跑接力比赛成绩</font></a></li><li><span class="date">2011-01-07</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3233.aspx" target="_self" title="标题：关于做好走访“三困”学生家庭工作的通知&#xD;点击数：462&#xD;发表时间：2011年01月07日"><font style=";">关于做好走访“三困”学生家庭工作的通知</font></a></li><li><span class="date">2011-01-07</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3225.aspx" target="_self" title="标题：关于上传学生品德考核结果的通知&#xD;点击数：469&#xD;发表时间：2011年01月07日"><font style=";">关于上传学生品德考核结果的通知</font></a></li><li class="split"></li><li><span class="date">2011-01-07</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3223.aspx" target="_self" title="标题：值周检查情况汇总（1月6日星期四）&#xD;点击数：314&#xD;发表时间：2011年01月07日"><font style=";">值周检查情况汇总（1月6日星期四）</font></a></li><li><span class="date">2011-01-06</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3217.aspx" target="_self" title="标题：值周检查情况汇总（1月5日星期三）&#xD;点击数：349&#xD;发表时间：2011年01月06日"><font style=";">值周检查情况汇总（1月5日星期三）</font></a></li><li><span class="date">2011-01-06</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3216.aspx" target="_self" title="标题：关于做好会考考前教育的通知&#xD;点击数：589&#xD;发表时间：2011年01月06日"><font style=";">关于做好会考考前教育的通知</font></a></li><li><span class="date">2011-01-05</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3214.aspx" target="_self" title="标题：2010年校园文化艺术节闭幕式暨2011元旦文艺会演我最喜爱节目投票结果&#xD;点击数：695&#xD;发表时间：2011年01月05日"><font style=";">2010年校园文化艺术节闭幕式暨2011元旦文艺会演我最喜爱节目投票结果</font></a></li><li><span class="date">2011-01-05</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3213.aspx" target="_self" title="标题：关于做好2010学年第一学期学生思想政治品德考核（初评）工作的通知&#xD;点击数：608&#xD;发表时间：2011年01月05日"><font style=";">关于做好2010学年第一学期学生思想政治品德考核（初评）工作的通知</font></a></li><li class="split"></li><li><span class="date">2011-01-05</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3212.aspx" target="_self" title="标题：高一领取品德考核手册通知&#xD;点击数：291&#xD;发表时间：2011年01月05日"><font style=";">高一领取品德考核手册通知</font></a></li><li><span class="date">2011-01-05</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3209.aspx" target="_self" title="标题：值周检查情况汇总（1月4日星期二）&#xD;点击数：335&#xD;发表时间：2011年01月05日"><font style=";">值周检查情况汇总（1月4日星期二）</font></a></li><li><span class="date">2010-12-31</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3191.aspx" target="_self" title="标题：12月30日大课间各班参加人数&#xD;点击数：462&#xD;发表时间：2010年12月31日"><font style=";">12月30日大课间各班参加人数</font></a></li><li><span class="date">2010-12-31</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3190.aspx" target="_self" title="标题：值周检查情况汇总（12月30日星期四）&#xD;点击数：313&#xD;发表时间：2010年12月31日"><font style=";">值周检查情况汇总（12月30日星期四）</font></a></li><li><span class="date">2010-12-30</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3187.aspx" target="_self" title="标题：各班主任请注意&#xD;点击数：762&#xD;发表时间：2010年12月30日"><font style=";">各班主任请注意</font></a></li><li class="split"></li><li><span class="date">2010-12-30</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3183.aspx" target="_self" title="标题：参加百年电力绘画展的同学注意&#xD;点击数：609&#xD;发表时间：2010年12月30日"><font style=";">参加百年电力绘画展的同学注意</font></a></li><li><span class="date">2010-12-30</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3181.aspx" target="_self" title="标题：值周检查情况汇总（12月29日星期三）&#xD;点击数：312&#xD;发表时间：2010年12月30日"><font style=";">值周检查情况汇总（12月29日星期三）</font></a></li><li><span class="date">2010-12-30</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3180.aspx" target="_self" title="标题：2010年校园文化艺术节闭幕式通知(座位有修改）&#xD;点击数：1809&#xD;发表时间：2010年12月30日"><font style=";">2010年校园文化艺术节闭幕式通知(座位有修改）</font></a></li><li><span class="date">2010-12-29</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3178.aspx" target="_self" title="标题：各班主任注意（关于告家长书）&#xD;点击数：469&#xD;发表时间：2010年12月29日"><font style=";">各班主任注意（关于告家长书）</font></a></li><li class="last"><span class="date">2010-12-29</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/3177.aspx" target="_self" title="标题：佚名之画作招领&#xD;点击数：596&#xD;发表时间：2010年12月29日"><font style=";">佚名之画作招领</font></a></li>
+            <li class="first"><span class="date">2011-03-23</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3586.aspx" target="_self" title="标题：值周检查情况汇总（3月22日星期二）&#xD;点击数：360&#xD;发表时间：2011年03月23日"><font style=";">值周检查情况汇总（3月22日星期二）</font></a></li><li><span class="date">2011-03-23</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3585.aspx" target="_self" title="标题：“全国文明城市创建和国家卫生城市复查迎检”的相关通知&#xD;点击数：441&#xD;发表时间：2011年03月23日"><font style=";">“全国文明城市创建和国家卫生城市复查迎检”的相关通知</font></a></li><li><span class="date">2011-03-23</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3583.aspx" target="_self" title="标题：3月23日校牌检查结果公布（十九）&#xD;点击数：526&#xD;发表时间：2011年03月23日"><font style=";">3月23日校牌检查结果公布（十九）</font></a></li><li><span class="date">2011-03-22</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3579.aspx" target="_self" title="标题：值周检查情况汇总（3月21日星期一）&#xD;点击数：320&#xD;发表时间：2011年03月22日"><font style=";">值周检查情况汇总（3月21日星期一）</font></a></li><li><span class="date">2011-03-22</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3577.aspx" target="_self" title="标题：温馨寝室评比结果&#xD;点击数：463&#xD;发表时间：2011年03月22日"><font style=";">温馨寝室评比结果</font></a></li><li class="split"></li><li><span class="date">2011-03-22</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3573.aspx" target="_self" title="标题：第一轮温馨教室评比结果&#xD;点击数：593&#xD;发表时间：2011年03月22日"><font style=";">第一轮温馨教室评比结果</font></a></li><li><span class="date">2011-03-22</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3572.aspx" target="_self" title="标题：3月22日校牌检查结果公布（十八）&#xD;点击数：492&#xD;发表时间：2011年03月22日"><font style=";">3月22日校牌检查结果公布（十八）</font></a></li><li><span class="date">2011-03-22</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3571.aspx" target="_self" title="标题：2011年大学生助学摸底申请的有关通知&#xD;点击数：421&#xD;发表时间：2011年03月22日"><font style=";">2011年大学生助学摸底申请的有关通知</font></a></li><li><span class="date">2011-03-22</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3569.aspx" target="_self" title="标题：今日大课间操暂停&#xD;点击数：303&#xD;发表时间：2011年03月22日"><font style=";">今日大课间操暂停</font></a></li><li><span class="date">2011-03-21</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3564.aspx" target="_self" title="标题：3月20日（周日）寝室缺席名单&#xD;点击数：468&#xD;发表时间：2011年03月21日"><font style=";">3月20日（周日）寝室缺席名单</font></a></li><li class="split"></li><li><span class="date">2011-03-21</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3563.aspx" target="_self" title="标题：3月21日校牌检查结果公布（十七）&#xD;点击数：540&#xD;发表时间：2011年03月21日"><font style=";">3月21日校牌检查结果公布（十七）</font></a></li><li><span class="date">2011-03-21</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3562.aspx" target="_self" title="标题：表扬&#xD;点击数：655&#xD;发表时间：2011年03月21日"><font style=";">表扬</font></a></li><li><span class="date">2011-03-21</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3561.aspx" target="_self" title="标题：今早每日包干区卫生工作检查通告&#xD;点击数：421&#xD;发表时间：2011年03月21日"><font style=";">今早每日包干区卫生工作检查通告</font></a></li><li><span class="date">2011-03-21</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3559.aspx" target="_self" title="标题：关于升旗仪式暂停的通知&#xD;点击数：370&#xD;发表时间：2011年03月21日"><font style=";">关于升旗仪式暂停的通知</font></a></li><li><span class="date">2011-03-18</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3556.aspx" target="_self" title="标题：值周检查情况汇总（3月17日星期四）&#xD;点击数：291&#xD;发表时间：2011年03月18日"><font style=";">值周检查情况汇总（3月17日星期四）</font></a></li><li class="split"></li><li><span class="date">2011-03-18</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3554.aspx" target="_self" title="标题：关于卫生与考纪的通知&#xD;点击数：485&#xD;发表时间：2011年03月18日"><font style=";">关于卫生与考纪的通知</font></a></li><li><span class="date">2011-03-18</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3553.aspx" target="_self" title="标题：3月18日校牌检查结果公布（十六）&#xD;点击数：563&#xD;发表时间：2011年03月18日"><font style=";">3月18日校牌检查结果公布（十六）</font></a></li><li><span class="date">2011-03-17</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3548.aspx" target="_self" title="标题：关于学生参加本月26日下午信息学颁奖大会的通知&#xD;点击数：556&#xD;发表时间：2011年03月17日"><font style=";">关于学生参加本月26日下午信息学颁奖大会的通知</font></a></li><li><span class="date">2011-03-17</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3546.aspx" target="_self" title="标题：值周检查情况汇总（3月16日星期三）&#xD;点击数：293&#xD;发表时间：2011年03月17日"><font style=";">值周检查情况汇总（3月16日星期三）</font></a></li><li><span class="date">2011-03-17</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3543.aspx" target="_self" title="标题：3月17日校牌检查结果公布（十五）&#xD;点击数：556&#xD;发表时间：2011年03月17日"><font style=";">3月17日校牌检查结果公布（十五）</font></a></li><li class="split"></li><li><span class="date">2011-03-17</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3542.aspx" target="_self" title="标题：关于做好每日包干区楼道卫生工作的通知&#xD;点击数：385&#xD;发表时间：2011年03月17日"><font style=";">关于做好每日包干区楼道卫生工作的通知</font></a></li><li><span class="date">2011-03-17</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3541.aspx" target="_self" title="标题：表扬&#xD;点击数：650&#xD;发表时间：2011年03月17日"><font style=";">表扬</font></a></li><li><span class="date">2011-03-16</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3527.aspx" target="_self" title="标题：值周检查情况汇总（3月15日星期二）&#xD;点击数：428&#xD;发表时间：2011年03月16日"><font style=";">值周检查情况汇总（3月15日星期二）</font></a></li><li><span class="date">2011-03-16</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3526.aspx" target="_self" title="标题：3月16日校牌检查结果公布（十四）&#xD;点击数：1577&#xD;发表时间：2011年03月16日"><font style=";">3月16日校牌检查结果公布（十四）</font></a></li><li><span class="date">2011-03-15</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3520.aspx" target="_self" title="标题：值周及大扫除检查情况（3月14日星期一）&#xD;点击数：393&#xD;发表时间：2011年03月15日"><font style=";">值周及大扫除检查情况（3月14日星期一）</font></a></li><li class="split"></li><li><span class="date">2011-03-15</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3514.aspx" target="_self" title="标题：3月14\15日校牌检查结果公布（十三）&#xD;点击数：614&#xD;发表时间：2011年03月15日"><font style=";">3月14\15日校牌检查结果公布（十三）</font></a></li><li><span class="date">2011-03-15</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3513.aspx" target="_self" title="标题：关于本周四主题班团课改期的通知&#xD;点击数：470&#xD;发表时间：2011年03月15日"><font style=";">关于本周四主题班团课改期的通知</font></a></li><li><span class="date">2011-03-14</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3507.aspx" target="_self" title="标题：批评&#xD;点击数：755&#xD;发表时间：2011年03月14日"><font style=";">批评</font></a></li><li><span class="date">2011-03-12</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3503.aspx" target="_self" title="标题：值周检查情况汇总（3月11日星期五）&#xD;点击数：428&#xD;发表时间：2011年03月12日"><font style=";">值周检查情况汇总（3月11日星期五）</font></a></li><li><span class="date">2011-03-11</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3500.aspx" target="_self" title="标题：通知&#xD;点击数：836&#xD;发表时间：2011年03月11日"><font style=";">通知</font></a></li><li class="split"></li><li><span class="date">2011-03-11</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3499.aspx" target="_self" title="标题：2011年市属级及以上三好学生、优秀学生干部评比办法&#xD;点击数：755&#xD;发表时间：2011年03月11日"><font style=";">2011年市属级及以上三好学生、优秀学生干部评比办法</font></a></li><li><span class="date">2011-03-11</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3496.aspx" target="_self" title="标题：值周检查情况汇总（3月10日星期四）&#xD;点击数：396&#xD;发表时间：2011年03月11日"><font style=";">值周检查情况汇总（3月10日星期四）</font></a></li><li><span class="date">2011-03-11</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3495.aspx" target="_self" title="标题：3月12日校牌检查结果公布（十二）&#xD;点击数：1513&#xD;发表时间：2011年03月11日"><font style=";">3月12日校牌检查结果公布（十二）</font></a></li><li><span class="date">2011-03-11</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3492.aspx" target="_self" title="标题：表扬&#xD;点击数：1620&#xD;发表时间：2011年03月11日"><font style=";">表扬</font></a></li><li class="last"><span class="date">2011-03-10</span><img src="/images/ontop1.gif" alt="热门"><a href="/Item/3485.aspx" target="_self" title="标题：3月10日校牌检查结果公布（十一）&#xD;点击数：455&#xD;发表时间：2011年03月10日"><font style=";">3月10日校牌检查结果公布（十一）</font></a></li>
           
                     </ul>
                     <div class="page"><span id="pe100_page_通用信息列表_普通式" class="pagecss"><!--{pe.begin.pagination}-->
@@ -449,7 +449,7 @@ function GetUserInfo1(response){
  <a href="Index_158.aspx">上一页</a>
  <a href="Index_154.aspx">154</a> <a href="Index_155.aspx">155</a> <a href="Index_156.aspx">156</a> <a href="Index_157.aspx">157</a> <a href="Index_158.aspx">158</a> <b><a href="Index_159.aspx">159</a></b> <a href="Index_160.aspx">160</a> <a href="Index_161.aspx">161</a> <a href="Index_162.aspx">162</a> <a href="Index_163.aspx">163</a> <a href="Index_164.aspx">164</a> 
 <a href="Index_160.aspx">下一页</a>
- <a href="Index_173.aspx">尾页</a>
+ <a href="Index_176.aspx">尾页</a>
  <!--{pe.end.pagination}--></span></div>
                     <!-- 正文内容 E -->
                 </div>
@@ -464,25 +464,25 @@ function GetUserInfo1(response){
 <div id="footer">
   <div class="siteWidth">
 
-      <div class="logo"><img src="/Shaoxingyizhong/Template/Default/Skin/erms/img/footlogo.png" /></div>
+      <div class="logo"><img src="/Template/Default/Skin/erms/img/footlogo.png" /></div>
 
       <ul class="footerNav">
-        <li class="li1 first"><a href="/Shaoxingyizhong/Category_13/Index_1.aspx">网站地图</a></li>
+        <li class="li1 first"><a href="/Category_13/Index_1.aspx">网站地图</a></li>
 <li class="spe">|</li>
 <li class="li2"><a target="_blank" href="http://10.176.17.2:8080/">怀旧网站</a></li>
 <li class="spe">|</li>
 <li class="li3"><a target="_blank" href="http://www.sxyz.net/">学校外网</a></li>
 <li class="spe">|</li>
-<li class="li4"><a href="/Shaoxingyizhong/Category_109/Index.aspx">校长信箱</a></li>
+<li class="li4"><a href="/Category_109/Index.aspx">校长信箱</a></li>
 <li class="spe">|</li>
-<li class="li5 last"><a href="/Shaoxingyizhong/Category_110/Index.aspx">反馈意见</a></li>
+<li class="li5 last"><a href="/Category_110/Index.aspx">反馈意见</a></li>
       </ul>
 
-      <div class="copyRight"><p>绍兴市第一中学 版权所有 Copyright © SXYZ.NET All Rights Reserved.<br style="color: rgb(102, 102, 102); font-family: Arial, 宋体; font-size: 13.3333px; white-space: normal; background-color: rgb(255, 255, 255);">地址：绍兴市站前大道1898号 电话&amp;传真：0575-85173853</p><p><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33060202000394" target="_blank"><img src="/Shaoxingyizhong/Template/Default/Skin/images/ga.png" >浙公网安备 33060202000394号</a> ICP证：浙ICP备14042003号-1</p><p><br></p></div>
+      <div class="copyRight"><p>绍兴市第一中学 版权所有 Copyright © SXYZ.NET All Rights Reserved.<br style="color: rgb(102, 102, 102); font-family: Arial, 宋体; font-size: 13.3333px; white-space: normal; background-color: rgb(255, 255, 255);">地址：绍兴市站前大道1898号 电话&amp;传真：0575-85173853</p><p><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33060202000394" target="_blank"><img src="/Template/Default/Skin/images/ga.png" >浙公网安备 33060202000394号</a> ICP证：浙ICP备14042003号-1</p><p><br></p></div>
 
-      <a class="dw" target="_blank" href="http://bszs.conac.cn/sitename?method=show&id=06F2CAD4909B067AE053012819AC8596"><img src="/Shaoxingyizhong/Template/Default/Skin/erms/img/blue.png" /></a>
-      <img class="wx" src="/Shaoxingyizhong/Template/Default/Skin/erms/img/weixin.png" />
-      <img class="xcxewm" src="/Shaoxingyizhong/Template/Default/Skin/erms/img/xcxewm.png" />
+      <a class="dw" target="_blank" href="http://bszs.conac.cn/sitename?method=show&id=06F2CAD4909B067AE053012819AC8596"><img src="/Template/Default/Skin/erms/img/blue.png" /></a>
+      <img class="wx" src="/Template/Default/Skin/erms/img/weixin.png" />
+      <img class="xcxewm" src="/Template/Default/Skin/erms/img/xcxewm.png" />
   </div>  
 </div>
 <!-- footer E -->

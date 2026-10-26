@@ -95,6 +95,7 @@ class IncrementalSyncTests(unittest.TestCase):
                 "/project/repo/attachment_routes.json",
                 "--workspace",
                 "/project/shards",
+                "--allow-missing-external-images",
             ],
         )
     def test_selects_only_2026_or_newer_attachment_paths(self):
