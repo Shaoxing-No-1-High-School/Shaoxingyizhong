@@ -8,7 +8,7 @@ same machine after a.py finishes; GitHub Actions cannot reach 10.176.17.2.
 from __future__ import annotations
 
 import argparse
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 import hashlib
 import os
 import shutil
@@ -26,6 +26,8 @@ except ImportError:  # pragma: no cover - supports direct script execution
     from attachment_routing import RouteConfig, rewrite_source_download_urls
     from build_pages import available_download_paths, render_text_file
 
+
+PUBLISH_TIMEZONE = timezone(timedelta(hours=8))
 
 EXCLUDED_DIRS = {".git", ".github", ".crawl_state", "_site", "tests", "tools", "UploadFiles"}
 IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp", ".ico", ".svg"}
@@ -309,6 +311,7 @@ def run_git(
         check=True,
         capture_output=capture_output,
         text=capture_output,
+        env={**os.environ, "TZ": "Asia/Shanghai"},
     )
 
 
@@ -704,10 +707,11 @@ def format_commit_message(
     changes: list[tuple[str, str]],
     now: datetime | None = None,
 ) -> str:
-    """Add a local timestamp and a concise staged-file summary to a message."""
-    timestamp = (now or datetime.now().astimezone())
+    """Add a UTC+8 timestamp and a concise staged-file summary to a message."""
+    timestamp = now or datetime.now(PUBLISH_TIMEZONE)
     if timestamp.tzinfo is None:
-        timestamp = timestamp.astimezone()
+        timestamp = timestamp.replace(tzinfo=PUBLISH_TIMEZONE)
+    timestamp = timestamp.astimezone(PUBLISH_TIMEZONE)
     timestamp_text = timestamp.isoformat(sep=" ", timespec="milliseconds")
     if len(timestamp_text) >= 6 and timestamp_text[-6] in "+-":
         timestamp_text = f"{timestamp_text[:-6]} {timestamp_text[-6:]}"
