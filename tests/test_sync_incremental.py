@@ -78,7 +78,7 @@ class IncrementalSyncTests(unittest.TestCase):
             ).stdout
             self.assertEqual(tracked, "")
 
-    def test_image_sync_command_uses_existing_shard_workspace(self):
+    def test_image_sync_command_preserves_archives_in_existing_shard_workspace(self):
         self.assertEqual(
             image_sync_command(
                 Path("/project/repo"),
@@ -95,7 +95,6 @@ class IncrementalSyncTests(unittest.TestCase):
                 "/project/repo/attachment_routes.json",
                 "--workspace",
                 "/project/shards",
-                "--prune-missing",
             ],
         )
     def test_selects_only_2026_or_newer_attachment_paths(self):
