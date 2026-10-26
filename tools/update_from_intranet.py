@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import math
+import os
 import re
 import subprocess
 import sys
@@ -43,7 +44,7 @@ def image_sync_command(
 def run_step(command: list[str], cwd: Path) -> None:
     """Run one pipeline step and turn Ctrl-C into a clean interrupted exit."""
     try:
-        subprocess.run(command, cwd=cwd, check=True)
+        subprocess.run(command, cwd=cwd, check=True, env={**os.environ, "TZ": "Asia/Shanghai"})
     except KeyboardInterrupt:
         print(
             "\n🛑 更新流程已中断；如需从上次抓取进度继续，请再次使用 --resume。",
