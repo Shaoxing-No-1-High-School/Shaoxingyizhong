@@ -12,9 +12,11 @@
     "quarantined_homepage_disguised_attachments": 2
   },
   "tests": {
-    "command": "NO_PROXY=localhost,127.0.0.1 .venv/bin/python -B -m pytest -q -p no:cacheprovider",
-    "passed": 99,
-    "subtests_passed": 27
+    "clean_commit_snapshot_passed": 100,
+    "worktree_passed": 103,
+    "subtests_passed": 33,
+    "verification_commit": "2c8b6152da4e2e77932ea221f6242c5f264f50da",
+    "command": "python3 -B -m pytest -q -p no:cacheprovider"
   },
   "production_build": {
     "exit": 0,
@@ -204,5 +206,10 @@
     "artifact_validation": "https://github.com/actions/upload-pages-artifact#artifact-validation",
     "previous_successful_main_run": "https://github.com/tangyixiao/Shaoxingyizhong/actions/runs/40271414763",
     "previous_successful_tar_bytes": 1318645760
+  },
+  "scheduled_update_support": {
+    "committed_partial_clone_inventory_reused": true,
+    "missing_external_images": "warn and retry on the next sync",
+    "image_size_type_local_write_and_git_errors_remain_fatal": true
   }
 }

@@ -12,9 +12,9 @@
 | 旧嵌套附件 | 1,322 个，均实际进入产物并核对链接 |
 | 图片仓库 | 23,242 个图片路径；新增 152、更新 21、删除 0 |
 | 大图访问 | 124 个目标、209 个来源变体改用 GitHub 原图直链 |
-| 测试 | 99 项及 27 个子测试通过 |
+| 测试 | 干净提交快照 100 项及 33 个子测试通过 |
 
-修复了 `downloads/UploadFiles/...` 被构建排除和发布断点恢复忽略的问题。大图单独使用原图直链，其他图片继续通过现有 CDN 路由。完整生产构建后，对受大图地址影响的 46 份 HTML 定向重渲染，验证内容只改变图片交付 URL，分页、文章与下载目标集合保持一致。
+修复了 `downloads/UploadFiles/...` 被构建排除和发布断点恢复忽略的问题。大图单独使用原图直链，其他图片继续通过现有 CDN 路由。定时更新会复用已提交的部分克隆图片库存，避免重复拷贝；已失效的外部图片会输出警告并在下一轮重试，图像大小、类型、本地写入和 Git 错误仍会阻止发布。完整生产构建后，对受大图地址影响的 46 份 HTML 定向重渲染，验证内容只改变图片交付 URL，分页、文章与下载目标集合保持一致。
 
 4 个图片 PR 已合并：[misc](https://github.com/tangyixiao/Shaoxingyizhong-img-misc/pull/1)、[2025 年 1–9 月](https://github.com/tangyixiao/Shaoxingyizhong-img-xwzx-2025-jan-sep/pull/1)、[2026 年下半年](https://github.com/tangyixiao/Shaoxingyizhong-img-xwzx-2026-h2/pull/1)、[2009–2018 年历史](https://github.com/tangyixiao/Shaoxingyizhong-img-legacy-2009-2018/pull/1)。合并保留了审计提交，旧固定版本路径全部保留。当前年份分片继续跟随 main，历史分片固定版本。
 
