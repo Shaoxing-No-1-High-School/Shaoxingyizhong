@@ -23,3 +23,7 @@
 最终产物 27,783 个文件，共 2,994,489,488 字节。此体积超过 Pages 的 [1GB 官方支持范围](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)，低于官方 action 的 [10GB 绝对 artifact 上限](https://github.com/actions/upload-pages-artifact#artifact-validation)。本项目已有 1,318,645,760 字节 tar 成功部署的[运行记录](https://github.com/tangyixiao/Shaoxingyizhong/actions/runs/40271414763)；本次实际部署结果以合并后的 Pages 工作流为准。
 
 [结构与附件验证](archive-recovery-20261026.json) · [图片验证](archive-image-recovery-20261026.json) · [大图定向验证](archive-large-image-routing-20261026.json)
+
+## 发布后的持续更新
+
+本报告的计数和 SHA 对应 v2026.10.26 发布快照。之后的定时更新会向 main 追加新内容。当前年份新闻分片及承接德育、教师风采等当年内容的通用图片分片跟随 main，其余 12 个历史分片保持固定版本。这样新上传图片可以随增量页面立即显示，历史快照仍由 Release 和 Git 提交保留。
