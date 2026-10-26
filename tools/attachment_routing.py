@@ -118,14 +118,15 @@ class RouteConfig:
         owner = quote(self.owner, safe="")
         repo = quote(repository, safe="")
         branch = quote(self.repository_refs.get(repository, self.branch), safe="")
+        raw_base = str(override.get("raw_base", self.raw_base)).rstrip("/") if override else self.raw_base
         # jsDelivr's GitHub endpoint uses ``repo@version/path``; raw GitHub
         # endpoints use ``repo/version/path``. A literal ``main/`` segment
         # makes jsDelivr return 404 even when the GitHub file exists.
-        if self.raw_base.endswith("cdn.jsdelivr.net/gh"):
+        if raw_base.endswith("cdn.jsdelivr.net/gh"):
             repository_ref = f"{repo}@{branch}"
         else:
             repository_ref = f"{repo}/{branch}"
-        raw_url = f"{self.raw_base}/{owner}/{repository_ref}/{raw_path}"
+        raw_url = f"{raw_base}/{owner}/{repository_ref}/{raw_path}"
         return RoutedImage(
             source_path=source_path,
             repository=repository,
