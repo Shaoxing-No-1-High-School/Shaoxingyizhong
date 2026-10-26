@@ -36,8 +36,9 @@ jobs:
           key_dir="$(mktemp -d)"
           trap 'rm -rf -- "$key_dir"' EXIT
           chmod 700 "$key_dir"
-          printf '%s\n' "$DEPLOY_KEY" > "$key_dir/id_ed25519"
+          printf '%s\n' "$DEPLOY_KEY" | tr -d '\r' > "$key_dir/id_ed25519"
           chmod 600 "$key_dir/id_ed25519"
+          ssh-keygen -y -f "$key_dir/id_ed25519" > /dev/null
           gh api meta --jq '.ssh_keys[] | "github.com " + .' > "$key_dir/known_hosts"
           test -s "$key_dir/known_hosts"
           export GIT_SSH_COMMAND="ssh -F /dev/null -i '$key_dir/id_ed25519' -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile='$key_dir/known_hosts'"
