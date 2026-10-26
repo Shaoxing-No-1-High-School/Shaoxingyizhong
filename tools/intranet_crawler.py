@@ -125,8 +125,22 @@ def should_follow_path(path):
     normalized_path = path.replace('\\', '/')
     if '/UploadFiles/' in normalized_path:
         return False
-    if ITEM_MIN_ID is not None and normalized_path.startswith('/Category_') and BRANCH_ALLOWLIST is not None:
-        return normalized_path in BRANCH_ALLOWLIST
+    if ITEM_MIN_ID is not None and normalized_path.lower().startswith('/category_') and BRANCH_ALLOWLIST is not None:
+        if normalized_path in BRANCH_ALLOWLIST:
+            return True
+        pagination = re.fullmatch(r'/Category_(\d+)/Index(?:_\d+)?\.aspx', normalized_path, re.IGNORECASE)
+        if not pagination:
+            return False
+        if os.path.isfile(get_save_path(urljoin(BASE_URL, normalized_path))):
+            return False
+        category = pagination.group(1)
+        if not any(
+            (seed := re.fullmatch(r'/Category_(\d+)/Index(?:_\d+)?\.aspx', path, re.IGNORECASE))
+            and seed.group(1) == category
+            for path in BRANCH_ALLOWLIST
+        ):
+            return False
+        return True
     item_match = re.fullmatch(r'/Item/(\d+)\.aspx', normalized_path, re.IGNORECASE)
     if item_match and ITEM_MIN_ID is not None:
         item_id = int(item_match.group(1))

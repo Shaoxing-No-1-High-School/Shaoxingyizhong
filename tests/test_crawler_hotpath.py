@@ -58,6 +58,58 @@ class LinkExtractionTests(unittest.TestCase):
         ])
 
 
+    def test_incremental_seeded_categories_follow_only_missing_legal_pagination(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            source = Path(tmp)
+            for page in ("Category_20/Index_482.aspx", "Category_36/Index_29.aspx"):
+                target = source / page
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_text("cached old page")
+            seeds = {"/Category_20/Index_483.aspx", "/Category_36/Index.aspx", "/"}
+            with mock.patch.multiple(
+                crawler, BASE_URL="http://example.test/", SAVE_DIR=str(source),
+                ITEM_MIN_ID=23851, ITEM_LOOKBACK=0, BRANCH_ALLOWLIST=seeds,
+            ):
+                links = crawler.extract_page_links('''
+                    <a href="/Category_20/Index_482.aspx">cached page</a>
+                    <a href="/Category_20/Index_484.aspx">new page</a>
+                    <a href="/Category_36/Index_29.aspx">another cached page</a>
+                    <a href="/Category_36/Index_30.aspx">another new page</a>
+                    <a href="/Category_99/Index_1.aspx">unrelated category</a>
+                    <a href="/category_99/Index_2.aspx">unrelated case variant</a>
+                    <a href="/Category_20/Archive.aspx">not pagination</a>
+                    <a href="/Category_20/Index_notes.aspx">not numbered pagination</a>
+                    <a href="/Item/23851.aspx">old waterline item</a>
+                    <a href="/Item/23858.aspx">new item</a>
+                ''', "http://example.test/Category_20/Index_483.aspx")
+                self.assertEqual(links.navigation, [
+                    "http://example.test/Category_20/Index_484.aspx",
+                    "http://example.test/Category_36/Index_30.aspx",
+                    "http://example.test/Item/23858.aspx",
+                ])
+                self.assertTrue(crawler.should_follow_path("/Category_20/Index_483.aspx"))
+                with mock.patch.object(crawler, "ITEM_LOOKBACK", 2):
+                    self.assertTrue(crawler.should_follow_path("/Item/23850.aspx"))
+                    self.assertFalse(crawler.should_follow_path("/Item/23849.aspx"))
+
+    def test_incremental_missing_pagination_is_skipped_after_source_is_cached(self):
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.multiple(
+            crawler, BASE_URL="http://example.test/", SAVE_DIR=tmp,
+            ITEM_MIN_ID=23851, ITEM_LOOKBACK=0,
+            BRANCH_ALLOWLIST={"/Category_20/Index_483.aspx"},
+        ):
+            for path in ("/Category_20/Index_484.aspx", "/Category_20/Index.aspx"):
+                with self.subTest(path=path):
+                    self.assertTrue(crawler.should_follow_path(path))
+                    target = Path(crawler.get_save_path("http://example.test" + path))
+                    target.parent.mkdir(parents=True, exist_ok=True)
+                    target.write_text("downloaded source")
+                    self.assertFalse(crawler.should_follow_path(path))
+                    with mock.patch.object(crawler, "ITEM_MIN_ID", None):
+                        self.assertTrue(crawler.should_follow_path(path))
+
+
+
 class FileSaveTests(unittest.TestCase):
     def test_unchanged_stream_keeps_file_without_allocating_a_temporary_file(self):
         with tempfile.TemporaryDirectory() as tmp:
