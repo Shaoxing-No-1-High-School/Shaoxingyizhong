@@ -10,7 +10,7 @@
     ".bmp",
     ".gif"
   ],
-  "max_repository_bytes": 4900000000,
+  "max_repository_bytes": 5000000000,
   "max_commit_bytes": 1500000000,
   "routes": [
     {
@@ -155,19 +155,19 @@
     }
   },
   "repository_refs": {
-    "Shaoxingyizhong-img-legacy-2009-2018": "950dfb60d1071b4e918f02e6c17ea74603d1ef82",
-    "Shaoxingyizhong-img-legacy-2019-2021": "71a0b1138616982bfd19f4ae9fcba5f927b77ce9",
-    "Shaoxingyizhong-img-misc": "0fd3da8898258fc3133561d96be6c057211d4c9b",
-    "Shaoxingyizhong-img-xwzx-2021": "6a6663f68c20eca8d0c234127827e2a2e36afd44",
-    "Shaoxingyizhong-img-xwzx-2022-h1": "96c50151154b670ebcaae5e1963e98281080b4ae",
-    "Shaoxingyizhong-img-xwzx-2022-h2": "50971df5ac6aed26f81d20fe3d3d0cc5ff8c8d75",
-    "Shaoxingyizhong-img-xwzx-2023-h1": "bfa64070b2466be4f63061ef464317443703618a",
-    "Shaoxingyizhong-img-xwzx-2023-h2": "7b2db3b26a76d02742f7aea7da854300208e9dcd",
-    "Shaoxingyizhong-img-xwzx-2024": "6142600f4160ee1dabd2c93595d2a0573200ac37",
-    "Shaoxingyizhong-img-xwzx-2025-jan-sep": "d2248e16fddf8f8b0fcf96f07bc35b6d05d22959",
-    "Shaoxingyizhong-img-xwzx-2025-nov-dec": "af96cf853a4fefc480524d1fcb843876eecff684",
-    "Shaoxingyizhong-img-xwzx-2025-oct": "77e88e3f421b21a05a485db995d7c75d664c5e63",
-    "Shaoxingyizhong-img-xwzx-2026-h1": "9474cd7c064bf776a1820fda4c8ec28aa777c106",
+    "Shaoxingyizhong-img-legacy-2009-2018": "678f880ff4556e836741aec17b9c3a8ce77991ac",
+    "Shaoxingyizhong-img-legacy-2019-2021": "b6f7f551709d8a917381567280160214d4f1dff7",
+    "Shaoxingyizhong-img-misc": "11815246809d9239de6fcf2530db4a390cb05744",
+    "Shaoxingyizhong-img-xwzx-2021": "03b3a7a2e0b6c695b0fe575b1f88958058681485",
+    "Shaoxingyizhong-img-xwzx-2022-h1": "a0a88ec606ab9148fe2a4cec3605ea15bcbfbce4",
+    "Shaoxingyizhong-img-xwzx-2022-h2": "a0b687e3f9c4f20d4332828bb9ef02614dadf35a",
+    "Shaoxingyizhong-img-xwzx-2023-h1": "0c26166b8d44e8d99b01c737012f26462f85cb4a",
+    "Shaoxingyizhong-img-xwzx-2023-h2": "ef14494fa45880acc94188c1d7d83771d90721fe",
+    "Shaoxingyizhong-img-xwzx-2024": "e7a3148ba4a42f9a416fe663524ec5d890eb3bae",
+    "Shaoxingyizhong-img-xwzx-2025-jan-sep": "261d8e87ff20ccb2a303f10ea317fd933000e26c",
+    "Shaoxingyizhong-img-xwzx-2025-nov-dec": "2042f2dcf82b4124bfb1f142bb8aa61c92038e7f",
+    "Shaoxingyizhong-img-xwzx-2025-oct": "722f20fa3dcfb423849a7575ac5d40c278819ac5",
+    "Shaoxingyizhong-img-xwzx-2026-h1": "60de56a0063962a295d59f7a1468896a4197ef8b",
     "Shaoxingyizhong-img-xwzx-2026-h2": "main"
   }
 }

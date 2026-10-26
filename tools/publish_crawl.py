@@ -44,7 +44,8 @@ def sha256_file(path: Path) -> str:
 
 
 def is_publishable(relative: Path) -> bool:
-    if any(part in EXCLUDED_DIRS for part in relative.parts):
+    excluded = EXCLUDED_DIRS - {"UploadFiles"} if relative.parts[:1] == ("downloads",) else EXCLUDED_DIRS
+    if any(part in excluded for part in relative.parts):
         return False
     if relative.suffix.lower() in IMAGE_SUFFIXES:
         return False

@@ -94,7 +94,8 @@ def add_favicon_link(text: str, base_path: str) -> str:
 
 
 def should_skip(relative: Path) -> bool:
-    return any(part in EXCLUDED_DIRS for part in relative.parts)
+    excluded = EXCLUDED_DIRS - {"UploadFiles"} if relative.parts[:1] == ("downloads",) else EXCLUDED_DIRS
+    return any(part in excluded for part in relative.parts)
 
 
 def is_same_file(left: Path, right: Path) -> bool:
