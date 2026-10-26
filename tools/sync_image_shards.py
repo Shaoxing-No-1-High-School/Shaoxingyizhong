@@ -6,9 +6,11 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import http.client
 import importlib.util
 import io
 import json
+import logging
 import os
 import re
 import shutil
@@ -291,8 +293,9 @@ def mirror_external_image_attachments(
     source_root: Path,
     routes: RouteConfig,
     timeout: int = EXTERNAL_IMAGE_TIMEOUT_SECONDS,
+    strict: bool = True,
 ) -> int:
-    """Download third-party image references into the routed source tree."""
+    """Mirror external images, optionally deferring unavailable upstreams."""
     mirrored = 0
     for value in sorted(_page_attachment_candidates(source_root)):
         parsed = urlsplit(value.replace("\\", "/"))
@@ -325,6 +328,12 @@ def mirror_external_image_attachments(
                         f"response exceeds {MAX_EXTERNAL_IMAGE_BYTES} bytes"
                     )
         except Exception as error:
+            if not strict and isinstance(error, (OSError, http.client.HTTPException)):
+                logging.getLogger(__name__).warning(
+                    "External image unavailable; retry on the next sync: %s -> %s: %s",
+                    value, routed.source_path, error,
+                )
+                continue
             raise RuntimeError(
                 f"failed to mirror external image {value} -> "
                 f"{routed.source_path}: {error}"
@@ -834,7 +843,25 @@ def sync_repository(
             and old_row["source_sha256"] == entry.source_sha256
         ):
             migrations[entry.target_path] = old_target
-    tracked_paths = set(_git(repo, "ls-files").stdout.splitlines())
+    tracked_paths = set(_git(repo, "ls-files", "-z").stdout.split("\0"))
+    archived_paths: set[str] = set()
+    if _is_partial_clone(repo) and manifest_path.is_file():
+        committed_manifest = _git(repo, "show", "HEAD:manifest.tsv", check=False)
+        # A crashed sync may have written new hashes before committing its
+        # image blobs. Reuse only an inventory already committed with the images.
+        if (
+            committed_manifest.returncode == 0
+            and committed_manifest.stdout == manifest_path.read_text(encoding="utf-8")
+        ):
+            committed_paths = set(
+                _git(repo, "ls-tree", "-r", "-z", "--name-only", "HEAD", "--", "UploadFiles")
+                .stdout.split("\0")
+            )
+            staged_paths = set(
+                _git(repo, "diff", "--cached", "--name-only", "--no-renames", "-z", "HEAD", "--", "UploadFiles")
+                .stdout.split("\0")
+            )
+            archived_paths = (committed_paths & tracked_paths) - staged_paths
     current_casefold = {target_path.casefold() for target_path in current}
     stale_case_paths = sorted(
         path
@@ -847,7 +874,7 @@ def sync_repository(
         entry
         for target_path, entry in current.items()
         if target_path not in rows
-        or not (repo / target_path).is_file()
+        or (not (repo / target_path).is_file() and target_path not in archived_paths)
         or rows[target_path]["sha256"] != entry.sha256
         or rows[target_path]["source_sha256"] != entry.source_sha256
     ]
@@ -1141,6 +1168,11 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="删除 manifest 中但完整源目录已不再存在的图片",
     )
+    sync_parser.add_argument(
+        "--allow-missing-external-images",
+        action="store_true",
+        help="记录不可用的外部图片并继续同步，下次运行仍会重试",
+    )
     verify_parser = subparsers.add_parser("verify", help="verify local clones and remote samples")
     _common_arguments(verify_parser)
     args = parser.parse_args(argv)
@@ -1156,7 +1188,9 @@ def main(argv: list[str] | None = None) -> int:
     if args.command in {"plan", "sync"}:
         materialized_thumbnails = 0
         if args.command == "sync":
-            mirror_external_image_attachments(args.source, routes)
+            mirror_external_image_attachments(
+                args.source, routes, strict=not args.allow_missing_external_images
+            )
             materialized_thumbnails = materialize_missing_thumbnails(
                 args.source, routes, args.workspace
             )
