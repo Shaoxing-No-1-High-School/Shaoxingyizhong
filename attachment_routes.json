@@ -1214,5 +1214,7 @@
     "Shaoxingyizhong-img-xwzx-2025-oct": "722f20fa3dcfb423849a7575ac5d40c278819ac5",
     "Shaoxingyizhong-img-xwzx-2026-h1": "60de56a0063962a295d59f7a1468896a4197ef8b",
     "Shaoxingyizhong-img-xwzx-2026-h2": "main"
-  }
+  },
+  "cdn_max_file_bytes": 20000000,
+  "preview_repository": "Shaoxingyizhong-img-previews"
 }

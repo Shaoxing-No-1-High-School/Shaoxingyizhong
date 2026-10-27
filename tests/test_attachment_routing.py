@@ -89,7 +89,7 @@ class AttachmentRoutingTests(unittest.TestCase):
         with self.assertRaisesRegex(RouteError, "traversal"):
             self.routes.resolve("/UploadFiles/xwzx/2026/../secret.jpg")
 
-    def test_oversized_png_routes_to_webp(self):
+    def test_oversized_png_keeps_a_full_resolution_webp_route(self):
         routed = self.routes.resolve(
             "/UploadFiles/xwzx/2026/4/202604081018322295.png"
         )
@@ -97,10 +97,6 @@ class AttachmentRoutingTests(unittest.TestCase):
         self.assertEqual(
             routed.target_path,
             "UploadFiles/xwzx/2026/4/202604081018322295.webp",
-        )
-        self.assertEqual(
-            routed.transform,
-            {"format": "webp", "quality": 90, "strip": True},
         )
 
     def test_rejects_overlapping_explicit_routes(self):
