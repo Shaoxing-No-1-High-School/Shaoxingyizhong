@@ -74,6 +74,7 @@ with Image.open(source) as image:
 MAX_EXTERNAL_IMAGE_BYTES = 100 * 1024 * 1024
 EXTERNAL_IMAGE_TIMEOUT_SECONDS = 30
 GIT_COMMAND_TIMEOUT_SECONDS = 180
+GIT_PUSH_TIMEOUT_SECONDS = 1800
 CLONE_TIMEOUT_SECONDS = 300
 
 
@@ -253,8 +254,14 @@ def build_inventory(
             routes.image_previews[source_path] = preview
             # Legacy source pages contain both .JPG and .jpg spellings.
             routes.image_previews[target_path] = preview
-            if routed.transform:
-                routes.overrides[source_path] = {"repository": routed.repository, "target_path": target_path}
+            routes.overrides[source_path] = {
+                "repository": routed.repository,
+                "target_path": target_path,
+                "raw_base": "https://raw.githubusercontent.com",
+            }
+            for alias, override in routes.overrides.items():
+                if override["repository"] == routed.repository and str(override["target_path"]).casefold() == target_path.casefold():
+                    routes.image_previews[alias] = preview
             entries.append(ImageEntry(
                 source_path=source_path,
                 target_path=preview_target,
@@ -539,7 +546,7 @@ def _git(repo: Path, *args: str, check: bool = True) -> subprocess.CompletedProc
         check=check,
         capture_output=True,
         text=True,
-        timeout=GIT_COMMAND_TIMEOUT_SECONDS,
+        timeout=GIT_PUSH_TIMEOUT_SECONDS if args and args[0] == "push" else GIT_COMMAND_TIMEOUT_SECONDS,
     )
 
 
@@ -683,7 +690,7 @@ def push_repository(repo: Path, attempts: int = 5, retry_delay: int = 10) -> Non
         try:
             result = _git(repo, "push", "origin", "main", check=False)
         except subprocess.TimeoutExpired:
-            last_error = f"git push timed out after {GIT_COMMAND_TIMEOUT_SECONDS}s"
+            last_error = f"git push timed out after {GIT_PUSH_TIMEOUT_SECONDS}s"
         except OSError as error:
             last_error = str(error)
         else:
@@ -1064,7 +1071,11 @@ def bootstrap_repository(routes: RouteConfig, repository: str, workspace: Path) 
     unexpected = {
         path
         for path in tracked
-        if path not in {"README.md", ".gitattributes", "manifest.tsv", "deletions.tsv"}
+        if path not in {
+            "README.md", ".gitattributes", "manifest.tsv", "deletions.tsv",
+            ".github/workflows/sync-organization-fork.yml",
+            "docs/organization-fork-sync.md",
+        }
         and not path.startswith("UploadFiles/")
     }
     if unexpected:
@@ -1138,8 +1149,12 @@ def _remote_smoke_test(routes: RouteConfig, repository: str, rows: dict[str, dic
         request = urllib.request.Request(url, headers={"Range": "bytes=0-1023"})
         with urllib.request.urlopen(request, timeout=30) as response:
             content_type = response.headers.get_content_type()
-            response.read(1024)
-            if response.status not in {200, 206} or not content_type.startswith("image/"):
+            payload = response.read(1024)
+            image_bytes = (
+                payload.startswith((b"\x89PNG\r\n\x1a\n", b"\xff\xd8", b"GIF8", b"BM"))
+                or (payload[:4] == b"RIFF" and payload[8:12] == b"WEBP")
+            )
+            if response.status not in {200, 206} or not (content_type.startswith("image/") or image_bytes):
                 raise ValueError(
                     f"remote image smoke test failed: {url}: "
                     f"{response.status} {content_type}"

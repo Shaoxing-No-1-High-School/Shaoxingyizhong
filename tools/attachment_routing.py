@@ -238,10 +238,11 @@ def rewrite_attachment_urls(
   document.addEventListener('error', function (event) {
     var image = event.target;
     if (!image || image.tagName !== 'IMG') return;
-    var fallback = image.getAttribute('data-cdn-fallback') || fallbacks[image.currentSrc || image.src];
-    if (!fallback || image.getAttribute('data-cdn-fallback-used') === 'true') return;
+    var original = image.currentSrc || image.src;
+    var fallback = fallbacks[original] || image.getAttribute('data-cdn-fallback');
+    if (!fallback || original === fallback || image.getAttribute('data-cdn-fallback-used') === original) return;
     event.stopImmediatePropagation();
-    image.setAttribute('data-cdn-fallback-used', 'true');
+    image.setAttribute('data-cdn-fallback-used', original);
     image.removeAttribute('srcset');
     if (image.parentElement && image.parentElement.tagName === 'PICTURE') {
       image.parentElement.querySelectorAll('source').forEach(function (source) { source.removeAttribute('srcset'); });

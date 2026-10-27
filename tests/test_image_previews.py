@@ -90,6 +90,18 @@ class ImagePreviewTests(unittest.TestCase):
             path.write_bytes(b"a" * 100)
             self.assertEqual(len(sync_image_shards.build_inventory(root / "source", self.routes(100), root / "workspace")), 1)
 
+    @unittest.skipUnless(shutil.which("vips"), "libvips is required")
+    def test_existing_case_alias_also_gets_the_cdn_fallback(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.image(root / "source", ".png")
+            routes = self.routes()
+            alias = "UploadFiles/xwzx/2026/7/noise.PNG"
+            routes.overrides[alias] = {"repository": "Shaoxingyizhong-img-xwzx-2026-h2", "target_path": "UploadFiles/xwzx/2026/7/noise.png", "raw_base": "https://raw.githubusercontent.com"}
+            sync_image_shards.build_inventory(root / "source", routes, root / "workspace")
+            rendered, _ = attachment_routing.rewrite_attachment_urls(f'<img src="/{alias}">', routes)
+            self.assertIn("data-cdn-fallback", Images(rendered).images[0])
+
     def test_page_uses_original_and_only_falls_back_after_load_error(self):
         routes = self.routes()
         path = "UploadFiles/xwzx/2026/7/photo.jpg"
@@ -106,6 +118,24 @@ class ImagePreviewTests(unittest.TestCase):
         self.assertEqual(rendered.count('id="archive-image-fallback"'), 1)
         self.assertEqual(images[0]["onerror"], "legacy()")
         self.assertEqual(attachment_routing.rewrite_attachment_urls(rendered, routes)[0], rendered)
+
+    @unittest.skipUnless(shutil.which("vips"), "libvips is required")
+    def test_large_original_smoke_check_accepts_png_bytes_with_generic_mime(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            image = self.image(Path(tmp), ".png").read_bytes()
+            response = mock.MagicMock()
+            response.status = 206
+            response.headers.get_content_type.return_value = "application/octet-stream"
+            response.__enter__.return_value = response
+            for payload, valid in ((image, True), (b"upstream unavailable", False)):
+                with self.subTest(valid=valid):
+                    response.read.return_value = payload[:1024]
+                    with mock.patch.object(sync_image_shards.urllib.request, "urlopen", return_value=response):
+                        if valid:
+                            self.assertEqual(sync_image_shards._remote_smoke_test(self.routes(), "images", {"UploadFiles/a.png": {"size": "30000"}}), 1)
+                        else:
+                            with self.assertRaises(ValueError):
+                                sync_image_shards._remote_smoke_test(self.routes(), "images", {"UploadFiles/a.png": {"size": "30000"}})
 
     def test_css_fallback_remains_valid_stylesheet_without_html_script(self):
         routes = self.routes()
@@ -156,7 +186,8 @@ class ImagePreviewTests(unittest.TestCase):
         routes = self.routes()
         path = "UploadFiles/photo.jpg"
         routes.image_previews[path] = {"target_path": "UploadFiles/photo.cdn-preview.jpg"}
-        rendered, _ = attachment_routing.rewrite_attachment_urls(f'<img src="/{path}">', routes)
+        routes.image_previews["UploadFiles/second.jpg"] = {"target_path": "UploadFiles/second.cdn-preview.jpg"}
+        rendered, _ = attachment_routing.rewrite_attachment_urls(f'<img src="/{path}"><img src="/UploadFiles/second.jpg">', routes)
         script = re.search(r'<script id="archive-image-fallback">(.*?)</script>', rendered, re.S).group(1)
         attrs = Images(rendered).images[0]
         harness = '''const assert = require('node:assert/strict');
@@ -177,7 +208,12 @@ image.src = 'failed-preview';
 handler(event);
 assert.equal(image.src, 'failed-preview');
 assert.equal(stopped, 1);
-'''.replace("SCRIPT", json.dumps(script)).replace("ATTRS", json.dumps(attrs))
+image.src = SECOND.src;
+image.currentSrc = SECOND.src;
+handler(event);
+assert.equal(image.src, SECOND['data-cdn-fallback']);
+assert.equal(stopped, 2);
+'''.replace("SCRIPT", json.dumps(script)).replace("ATTRS", json.dumps(attrs)).replace("SECOND", json.dumps(Images(rendered).images[1]))
         subprocess.run(["node", "-e", harness], check=True, capture_output=True)
 
     def test_publisher_commits_new_fallback_routes_without_crawl_changes(self):

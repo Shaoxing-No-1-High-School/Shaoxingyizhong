@@ -24,6 +24,9 @@ def create_cdn_preview(source: Path, target: Path, max_bytes: int) -> None:
     else:
         dimensions = list(map(int, subprocess.check_output(["magick", "identify", "-format", "%w %h", str(source)], text=True).split()))
     longest = max(dimensions)
+    # Two-pass Huffman optimization buffers DCT coefficients for the whole
+    # image. Avoid that allocation for scans with hundreds of megapixels.
+    optimize = ",optimize_coding" if dimensions[0] * dimensions[1] <= 100_000_000 else ""
     with tempfile.TemporaryDirectory(dir=target.parent) as temporary:
         candidate = Path(temporary) / ("candidate" + target.suffix)
         best = Path(temporary) / ("best" + target.suffix)
@@ -32,7 +35,7 @@ def create_cdn_preview(source: Path, target: Path, max_bytes: int) -> None:
         def fits(pixels: int, quality: int = 100) -> bool:
             nonlocal encoded_size
             if backend == "vips":
-                options = f"Q={quality},subsample_mode=off,optimize_coding,strip" if jpeg else f"Q={quality},strip" if webp else "compression=9,strip"
+                options = f"Q={quality},subsample_mode=off{optimize},strip" if jpeg else f"Q={quality},strip" if webp else "compression=9,strip"
                 command = ["vips", "thumbnail", str(source), f"{candidate}[{options}]", str(pixels), "--height", str(pixels), "--size", "down"]
             else:
                 command = ["magick", str(source), "-auto-orient", "-resize", f"{pixels}x{pixels}>", "-strip", "-quality", str(quality), str(candidate)]
