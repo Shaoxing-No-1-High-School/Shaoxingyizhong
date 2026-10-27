@@ -381,7 +381,7 @@ function GetUserInfo1(response){
                 <div class="bd">
                     <ul class="sideinfoList">
                         
-            <li class="first"><a href="/Item/23859.aspx" target="_blank" title="标题：高三2026体质健康抽测名单&#xD;点击数：140&#xD;发表时间：2026年10月26日">高三2026体质健康抽测名单</a><span class="dateRight">[10-26]</span></li><li><a href="/Item/23565.aspx" target="_blank" title="标题：高三09.01协作体考场布置及相关要求&#xD;点击数：104&#xD;发表时间：2026年08月31日">高三09.01协作体考场布置及相关要求</a><span class="dateRight">[08-31]</span></li><li><a href="/Item/23748.aspx" target="_blank" title="标题：高三10.08联盟考试考场布置及相关要求&#xD;点击数：80&#xD;发表时间：2026年10月06日">高三10.08联盟考试考场布置及相关要求</a><span class="dateRight">[10-06]</span></li><li><a href="/Item/22786.aspx" target="_blank" title="标题：03.04高三协作体考场布置及相关要求&#xD;点击数：45&#xD;发表时间：2026年03月01日">03.04高三协作体考场布置及相关要求</a><span class="dateRight">[03-01]</span></li><li><a href="/Item/21589.aspx" target="_blank" title="标题：06.14高一学考模拟考监考安排和学生考场安排&#xD;点击数：400&#xD;发表时间：2025年06月11日">06.14高一学考模拟考监考安排和学生考场安排</a><span class="dateRight">[06-11]</span></li><li><a href="/Item/23811.aspx" target="_blank" title="标题：高三诊断性考试时间安排&#xD;点击数：175&#xD;发表时间：2026年10月19日">高三诊断性考试时间安排</a><span class="dateRight">[10-19]</span></li><li class="last"><a href="/Item/23766.aspx" target="_blank" title="标题：学生证领取和注册通知&#xD;点击数：211&#xD;发表时间：2026年10月08日">学生证领取和注册通知</a><span class="dateRight">[10-08]</span></li>
+            <li class="first"><a href="/Item/23859.aspx" target="_blank" title="标题：高三2026体质健康抽测名单&#xD;点击数：151&#xD;发表时间：2026年10月26日">高三2026体质健康抽测名单</a><span class="dateRight">[10-26]</span></li><li><a href="/Item/23864.aspx" target="_blank" title="标题：高考报名工作相关通知（两则）&#xD;点击数：30&#xD;发表时间：2026年10月27日">高考报名工作相关通知（两则）</a><span class="dateRight">[10-27]</span></li><li><a href="/Item/23565.aspx" target="_blank" title="标题：高三09.01协作体考场布置及相关要求&#xD;点击数：104&#xD;发表时间：2026年08月31日">高三09.01协作体考场布置及相关要求</a><span class="dateRight">[08-31]</span></li><li><a href="/Item/23811.aspx" target="_blank" title="标题：高三诊断性考试时间安排&#xD;点击数：177&#xD;发表时间：2026年10月19日">高三诊断性考试时间安排</a><span class="dateRight">[10-19]</span></li><li><a href="/Item/23804.aspx" target="_blank" title="标题：高一、高二期中考时间和考试范围&#xD;点击数：279&#xD;发表时间：2026年10月16日">高一、高二期中考时间和考试范围</a><span class="dateRight">[10-16]</span></li><li><a href="/Item/23748.aspx" target="_blank" title="标题：高三10.08联盟考试考场布置及相关要求&#xD;点击数：80&#xD;发表时间：2026年10月06日">高三10.08联盟考试考场布置及相关要求</a><span class="dateRight">[10-06]</span></li><li class="last"><a href="/Item/22786.aspx" target="_blank" title="标题：03.04高三协作体考场布置及相关要求&#xD;点击数：45&#xD;发表时间：2026年03月01日">03.04高三协作体考场布置及相关要求</a><span class="dateRight">[03-01]</span></li>
           
                     </ul>
                 </div>
@@ -440,7 +440,7 @@ $(document).ready(function()
 
                         <div class="others">
                             <div class="prev"><span>上一篇：</span><a href="/Item/23812.aspx" target="_self" title="标题：体育教研及体育课调整通知&#xD;点击数：181&#xD;发表时间：26年10月19日">体育教研及体育课调整通知</a>[ 10-19 ]</div>
-                            <div class="next"><span>下一篇：没有了！</span></div>
+                            <div class="next"><span>下一篇：</span><a href="/Item/23864.aspx" target="_self" title="标题：高考报名工作相关通知（两则）&#xD;点击数：30&#xD;发表时间：26年10月27日">高考报名工作相关通知（两则）</a>[ 10-27 ]</div>
                         </div>
                     </div>
 
