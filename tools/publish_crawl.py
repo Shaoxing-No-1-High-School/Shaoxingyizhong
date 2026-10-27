@@ -783,6 +783,19 @@ def main() -> int:
         args.state_file.parent.mkdir(parents=True, exist_ok=True)
         args.state_file.write_text("in_progress\n", encoding="utf-8")
     changed = sync_crawl_paths(args.source, args.repo, urls)
+    route_file = args.repo / "attachment_routes.json"
+    if args.commit and route_file.is_file():
+        # Image sync writes this index only after uploading its derivatives.
+        # It must be published even when no article changed this crawl.
+        route_diff = subprocess.run(
+            ["git", "diff", "--quiet", "HEAD", "--", "attachment_routes.json"],
+            cwd=args.repo, check=False, capture_output=True,
+        )
+        if route_diff.returncode == 1:
+            RouteConfig.load(route_file)
+            changed.append("attachment_routes.json")
+        elif route_diff.returncode != 0:
+            route_diff.check_returncode()
     if recover_pending:
         pending = pending_crawl_paths(args.source, args.repo)
         if pending:

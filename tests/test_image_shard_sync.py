@@ -785,12 +785,18 @@ class ImageShardSyncTests(unittest.TestCase):
                 encoding="utf-8",
             )
             self._git(repo, "add", "README.md", ".gitattributes")
+            for relative in (".github/workflows/sync-organization-fork.yml", "docs/organization-fork-sync.md"):
+                path = repo / relative
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text("existing organization fork synchronization\n")
+                self._git(repo, "add", relative)
             self._git(repo, "commit", "-m", "initialize")
 
             with mock.patch("tools.sync_image_shards._run") as run:
                 result = bootstrap_repository(self.routes, name, workspace)
 
             self.assertEqual(result, repo)
+            self.assertEqual((repo / "docs/organization-fork-sync.md").read_text(), "existing organization fork synchronization\n")
             run.assert_not_called()
 
     def test_clean_shard_skips_remote_push_but_pending_commit_is_uploaded(self):

@@ -26,8 +26,10 @@ from urllib.parse import quote, urlsplit
 
 try:
     from tools.attachment_routing import RouteConfig, _normalize_attachment_path
+    from tools.image_preview import create_cdn_preview, create_github_original
 except ModuleNotFoundError:  # Support direct execution as tools/sync_image_shards.py.
     from attachment_routing import RouteConfig, _normalize_attachment_path
+    from image_preview import create_cdn_preview, create_github_original
 
 
 MANIFEST_FIELDS = (
@@ -72,6 +74,7 @@ with Image.open(source) as image:
 MAX_EXTERNAL_IMAGE_BYTES = 100 * 1024 * 1024
 EXTERNAL_IMAGE_TIMEOUT_SECONDS = 30
 GIT_COMMAND_TIMEOUT_SECONDS = 180
+GIT_PUSH_TIMEOUT_SECONDS = 1800
 CLONE_TIMEOUT_SECONDS = 300
 
 
@@ -214,42 +217,64 @@ def build_inventory(
         else:
             source_digest = sha256_file(source)
         refreshed_files[source_path] = {**fingerprint, "sha256": source_digest}
-        prepared_path = source
+        # Keep ordinary originals byte for byte. Only files beyond GitHub's
+        # object limit are re-encoded, with lossless full-resolution preferred.
+        target_path = str(Path(source_path).with_suffix(source.suffix.lower())) if routed.transform else routed.target_path
+        prepared_original = source
         transform = ""
-        if routed.transform:
-            if routed.transform.get("format") != "webp":
-                raise ValueError(f"unsupported transform for {source_path}")
-            if _image_backend() is None:
-                raise RuntimeError("libvips or ImageMagick is required for WebP transforms")
-            transform = json.dumps(
-                routed.transform, ensure_ascii=False, sort_keys=True, separators=(",", ":")
-            )
-            prepared_path = workspace / ".cache" / "transforms" / f"{source_digest}.webp"
-            if not prepared_path.exists():
-                prepared_path.parent.mkdir(parents=True, exist_ok=True)
-                subprocess.run(
-                    webp_command(
-                        source,
-                        prepared_path,
-                        quality=int(routed.transform["quality"]),
-                    ),
-                    check=True,
-                )
-        target_digest = (
-            sha256_file(prepared_path) if prepared_path != source else source_digest
-        )
+        if stat.st_size > MAX_GIT_OBJECT_BYTES:
+            target_path = str(Path(target_path).with_suffix(".webp"))
+            prepared_original = workspace / ".cache" / "github-originals" / f"{source_digest}-{MAX_GIT_OBJECT_BYTES}.webp"
+            if not prepared_original.is_file() or prepared_original.stat().st_size > MAX_GIT_OBJECT_BYTES:
+                create_github_original(source, prepared_original, MAX_GIT_OBJECT_BYTES)
+            transform = json.dumps({"format": "webp", "max_bytes": MAX_GIT_OBJECT_BYTES, "lossless_first": True}, sort_keys=True)
+            routes.overrides[source_path] = {"repository": routed.repository, "target_path": target_path}
+        elif routed.transform:
+            routes.overrides[source_path] = {"repository": routed.repository, "target_path": target_path}
+        original_size = prepared_original.stat().st_size
         entries.append(
             ImageEntry(
                 source_path=source_path,
-                target_path=routed.target_path,
+                target_path=target_path,
                 repository=routed.repository,
-                prepared_path=prepared_path,
-                size=prepared_path.stat().st_size,
-                sha256=target_digest,
+                prepared_path=prepared_original,
+                size=original_size,
+                sha256=source_digest if prepared_original == source else sha256_file(prepared_original),
                 source_sha256=source_digest,
                 transform=transform,
             )
         )
+        if original_size > routes.cdn_max_file_bytes:
+            suffix = Path(target_path).suffix.lower() if Path(target_path).suffix.lower() in {".jpg", ".jpeg", ".png", ".webp"} else ".png"
+            preview_target = str(Path(target_path).with_suffix(".cdn-preview" + suffix))
+            prepared = workspace / ".cache" / "cdn-previews" / f"{source_digest}-{routes.cdn_max_file_bytes}{suffix}"
+            if not prepared.is_file() or prepared.stat().st_size > routes.cdn_max_file_bytes:
+                create_cdn_preview(prepared_original, prepared, routes.cdn_max_file_bytes)
+            preview = {"target_path": preview_target}
+            routes.image_previews[source_path] = preview
+            # Legacy source pages contain both .JPG and .jpg spellings.
+            routes.image_previews[target_path] = preview
+            routes.overrides[source_path] = {
+                "repository": routed.repository,
+                "target_path": target_path,
+                "raw_base": "https://raw.githubusercontent.com",
+            }
+            for alias, override in routes.overrides.items():
+                if override["repository"] == routed.repository and str(override["target_path"]).casefold() == target_path.casefold():
+                    routes.image_previews[alias] = preview
+            entries.append(ImageEntry(
+                source_path=source_path,
+                target_path=preview_target,
+                repository=routes.preview_repository,
+                prepared_path=prepared,
+                size=prepared.stat().st_size,
+                sha256=sha256_file(prepared),
+                source_sha256=source_digest,
+                transform=json.dumps({"cdn_max_bytes": routes.cdn_max_file_bytes}, sort_keys=True),
+            ))
+        else:
+            routes.image_previews.pop(source_path, None)
+            routes.image_previews.pop(target_path, None)
     if hash_cache is not None:
         hash_cache.parent.mkdir(parents=True, exist_ok=True)
         temporary: Path | None = None
@@ -521,7 +546,7 @@ def _git(repo: Path, *args: str, check: bool = True) -> subprocess.CompletedProc
         check=check,
         capture_output=True,
         text=True,
-        timeout=GIT_COMMAND_TIMEOUT_SECONDS,
+        timeout=GIT_PUSH_TIMEOUT_SECONDS if args and args[0] == "push" else GIT_COMMAND_TIMEOUT_SECONDS,
     )
 
 
@@ -665,7 +690,7 @@ def push_repository(repo: Path, attempts: int = 5, retry_delay: int = 10) -> Non
         try:
             result = _git(repo, "push", "origin", "main", check=False)
         except subprocess.TimeoutExpired:
-            last_error = f"git push timed out after {GIT_COMMAND_TIMEOUT_SECONDS}s"
+            last_error = f"git push timed out after {GIT_PUSH_TIMEOUT_SECONDS}s"
         except OSError as error:
             last_error = str(error)
         else:
@@ -944,6 +969,7 @@ def sync_repository(
 def repository_names(routes: RouteConfig) -> list[str]:
     names = {route.repository for route in routes.routes}
     names.add(routes.fallback_repository)
+    names.add(routes.preview_repository)
     names.update(str(item["repository"]) for item in routes.overrides.values())
     return sorted(names)
 
@@ -1045,7 +1071,11 @@ def bootstrap_repository(routes: RouteConfig, repository: str, workspace: Path) 
     unexpected = {
         path
         for path in tracked
-        if path not in {"README.md", ".gitattributes", "manifest.tsv", "deletions.tsv"}
+        if path not in {
+            "README.md", ".gitattributes", "manifest.tsv", "deletions.tsv",
+            ".github/workflows/sync-organization-fork.yml",
+            "docs/organization-fork-sync.md",
+        }
         and not path.startswith("UploadFiles/")
     }
     if unexpected:
@@ -1102,21 +1132,29 @@ def _remote_smoke_test(routes: RouteConfig, repository: str, rows: dict[str, dic
     for index in indices:
         encoded = "/".join(quote(part, safe="") for part in targets[index].split("/"))
         repository_ref = routes.repository_refs.get(repository, routes.branch)
-        if routes.raw_base.endswith("cdn.jsdelivr.net/gh"):
+        size = int(rows[targets[index]].get("size", 0))
+        raw_base = routes.raw_base
+        if size > routes.cdn_max_file_bytes:
+            raw_base = "https://raw.githubusercontent.com"
+        if raw_base.endswith("cdn.jsdelivr.net/gh"):
             repository_ref = f"{quote(repository, safe='')}@{quote(repository_ref, safe='')}"
         else:
             repository_ref = (
                 f"{quote(repository, safe='')}/{quote(repository_ref, safe='')}"
             )
         url = (
-            f"{routes.raw_base}/{quote(routes.owner, safe='')}/"
+            f"{raw_base}/{quote(routes.owner, safe='')}/"
             f"{repository_ref}/{encoded}"
         )
         request = urllib.request.Request(url, headers={"Range": "bytes=0-1023"})
         with urllib.request.urlopen(request, timeout=30) as response:
             content_type = response.headers.get_content_type()
-            response.read(1024)
-            if response.status not in {200, 206} or not content_type.startswith("image/"):
+            payload = response.read(1024)
+            image_bytes = (
+                payload.startswith((b"\x89PNG\r\n\x1a\n", b"\xff\xd8", b"GIF8", b"BM"))
+                or (payload[:4] == b"RIFF" and payload[8:12] == b"WEBP")
+            )
+            if response.status not in {200, 206} or not (content_type.startswith("image/") or image_bytes):
                 raise ValueError(
                     f"remote image smoke test failed: {url}: "
                     f"{response.status} {content_type}"
@@ -1218,6 +1256,11 @@ def main(argv: list[str] | None = None) -> int:
                 push=True,
                 prune_missing=args.prune_missing,
             )
+            if results[repository]["changed_files"] and routes.repository_refs.get(repository) != "main":
+                routes.repository_refs[repository] = _git(repo, "rev-parse", "HEAD").stdout.strip()
+        # Publish fallback routes only after all referenced image blobs exist.
+        if args.repository is None:
+            routes.save(args.routes)
         print(json.dumps(results, ensure_ascii=False, sort_keys=True))
         return 0
 
