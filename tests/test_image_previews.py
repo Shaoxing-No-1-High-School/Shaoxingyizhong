@@ -119,6 +119,18 @@ class ImagePreviewTests(unittest.TestCase):
         self.assertEqual(images[0]["onerror"], "legacy()")
         self.assertEqual(attachment_routing.rewrite_attachment_urls(rendered, routes)[0], rendered)
 
+    def test_organization_site_uses_the_published_canonical_preview_shard(self):
+        data = self.routes().data
+        data['owner'] = 'Shaoxing-No-1-High-School'
+        data['preview_owner'] = 'tangyixiao'
+        routes = attachment_routing.RouteConfig(data)
+        path = 'UploadFiles/photo.jpg'
+        routes.image_previews[path] = {'target_path': 'UploadFiles/photo.cdn-preview.jpg'}
+        rendered, _ = attachment_routing.rewrite_attachment_urls(f'<img src="/{path}">', routes)
+        image = Images(rendered).images[0]
+        self.assertIn('/Shaoxing-No-1-High-School/', image['src'])
+        self.assertIn('/gh/tangyixiao/archive-previews@main/', image['data-cdn-fallback'])
+
     @unittest.skipUnless(shutil.which("vips"), "libvips is required")
     def test_large_original_smoke_check_accepts_png_bytes_with_generic_mime(self):
         with tempfile.TemporaryDirectory() as tmp:

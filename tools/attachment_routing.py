@@ -83,6 +83,7 @@ class RouteConfig:
         )
         self.fallback_repository = str(data["fallback_repository"])
         self.preview_repository = str(data.get("preview_repository", self.fallback_repository))
+        self.preview_owner = str(data.get("preview_owner", self.owner))
         self.overrides = {
             str(source): dict(details)
             for source, details in dict(data.get("overrides", {})).items()
@@ -119,7 +120,8 @@ class RouteConfig:
             target_path = source_path
             transform = None
 
-        if ".cdn-preview." in PurePosixPath(target_path).name:
+        preview_target = ".cdn-preview." in PurePosixPath(target_path).name
+        if preview_target:
             repository = self.preview_repository
 
         suffix = PurePosixPath(target_path).suffix
@@ -127,10 +129,12 @@ class RouteConfig:
             target_path = target_path[: -len(suffix)] + suffix.lower()
 
         raw_path = "/".join(quote(part, safe="") for part in target_path.split("/"))
-        owner = quote(self.owner, safe="")
+        owner = quote(self.preview_owner if preview_target else self.owner, safe="")
         repo = quote(repository, safe="")
         branch = quote(self.repository_refs.get(repository, self.branch), safe="")
         raw_base = str(override.get("raw_base", self.raw_base)).rstrip("/") if override else self.raw_base
+        if preview_target:
+            raw_base = "https://cdn.jsdelivr.net/gh"
         preview = self.image_previews.get(source_path)
         if preview:
             raw_base = "https://raw.githubusercontent.com"
@@ -147,7 +151,8 @@ class RouteConfig:
             fallback_path = "/".join(quote(part, safe="") for part in str(preview["target_path"]).split("/"))
             preview_repo = str(preview.get("repository", self.preview_repository))
             preview_ref = self.repository_refs.get(preview_repo, self.branch)
-            fallback_url = f"https://cdn.jsdelivr.net/gh/{owner}/{quote(preview_repo, safe='')}@{quote(preview_ref, safe='')}/{fallback_path}"
+            fallback_owner = quote(self.preview_owner, safe="")
+            fallback_url = f"https://cdn.jsdelivr.net/gh/{fallback_owner}/{quote(preview_repo, safe='')}@{quote(preview_ref, safe='')}/{fallback_path}"
         return RoutedImage(
             source_path=source_path,
             repository=repository,
@@ -158,7 +163,7 @@ class RouteConfig:
         )
 
     def save(self, path: Path) -> None:
-        data = {**self.data, "overrides": self.overrides, "image_previews": self.image_previews, "repository_refs": self.repository_refs}
+        data = {**self.data, "overrides": self.overrides, "image_previews": self.image_previews, "repository_refs": self.repository_refs, "preview_owner": self.preview_owner}
         content = json.dumps(data, ensure_ascii=False, indent=2) + "\n"
         if path.read_text(encoding="utf-8") != content:
             temporary = path.with_name(path.name + ".tmp")
