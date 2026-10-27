@@ -381,7 +381,7 @@ function GetUserInfo1(response){
                 <div class="bd">
                     <ul class="sideinfoList">
                         
-            <li class="first"><a href="/Item/23825.aspx" target="_blank" title="标题：第十八期团校上课通知&#xD;点击数：148&#xD;发表时间：2026年10月21日">第十八期团校上课通知</a><span class="dateRight">[10-21]</span></li><li><a href="/Item/23769.aspx" target="_blank" title="标题：求真实验室招新考试&#xD;点击数：128&#xD;发表时间：2026年10月09日">求真实验室招新考试</a><span class="dateRight">[10-09]</span></li><li><a href="/Item/23848.aspx" target="_blank" title="标题：越窑青瓷社社员开会通知&#xD;点击数：77&#xD;发表时间：2026年10月26日">越窑青瓷社社员开会通知</a><span class="dateRight">[10-26]</span></li><li><a href="/Item/23247.aspx" target="_blank" title="标题：周六招生考试志愿者会议&#xD;点击数：207&#xD;发表时间：2026年05月20日">周六招生考试志愿者会议</a><span class="dateRight">[05-20]</span></li><li><a href="/Item/23243.aspx" target="_blank" title="标题：学术节｜考古知识竞赛&#xD;点击数：113&#xD;发表时间：2026年05月19日">学术节｜考古知识竞赛</a><span class="dateRight">[05-19]</span></li><li><a href="/Item/23192.aspx" target="_blank" title="标题：学术节｜绍兴一中文创产品设计方案征集&#xD;点击数：146&#xD;发表时间：2026年05月13日">学术节｜绍兴一中文创产品设计方案征集</a><span class="dateRight">[05-13]</span></li><li class="last"><a href="/Item/22878.aspx" target="_blank" title="标题：关于2026寒期社会实践交流评比的通知&#xD;点击数：122&#xD;发表时间：2026年03月17日">关于2026寒期社会实践交流评比的通知</a><span class="dateRight">[03-17]</span></li>
+            <li class="first"><a href="/Item/23848.aspx" target="_blank" title="标题：越窑青瓷社社员开会通知&#xD;点击数：82&#xD;发表时间：2026年10月26日">越窑青瓷社社员开会通知</a><span class="dateRight">[10-26]</span></li><li><a href="/Item/23838.aspx" target="_blank" title="标题：周六社团课通知8则&#xD;点击数：156&#xD;发表时间：2026年10月23日">周六社团课通知8则</a><span class="dateRight">[10-23]</span></li><li><a href="/Item/23825.aspx" target="_blank" title="标题：第十八期团校上课通知&#xD;点击数：152&#xD;发表时间：2026年10月21日">第十八期团校上课通知</a><span class="dateRight">[10-21]</span></li><li><a href="/Item/23243.aspx" target="_blank" title="标题：学术节｜考古知识竞赛&#xD;点击数：113&#xD;发表时间：2026年05月19日">学术节｜考古知识竞赛</a><span class="dateRight">[05-19]</span></li><li><a href="/Item/23192.aspx" target="_blank" title="标题：学术节｜绍兴一中文创产品设计方案征集&#xD;点击数：146&#xD;发表时间：2026年05月13日">学术节｜绍兴一中文创产品设计方案征集</a><span class="dateRight">[05-13]</span></li><li><a href="/Item/22878.aspx" target="_blank" title="标题：关于2026寒期社会实践交流评比的通知&#xD;点击数：122&#xD;发表时间：2026年03月17日">关于2026寒期社会实践交流评比的通知</a><span class="dateRight">[03-17]</span></li><li class="last"><a href="/Item/21976.aspx" target="_blank" title="标题：第二十六届团学联主席团选举结果公示&#xD;点击数：188&#xD;发表时间：2025年09月25日">第二十六届团学联主席团选举结果公示</a><span class="dateRight">[09-25]</span></li>
           
                     </ul>
                 </div>
@@ -436,7 +436,7 @@ $(document).ready(function()
                         </div>
 
                         <div class="others">
-                            <div class="prev"><span>上一篇：</span><a href="/Item/23838.aspx" target="_self" title="标题：周六社团课通知8则&#xD;点击数：153&#xD;发表时间：26年10月23日">周六社团课通知8则</a>[ 10-23 ]</div>
+                            <div class="prev"><span>上一篇：</span><a href="/Item/23838.aspx" target="_self" title="标题：周六社团课通知8则&#xD;点击数：156&#xD;发表时间：26年10月23日">周六社团课通知8则</a>[ 10-23 ]</div>
                             <div class="next"><span>下一篇：没有了！</span></div>
                         </div>
                     </div>
