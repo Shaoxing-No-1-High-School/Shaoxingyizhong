@@ -2,7 +2,7 @@
 
 `tools/intranet_crawler.py` 运行在能访问 `10.176.17.2` 的内网机器上，GitHub Actions 无法直接访问这个地址。因此同步分为两段：
 
-1. `tools/intranet_crawler.py` 检查首页、分类页等枝干节点，并根据 `Item/数字.aspx` 的编号水位线只抓取新叶子节点。默认以 GitHub 仓库中最大的 Item 编号为基准，再回溯 20 个编号，避免少量临近旧页面漏更新。下载内容按字节与本地文件比较；相同时不创建临时文件，有变化时原子替换。
+1. `tools/intranet_crawler.py` 检查首页、分类页等枝干节点，并根据 `Item/数字.aspx` 的编号水位线抓取新叶子节点。默认以 GitHub 仓库中最大的 Item 编号为基准，再回溯 20 个编号；目录引用但仓库缺少的文章也会补抓，不受回溯范围限制。下载内容按字节与本地文件比较；相同时不创建临时文件，有变化时原子替换。
 2. `tools/sync_image_shards.py` 把 `UploadFiles` 下的图片按分片仓库同步并校验。
 3. `tools/publish_crawl.py` 比较爬虫目录和仓库目录，复制内容变化的页面、脚本和非图片附件；非图片附件会从 `UploadFiles` 镜像到主仓库的 `downloads/`。每个发生变化的 `.aspx` 页面会同时刷新对应的已提交 `.html` 别名（根首页同步 `index.html`、`Default.html`、`default.html`），然后自动 commit 和 push。原始 `UploadFiles`、图片、爬虫状态和日志不会进入主仓库。
 4. push 后，GitHub Pages Action 仍会把完整 `.aspx` 页面树转换为部署用的 `.html`；仓库内的页面 HTML 与发布源同步，避免只更新 `.aspx` 而留下旧页面。
@@ -36,11 +36,11 @@ python3 tools/update_from_intranet.py --full-crawl
 python3 tools/update_from_intranet.py --base-url http://10.176.17.2/
 ```
 
-增量抓取默认使用 128 个工作线程，不再固定等待；页面和附件处理可同时进行。
+增量抓取默认使用 16 个工作线程，不再固定等待；页面和附件处理可同时进行，避免并发过高导致内网站点连接超时。
 完整抓取默认保持单线程、每页等待 0.2 秒。可通过参数覆盖：
 
 ```bash
-python3 tools/update_from_intranet.py --workers 128 --page-delay 0
+python3 tools/update_from_intranet.py --workers 16 --page-delay 0
 ```
 
 `--workers` 是同时处理的页面数，附件下载计入相应页面的工作线程。
@@ -49,7 +49,7 @@ python3 tools/update_from_intranet.py --workers 128 --page-delay 0
 
 终端默认每秒显示一次汇总进度和警告，逐文件明细仍写入 `crawl.log`。
 需要在终端查看全部明细时运行 `python3 tools/update_from_intranet.py --verbose`。
-爬虫代码随仓库版本管理，无需另行复制相邻目录的 `a.py`。
+爬虫代码随仓库版本管理，无需另行复制相邻目录的 `a.py`。页面或所需附件失败时会重试，重试后仍失败的地址保存在队列中，下一轮继续；首页、分类页或文章失败时本轮不会继续发布。发布前也会检查目录引用的文章是否已在仓库中或在本轮成功抓取。
 
 ## 重要行为
 

@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import math
 import os
 import re
@@ -11,6 +12,7 @@ import subprocess
 import sys
 import time
 from pathlib import Path
+from urllib.parse import urlparse
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -82,14 +84,50 @@ def recent_branch_paths(crawl_output: Path, min_item_id: int, lookback: int) -> 
     return branches
 
 
+def missing_item_paths(crawl_output: Path, repo_root: Path) -> set[str]:
+    """Revisit linked articles absent from the published archive, regardless of age."""
+    if not crawl_output.exists():
+        return set()
+    published = {path.name.casefold() for path in (repo_root / "Item").glob("*.aspx")}
+    item_pattern = re.compile(r"/Item/(\d+)\.aspx", re.IGNORECASE)
+    pages = list(crawl_output.glob("Category_*/*.aspx"))
+    pages.extend(crawl_output / name for name in ("Default.aspx", "default.aspx"))
+    missing: set[str] = set()
+    for page in pages:
+        if not page.is_file():
+            continue
+        text = page.read_text(encoding="utf-8", errors="ignore")
+        for item_id in item_pattern.findall(text):
+            if f"{item_id}.aspx".casefold() not in published:
+                missing.add(f"/Item/{item_id}.aspx")
+    return missing
+
+
 def build_recent_branch_seed(min_item_id: int, lookback: int) -> Path:
     """Seed category branches containing leaves near the current item waterline."""
     branches = recent_branch_paths(CRAWL_OUTPUT, min_item_id, lookback)
+    missing = missing_item_paths(CRAWL_OUTPUT, REPO_ROOT)
     INCREMENTAL_STATE.mkdir(parents=True, exist_ok=True)
     seed_file = INCREMENTAL_STATE / "recent_branches.txt"
-    seed_file.write_text("\n".join(sorted(branches)) + "\n", encoding="utf-8")
-    print(f"recent_branch_seeds={len(branches)} threshold={min_item_id} lookback={lookback}")
+    seed_file.write_text("\n".join(sorted(branches | missing)) + "\n", encoding="utf-8")
+    print(f"recent_branch_seeds={len(branches)} missing_item_seeds={len(missing)} "
+          f"threshold={min_item_id} lookback={lookback}")
     return seed_file
+
+
+def unpublished_missing_items() -> list[str]:
+    """Find linked articles that this crawl cannot publish from its visited files."""
+    missing = missing_item_paths(CRAWL_OUTPUT, REPO_ROOT)
+    if not missing:
+        return []
+    visited_file = INCREMENTAL_STATE / "visited.json"
+    visited = set()
+    if visited_file.is_file():
+        visited = {urlparse(url).path.casefold() for url in json.loads(visited_file.read_text(encoding="utf-8"))}
+    return sorted(
+        item for item in missing
+        if item.casefold() not in visited or not (CRAWL_OUTPUT / item.lstrip("/")).is_file()
+    )
 
 
 def main() -> int:
@@ -112,7 +150,7 @@ def main() -> int:
     page_delay = args.page_delay if args.page_delay is not None else (0.2 if args.full_crawl else 0.0)
     if not math.isfinite(page_delay) or page_delay < 0:
         parser.error("--page-delay 必须是非负有限数")
-    workers = args.workers if args.workers is not None else (1 if args.full_crawl else 128)
+    workers = args.workers if args.workers is not None else (1 if args.full_crawl else 16)
     if workers < 1:
         parser.error("--workers 必须是正整数")
     crawler_args.extend(["--page-delay", str(page_delay), "--workers", str(workers)])
@@ -136,6 +174,13 @@ def main() -> int:
     started = time.monotonic()
     run_step(crawler_args, PROJECTS_ROOT)
     print(f"crawl_seconds={time.monotonic() - started:.1f}", flush=True)
+
+    missing = unpublished_missing_items()
+    if missing:
+        print(f"❌ 目录引用了 {len(missing)} 个尚未抓取的文章，已停止发布；下次更新会补抓：", file=sys.stderr)
+        for item in missing:
+            print(f"  {item}", file=sys.stderr)
+        return 1
 
     started = time.monotonic()
     run_step(

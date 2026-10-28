@@ -10,10 +10,10 @@ from tools import update_from_intranet
 
 
 class UpdateCommandTests(unittest.TestCase):
-    def test_incremental_update_preserves_fast_defaults_and_publish_state(self):
+    def test_incremental_update_limits_default_load_and_preserves_publish_state(self):
         for options, delay, workers in [
-            ([], "0.0", "128"),
-            (["--verbose"], "0.0", "128"),
+            ([], "0.0", "16"),
+            (["--verbose"], "0.0", "16"),
             (["--full-crawl"], "0.2", "1"),
             (["--workers", "64", "--page-delay", "0.01"], "0.01", "64"),
         ]:
@@ -29,6 +29,8 @@ class UpdateCommandTests(unittest.TestCase):
                 update_from_intranet,
                 CRAWLER=crawler,
                 INCREMENTAL_STATE=root,
+                CRAWL_OUTPUT=root / "crawl",
+                REPO_ROOT=root / "repo",
             ), mock.patch.object(
                 update_from_intranet, "latest_published_item_id", return_value=100
             ), mock.patch.object(

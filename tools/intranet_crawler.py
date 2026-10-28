@@ -437,19 +437,23 @@ def process_page(current_url, page_delay):
         if page_delay:
             time.sleep(page_delay)
         if stop_requested:
-            return []
+            return None
         with get_session().get(current_url, timeout=15) as resp:
             if resp.status_code != 200 or stop_requested:
-                return []
+                if not stop_requested:
+                    logging.warning(f"⚠️ 状态码 {resp.status_code}: {current_url}")
+                return None
             content_type = resp.headers.get('Content-Type', '')
             if 'text/html' not in content_type:
-                save_response(resp, get_save_path(current_url), current_url)
+                if not save_response(resp, get_save_path(current_url), current_url):
+                    return None
                 if 'text/css' in content_type or urlparse(current_url).path.lower().endswith('.css'):
                     css = resp.content.decode(resp.encoding or 'utf-8', errors='ignore')
                     for asset in extract_css_asset_links(css, current_url):
                         if stop_requested:
-                            break
-                        download_file(asset, get_save_path(asset))
+                            return None
+                        if not download_file(asset, get_save_path(asset)):
+                            return None
                 return []
             html = resp.text
             page_links = extract_page_links(html, current_url)
@@ -468,17 +472,29 @@ def process_page(current_url, page_delay):
                     if href.endswith('/'):
                         links.append(absolute)
                     else:
-                        download_file(absolute, get_save_path(absolute))
+                        if not download_file(absolute, get_save_path(absolute)):
+                            return None
                 return links
-            save_response(resp, get_save_path(current_url), current_url)
+            if not save_response(resp, get_save_path(current_url), current_url):
+                return None
             for attachment in page_links.attachments:
                 if stop_requested:
-                    break
-                download_file(attachment, get_save_path(attachment))
+                    return None
+                if not download_file(attachment, get_save_path(attachment)):
+                    return None
             return page_links.navigation
     except Exception as error:
         logging.error(f"❌ 处理失败 {current_url}: {error}")
-        return []
+        return None
+
+
+def is_required_page(url):
+    """Fail the update when the homepage, a category, or an article is missing."""
+    path = urlparse(url).path
+    return (path in ('', '/')
+            or re.fullmatch(r'/default\.aspx', path, re.IGNORECASE) is not None
+            or re.fullmatch(r'/Category_\d+/Index(?:_\d+)?\.aspx', path, re.IGNORECASE) is not None
+            or re.fullmatch(r'/Item/\d+\.aspx', path, re.IGNORECASE) is not None)
 
 
 def main():
@@ -509,13 +525,22 @@ def main():
         with open(args.seed_file, encoding='utf-8') as seed_handle:
             seeds = [urljoin(BASE_URL, line.strip()) for line in seed_handle if line.strip()]
         BRANCH_ALLOWLIST = {urlparse(url).path for url in seeds}
-    visited, queue = load_state() if args.resume else (set(), deque())
+    if args.resume:
+        visited, queue = load_state()
+    else:
+        _, pending = load_state()
+        own_host = urlparse(BASE_URL).netloc
+        pending = [url for url in pending if urlparse(url).netloc == own_host]
+        visited, queue = set(), deque(dict.fromkeys([BASE_URL, *seeds, *pending]))
     if not queue:
         queue.extend(dict.fromkeys([BASE_URL, *seeds]))
+    if not args.resume or not visited:
         logging.info("🚀 开始本轮抓取", extra={"progress": True})
     logging.info(f"抓取参数：workers={args.workers} page_delay={args.page_delay}", extra={"progress": True})
     scheduled = set(visited) | set(queue)
     in_flight = {}
+    attempts = {}
+    failed = []
     count = 0
     next_save = 10
     last_progress = time.monotonic()
@@ -524,7 +549,7 @@ def main():
     executor = ThreadPoolExecutor(max_workers=args.workers)
 
     def save_progress():
-        pending_urls = [*in_flight.values(), *queue]
+        pending_urls = [*failed, *in_flight.values(), *queue]
         save_state(visited, deque(dict.fromkeys(pending_urls)))
 
     try:
@@ -536,7 +561,9 @@ def main():
                 if not is_allowed(current_url):
                     visited.add(current_url)
                     continue
-                future = executor.submit(process_page, current_url, args.page_delay)
+                retry_count = attempts.get(current_url, 0)
+                retry_delay = min(1.0, 0.25 * 2 ** (retry_count - 1)) if retry_count else 0
+                future = executor.submit(process_page, current_url, args.page_delay + retry_delay)
                 in_flight[future] = current_url
             if not in_flight:
                 continue
@@ -545,7 +572,16 @@ def main():
                 if stop_requested:
                     break
                 current_url = in_flight.pop(future)
-                for link in future.result():
+                links = future.result()
+                if links is None:
+                    attempts[current_url] = attempts.get(current_url, 0) + 1
+                    if attempts[current_url] < 3:
+                        queue.append(current_url)
+                    else:
+                        failed.append(current_url)
+                        logging.warning(f"⚠️ 抓取失败，已保留待重试: {current_url}")
+                    continue
+                for link in links:
                     if link not in scheduled:
                         scheduled.add(link)
                         queue.append(link)
@@ -566,6 +602,12 @@ def main():
         executor.shutdown(wait=True, cancel_futures=True)
     if stop_requested:
         return 130
+    required_failures = [url for url in failed if is_required_page(url)]
+    if required_failures:
+        logging.error(f"❌ 抓取未完成：{len(required_failures)} 个页面失败，已保留待重试。")
+        return 1
+    if failed:
+        logging.warning(f"⚠️ {len(failed)} 个资源未抓取成功，已保留待重试。")
     logging.info(f"✅ 抓取结束：已处理 {count} 个页面", extra={"progress": True})
     logging.info(f"🎉 爬取完成！共处理 {len(visited)} 个页面。", extra={"progress": True})
     return 0
