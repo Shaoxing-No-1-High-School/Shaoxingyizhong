@@ -10,6 +10,7 @@ import shutil
 from pathlib import Path
 
 try:
+    from tools.static_search import build_search_assets, rewrite_search_urls
     from tools.attachment_routing import (
         RouteConfig,
         RouteError,
@@ -17,6 +18,7 @@ try:
         rewrite_download_urls,
     )
 except ModuleNotFoundError:  # Support direct execution as tools/build_pages.py.
+    from static_search import build_search_assets, rewrite_search_urls
     from attachment_routing import (
         RouteConfig,
         RouteError,
@@ -73,6 +75,7 @@ def rewrite_text(text: str, base_path: str) -> str:
     text, _ = ROOT_URL_RE.subn(
         lambda match: match.group("prefix") + base + match.group("path"), text
     )
+    text = rewrite_search_urls(text, base_path)
     return ASPX_RE.sub(".html", text)
 
 
@@ -225,6 +228,9 @@ def build_site(
         if fail_on_unresolved:
             raise RouteError(message)
         print(f"warning: {message}; see attachment-errors.json")
+
+    if (source / "search.aspx").is_file():
+        build_search_assets(source, output, base_path)
 
     return {"copied": copied, "converted_aspx": converted, "skipped": skipped}
 
