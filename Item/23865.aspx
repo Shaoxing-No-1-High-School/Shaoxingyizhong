@@ -439,7 +439,7 @@ $(document).ready(function()
 
                         <div class="others">
                             <div class="prev"><span>上一篇：</span><a href="/Item/23848.aspx" target="_self" title="标题：越窑青瓷社社员开会通知&#xD;点击数：86&#xD;发表时间：26年10月26日">越窑青瓷社社员开会通知</a>[ 10-26 ]</div>
-                            <div class="next"><span>下一篇：没有了！</span></div>
+                            <div class="next"><span>下一篇：</span><a href="/Item/23869.aspx" target="_self" title="标题：团课地点更改通知&#xD;点击数：0&#xD;发表时间：26年10月29日">团课地点更改通知</a>[ 10-29 ]</div>
                         </div>
                     </div>
 
