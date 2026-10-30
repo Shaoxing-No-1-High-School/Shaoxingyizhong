@@ -115,7 +115,7 @@ function GetUserInfo1(response){
                     return;
                 } else {
 
-                    window.location = '/search/s.html?c=&f=title&wd=' + escape(keyword2) + '&o='+2;
+                    window.location = '/Shaoxingyizhong/search.html?c=&f=title&wd=' + encodeURIComponent(keyword2) + '&o='+2;
                 }
             }
             </script>
@@ -371,7 +371,7 @@ function GetUserInfo1(response){
 	<div class="bd">
 		<ul class="sideinfoList">
 			
-            <li class="first"><a href="/Shaoxingyizhong/Item/10553.html" target="_blank" title="标题：绍兴一中教育基金会捐赠账户&#xD;点击数：267&#xD;发表时间：2019年09月16日"><font style=";">绍兴一中教育基金会捐赠账户</font></a><span class="dateRight">[09-16]</span></li><li><a href="/Shaoxingyizhong/Item/10552.html" target="_blank" title="标题：基金会法人登记证书（正本）&#xD;点击数：168&#xD;发表时间：2019年09月16日">基金会法人登记证书（正本）</a><span class="dateRight">[09-16]</span></li><li><a href="/Shaoxingyizhong/Item/10551.html" target="_blank" title="标题：绍兴市民政局准予绍兴市第一中学教育基金会设立登记决定书&#xD;点击数：112&#xD;发表时间：2019年09月16日">绍兴市民政局准予绍兴市第一中学教育基金会设立登记决定书</a><span class="dateRight">[09-16]</span></li><li><a href="/Shaoxingyizhong/Item/10550.html" target="_blank" title="标题：绍兴市第一中学教育基金会第一届理事会名单&#xD;点击数：134&#xD;发表时间：2019年09月16日"><font style=";">绍兴市第一中学教育基金会第一届理事会名单</font></a><span class="dateRight">[09-16]</span></li><li class="last"><a href="/Shaoxingyizhong/Item/10549.html" target="_blank" title="标题：绍兴市第一中学教育基金会章程（终稿）&#xD;点击数：82&#xD;发表时间：2019年09月16日"><font style=";">绍兴市第一中学教育基金会章程（终稿）</font></a><span class="dateRight">[09-16]</span></li>
+            <li class="first"><a href="/Shaoxingyizhong/Item/10553.html" target="_blank" title="标题：绍兴一中教育基金会捐赠账户&#xD;点击数：268&#xD;发表时间：2019年09月16日"><font style=";">绍兴一中教育基金会捐赠账户</font></a><span class="dateRight">[09-16]</span></li><li><a href="/Shaoxingyizhong/Item/10552.html" target="_blank" title="标题：基金会法人登记证书（正本）&#xD;点击数：169&#xD;发表时间：2019年09月16日">基金会法人登记证书（正本）</a><span class="dateRight">[09-16]</span></li><li><a href="/Shaoxingyizhong/Item/10551.html" target="_blank" title="标题：绍兴市民政局准予绍兴市第一中学教育基金会设立登记决定书&#xD;点击数：113&#xD;发表时间：2019年09月16日">绍兴市民政局准予绍兴市第一中学教育基金会设立登记决定书</a><span class="dateRight">[09-16]</span></li><li><a href="/Shaoxingyizhong/Item/10550.html" target="_blank" title="标题：绍兴市第一中学教育基金会第一届理事会名单&#xD;点击数：135&#xD;发表时间：2019年09月16日"><font style=";">绍兴市第一中学教育基金会第一届理事会名单</font></a><span class="dateRight">[09-16]</span></li><li class="last"><a href="/Shaoxingyizhong/Item/10549.html" target="_blank" title="标题：绍兴市第一中学教育基金会章程（终稿）&#xD;点击数：83&#xD;发表时间：2019年09月16日"><font style=";">绍兴市第一中学教育基金会章程（终稿）</font></a><span class="dateRight">[09-16]</span></li>
           
 		</ul>
 	</div>
@@ -397,7 +397,7 @@ function GetUserInfo1(response){
    <label> <input id="Submit"  type="button"  class="input_button" value="搜索" name="Button" onclick="OnSearchCheckAndSubmit2();" /></label>
    <label> 
    <!--<input type="button" class="input_button" value="高级搜索" onclick="location.href='/Shaoxingyizhong/search.html?searchtype=2&ModelId=1'" />--></label>
-    <script type="text/javascript">$('#keyword_PowerEasy').useKeypressSubmit($('#Submit'));</script>
+    <script type="text/javascript">$('#keyword_PowerEasy').useKeypressSubmit($('input[onclick^=OnSearchCheckAndSubmit2]'));</script>
     <script language="javascript" type="text/javascript">
     function OnSearchCheckAndSubmit2(){
         var keyword = document.getElementById("keyword_PowerEasy").value;
@@ -410,7 +410,7 @@ function GetUserInfo1(response){
             var fieldOptionSel = document.getElementById("fieldOption");
             var nodeId = nodeSel.options[nodeSel.options.selectedIndex].value;
             var fieldOption = fieldOptionSel.options[fieldOptionSel.options.selectedIndex].value;
-            window.location = "/search.html?searchtype=1&ModelId=1&nodeId=" + nodeId + "&Keyword=" + escape(keyword) + "&fieldOption=" + fieldOption;
+            window.location = "/Shaoxingyizhong/search.html?searchtype=1&ModelId=1&nodeId=" + nodeId + "&Keyword=" + encodeURIComponent(keyword) + "&fieldOption=" + fieldOption;
         }
     }
     </script>
@@ -431,7 +431,7 @@ function GetUserInfo1(response){
                     <!-- 正文内容 S -->
                     <ul class="infoList">
                         
-            <li class="first"><span class="date">2024-09-14</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/20305.html" target="_self" title="标题：奖教助学 传递大爱|杰出校友王卫列回母校设立“越民奖学金”并投入使用&#xD;点击数：159&#xD;发表时间：2024年09月14日">奖教助学 传递大爱|杰出校友王卫列回母校设立“越民奖学金”并投入使用</a></li><li><span class="date">2020-09-29</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/16605.html" target="_self" title="标题：关于公布绍兴一中教育基金会审计报告的通知&#xD;点击数：276&#xD;发表时间：2020年09月29日">关于公布绍兴一中教育基金会审计报告的通知</a></li><li><span class="date">2019-09-16</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/10553.html" target="_self" title="标题：绍兴一中教育基金会捐赠账户&#xD;点击数：267&#xD;发表时间：2019年09月16日"><font style=";">绍兴一中教育基金会捐赠账户</font></a></li><li><span class="date">2019-09-16</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/10552.html" target="_self" title="标题：基金会法人登记证书（正本）&#xD;点击数：168&#xD;发表时间：2019年09月16日">基金会法人登记证书（正本）</a></li><li><span class="date">2019-09-16</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/10551.html" target="_self" title="标题：绍兴市民政局准予绍兴市第一中学教育基金会设立登记决定书&#xD;点击数：112&#xD;发表时间：2019年09月16日">绍兴市民政局准予绍兴市第一中学教育基金会设立登记决定书</a></li><li class="split"></li><li><span class="date">2019-09-16</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/10550.html" target="_self" title="标题：绍兴市第一中学教育基金会第一届理事会名单&#xD;点击数：134&#xD;发表时间：2019年09月16日"><font style=";">绍兴市第一中学教育基金会第一届理事会名单</font></a></li><li class="last"><span class="date">2019-09-16</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/10549.html" target="_self" title="标题：绍兴市第一中学教育基金会章程（终稿）&#xD;点击数：82&#xD;发表时间：2019年09月16日"><font style=";">绍兴市第一中学教育基金会章程（终稿）</font></a></li>
+            <li class="first"><span class="date">2024-09-14</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/20305.html" target="_self" title="标题：奖教助学 传递大爱|杰出校友王卫列回母校设立“越民奖学金”并投入使用&#xD;点击数：159&#xD;发表时间：2024年09月14日">奖教助学 传递大爱|杰出校友王卫列回母校设立“越民奖学金”并投入使用</a></li><li><span class="date">2020-09-29</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/16605.html" target="_self" title="标题：关于公布绍兴一中教育基金会审计报告的通知&#xD;点击数：277&#xD;发表时间：2020年09月29日">关于公布绍兴一中教育基金会审计报告的通知</a></li><li><span class="date">2019-09-16</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/10553.html" target="_self" title="标题：绍兴一中教育基金会捐赠账户&#xD;点击数：268&#xD;发表时间：2019年09月16日"><font style=";">绍兴一中教育基金会捐赠账户</font></a></li><li><span class="date">2019-09-16</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/10552.html" target="_self" title="标题：基金会法人登记证书（正本）&#xD;点击数：169&#xD;发表时间：2019年09月16日">基金会法人登记证书（正本）</a></li><li><span class="date">2019-09-16</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/10551.html" target="_self" title="标题：绍兴市民政局准予绍兴市第一中学教育基金会设立登记决定书&#xD;点击数：113&#xD;发表时间：2019年09月16日">绍兴市民政局准予绍兴市第一中学教育基金会设立登记决定书</a></li><li class="split"></li><li><span class="date">2019-09-16</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/10550.html" target="_self" title="标题：绍兴市第一中学教育基金会第一届理事会名单&#xD;点击数：135&#xD;发表时间：2019年09月16日"><font style=";">绍兴市第一中学教育基金会第一届理事会名单</font></a></li><li class="last"><span class="date">2019-09-16</span><img src="/Shaoxingyizhong/images/ontop1.gif" alt="热门"><a href="/Shaoxingyizhong/Item/10549.html" target="_self" title="标题：绍兴市第一中学教育基金会章程（终稿）&#xD;点击数：83&#xD;发表时间：2019年09月16日"><font style=";">绍兴市第一中学教育基金会章程（终稿）</font></a></li>
           
                     </ul>
                     <div class="page"><span id="pe100_page_通用信息列表_普通式" class="pagecss"><!--{pe.begin.pagination}-->
