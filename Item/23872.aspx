@@ -381,7 +381,7 @@ function GetUserInfo1(response){
                 <div class="bd">
                     <ul class="sideinfoList">
                         
-            <li class="first"><a href="/Item/23874.aspx" target="_blank" title="标题：10月份“美丽寝室”表彰公告&#xD;点击数：59&#xD;发表时间：2026年10月30日">10月份“美丽寝室”表彰公告</a><span class="dateRight">[10-30]</span></li><li><a href="/Item/23872.aspx" target="_blank" title="标题：10.29跑操量化考核反馈&#xD;点击数：57&#xD;发表时间：2026年10月29日">10.29跑操量化考核反馈</a><span class="dateRight">[10-29]</span></li><li><a href="/Item/23871.aspx" target="_blank" title="标题：10.28班级一日考核&#xD;点击数：43&#xD;发表时间：2026年10月29日">10.28班级一日考核</a><span class="dateRight">[10-29]</span></li><li><a href="/Item/23868.aspx" target="_blank" title="标题：10.28跑操量化考核反馈&#xD;点击数：61&#xD;发表时间：2026年10月28日">10.28跑操量化考核反馈</a><span class="dateRight">[10-28]</span></li><li><a href="/Item/22444.aspx" target="_blank" title="标题：12.8班级一日考核&#xD;点击数：44&#xD;发表时间：2025年12月09日">12.8班级一日考核</a><span class="dateRight">[12-09]</span></li><li><a href="/Item/23013.aspx" target="_blank" title="标题：4.9班级一日考核&#xD;点击数：36&#xD;发表时间：2026年04月10日">4.9班级一日考核</a><span class="dateRight">[04-10]</span></li><li class="last"><a href="/Item/22964.aspx" target="_blank" title="标题：3.30班级一日考核&#xD;点击数：40&#xD;发表时间：2026年03月31日">3.30班级一日考核</a><span class="dateRight">[03-31]</span></li>
+            <li class="first"><a href="/Item/23874.aspx" target="_blank" title="标题：10月份“美丽寝室”表彰公告&#xD;点击数：64&#xD;发表时间：2026年10月30日">10月份“美丽寝室”表彰公告</a><span class="dateRight">[10-30]</span></li><li><a href="/Item/23872.aspx" target="_blank" title="标题：10.29跑操量化考核反馈&#xD;点击数：58&#xD;发表时间：2026年10月29日">10.29跑操量化考核反馈</a><span class="dateRight">[10-29]</span></li><li><a href="/Item/23871.aspx" target="_blank" title="标题：10.28班级一日考核&#xD;点击数：43&#xD;发表时间：2026年10月29日">10.28班级一日考核</a><span class="dateRight">[10-29]</span></li><li><a href="/Item/23868.aspx" target="_blank" title="标题：10.28跑操量化考核反馈&#xD;点击数：61&#xD;发表时间：2026年10月28日">10.28跑操量化考核反馈</a><span class="dateRight">[10-28]</span></li><li><a href="/Item/22444.aspx" target="_blank" title="标题：12.8班级一日考核&#xD;点击数：44&#xD;发表时间：2025年12月09日">12.8班级一日考核</a><span class="dateRight">[12-09]</span></li><li><a href="/Item/23013.aspx" target="_blank" title="标题：4.9班级一日考核&#xD;点击数：36&#xD;发表时间：2026年04月10日">4.9班级一日考核</a><span class="dateRight">[04-10]</span></li><li class="last"><a href="/Item/22964.aspx" target="_blank" title="标题：3.30班级一日考核&#xD;点击数：40&#xD;发表时间：2026年03月31日">3.30班级一日考核</a><span class="dateRight">[03-31]</span></li>
           
                     </ul>
                 </div>
@@ -427,7 +427,7 @@ $(document).ready(function()
 </script></span> </div>
                         <div class="conTxt"> 
       
-     <p style="text-align: center;"><img src="/UploadFiles/xwzx/2026/10/202610291636167829.png" style="max-width: 100%; " title="202610291636167829.png" /></p>
+     <p style="text-align: center;"><img src="/UploadFiles/xwzx/2026/10/202610301451362883.png" style="max-width: 100%; " title="202610301451362883.png" /></p>
     
     </div><!--endprint-->
                         <div class="userControl">
@@ -437,7 +437,7 @@ $(document).ready(function()
 
                         <div class="others">
                             <div class="prev"><span>上一篇：</span><a href="/Item/23871.aspx" target="_self" title="标题：10.28班级一日考核&#xD;点击数：43&#xD;发表时间：26年10月29日">10.28班级一日考核</a>[ 10-29 ]</div>
-                            <div class="next"><span>下一篇：</span><a href="/Item/23874.aspx" target="_self" title="标题：10月份“美丽寝室”表彰公告&#xD;点击数：59&#xD;发表时间：26年10月30日">10月份“美丽寝室”表彰公告</a>[ 10-30 ]</div>
+                            <div class="next"><span>下一篇：</span><a href="/Item/23874.aspx" target="_self" title="标题：10月份“美丽寝室”表彰公告&#xD;点击数：64&#xD;发表时间：26年10月30日">10月份“美丽寝室”表彰公告</a>[ 10-30 ]</div>
                         </div>
                     </div>
 
