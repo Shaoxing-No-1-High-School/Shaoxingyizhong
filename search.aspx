@@ -350,11 +350,11 @@ function GetUserInfo1(response){
                     <h1 class="title"><b>关键词 "<i></i>"</b></h1>
                     <div class="con">
                         <div class="infoList a14" style="margin-bottom: 30px;"> 
-  <li><span class="date">2026-10-30</span><a href="/Item/23882.aspx" target="_blank" title="标题：研究院2026年11月份市直活动安排&#xD;点击数：66&#xD;发表时间：2026年10月30日">研究院2026年11月份市直活动安排</a></li>
+  <li><span class="date">2026-10-30</span><a href="/Item/23882.aspx" target="_blank" title="标题：研究院2026年11月份市直活动安排&#xD;点击数：67&#xD;发表时间：2026年10月30日">研究院2026年11月份市直活动安排</a></li>
 <li><span class="date">2026-10-30</span><a href="/Item/23881.aspx" target="_blank" title="标题：10.30跑操量化考核反馈&#xD;点击数：29&#xD;发表时间：2026年10月30日">10.30跑操量化考核反馈</a></li>
 <li><span class="date">2026-10-30</span><a href="/Item/23880.aspx" target="_blank" title="标题：10.29班级一日考核&#xD;点击数：23&#xD;发表时间：2026年10月30日">10.29班级一日考核</a></li>
 <li><span class="date">2026-10-30</span><a href="/Item/23879.aspx" target="_blank" title="标题：高一晚自修（11.1-11.6）&#xD;点击数：13&#xD;发表时间：2026年10月30日">高一晚自修（11.1-11.6）</a></li>
-<li><span class="date">2026-10-30</span><a href="/Item/23878.aspx" target="_blank" title="标题：周六社团课通知9则&#xD;点击数：103&#xD;发表时间：2026年10月30日">周六社团课通知9则</a></li>
+<li><span class="date">2026-10-30</span><a href="/Item/23878.aspx" target="_blank" title="标题：周六社团课通知9则&#xD;点击数：104&#xD;发表时间：2026年10月30日">周六社团课通知9则</a></li>
 <li><span class="date">2026-10-30</span><a href="/Item/23877.aspx" target="_blank" title="标题：热血篮途，双喜临门！我校男女篮在2026年市直属高中生篮球赛中双双斩获佳绩&#xD;点击数：46&#xD;发表时间：2026年10月30日">热血篮途，双喜临门！我校男女篮在2026年市直属高中生篮球赛中双双斩获佳绩</a></li>
 <li><span class="date">2026-10-30</span><a href="/Item/23876.aspx" target="_blank" title="标题：笃行反思 精进赋能  ——青年教师第三期业务提升培训顺利举行&#xD;点击数：50&#xD;发表时间：2026年10月30日">笃行反思 精进赋能  ——青年教师第三期业务提升培训顺利举行</a></li>
 <li><span class="date">2026-10-30</span><a href="/Item/23875.aspx" target="_blank" title="标题：高二晚自修（11.2-11.8）&#xD;点击数：40&#xD;发表时间：2026年10月30日">高二晚自修（11.2-11.8）</a></li>
@@ -362,7 +362,7 @@ function GetUserInfo1(response){
 <li><span class="date">2026-10-30</span><a href="/Item/23873.aspx" target="_blank" title="标题：关于高三体测抽测同学的通知&#xD;点击数：98&#xD;发表时间：2026年10月30日">关于高三体测抽测同学的通知</a></li>
 <li><span class="date">2026-10-29</span><a href="/Item/23872.aspx" target="_blank" title="标题：10.29跑操量化考核反馈&#xD;点击数：68&#xD;发表时间：2026年10月29日">10.29跑操量化考核反馈</a></li>
 <li><span class="date">2026-10-29</span><a href="/Item/23871.aspx" target="_blank" title="标题：10.28班级一日考核&#xD;点击数：47&#xD;发表时间：2026年10月29日">10.28班级一日考核</a></li>
-<li><span class="date">2026-10-29</span><a href="/Item/23870.aspx" target="_blank" title="标题：创新班学部11月1日至11月13日晚自习安排&#xD;点击数：85&#xD;发表时间：2026年10月29日">创新班学部11月1日至11月13日晚自习安排</a></li>
+<li><span class="date">2026-10-29</span><a href="/Item/23870.aspx" target="_blank" title="标题：创新班学部11月1日至11月13日晚自习安排&#xD;点击数：86&#xD;发表时间：2026年10月29日">创新班学部11月1日至11月13日晚自习安排</a></li>
 <li><span class="date">2026-10-29</span><a href="/Item/23869.aspx" target="_blank" title="标题：团课地点更改通知&#xD;点击数：78&#xD;发表时间：2026年10月29日">团课地点更改通知</a></li>
 <li><span class="date">2026-10-28</span><a href="/Item/23868.aspx" target="_blank" title="标题：10.28跑操量化考核反馈&#xD;点击数：65&#xD;发表时间：2026年10月28日">10.28跑操量化考核反馈</a></li>
 <li><span class="date">2026-10-28</span><a href="/Item/23867.aspx" target="_blank" title="标题：10.27班级一日考核&#xD;点击数：65&#xD;发表时间：2026年10月28日">10.27班级一日考核</a></li>
