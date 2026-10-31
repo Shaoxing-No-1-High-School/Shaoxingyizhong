@@ -440,7 +440,7 @@ $(document).ready(function()
 
                         <div class="others">
                             <div class="prev"><span>上一篇：</span><a href="/Item/23859.aspx" target="_self" title="标题：高三2026体质健康抽测名单&#xD;点击数：203&#xD;发表时间：26年10月26日">高三2026体质健康抽测名单</a>[ 10-26 ]</div>
-                            <div class="next"><span>下一篇：</span><a href="/Item/23873.aspx" target="_self" title="标题：关于高三体测抽测同学的通知&#xD;点击数：96&#xD;发表时间：26年10月30日">关于高三体测抽测同学的通知</a>[ 10-30 ]</div>
+                            <div class="next"><span>下一篇：</span><a href="/Item/23873.aspx" target="_self" title="标题：关于高三体测抽测同学的通知&#xD;点击数：97&#xD;发表时间：26年10月30日">关于高三体测抽测同学的通知</a>[ 10-30 ]</div>
                         </div>
                     </div>
 
