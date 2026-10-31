@@ -350,15 +350,15 @@ function GetUserInfo1(response){
                     <h1 class="title"><b>关键词 "<i></i>"</b></h1>
                     <div class="con">
                         <div class="infoList a14" style="margin-bottom: 30px;"> 
-  <li><span class="date">2026-10-30</span><a href="/Item/23882.aspx" target="_blank" title="标题：研究院2026年11月份市直活动安排&#xD;点击数：88&#xD;发表时间：2026年10月30日">研究院2026年11月份市直活动安排</a></li>
-<li><span class="date">2026-10-30</span><a href="/Item/23881.aspx" target="_blank" title="标题：10.30跑操量化考核反馈&#xD;点击数：34&#xD;发表时间：2026年10月30日">10.30跑操量化考核反馈</a></li>
+  <li><span class="date">2026-10-30</span><a href="/Item/23882.aspx" target="_blank" title="标题：研究院2026年11月份市直活动安排&#xD;点击数：92&#xD;发表时间：2026年10月30日">研究院2026年11月份市直活动安排</a></li>
+<li><span class="date">2026-10-30</span><a href="/Item/23881.aspx" target="_blank" title="标题：10.30跑操量化考核反馈&#xD;点击数：35&#xD;发表时间：2026年10月30日">10.30跑操量化考核反馈</a></li>
 <li><span class="date">2026-10-30</span><a href="/Item/23880.aspx" target="_blank" title="标题：10.29班级一日考核&#xD;点击数：25&#xD;发表时间：2026年10月30日">10.29班级一日考核</a></li>
 <li><span class="date">2026-10-30</span><a href="/Item/23879.aspx" target="_blank" title="标题：高一晚自修（11.1-11.6）&#xD;点击数：17&#xD;发表时间：2026年10月30日">高一晚自修（11.1-11.6）</a></li>
-<li><span class="date">2026-10-30</span><a href="/Item/23878.aspx" target="_blank" title="标题：周六社团课通知9则&#xD;点击数：129&#xD;发表时间：2026年10月30日">周六社团课通知9则</a></li>
-<li><span class="date">2026-10-30</span><a href="/Item/23877.aspx" target="_blank" title="标题：热血篮途，双喜临门！我校男女篮在2026年市直属高中生篮球赛中双双斩获佳绩&#xD;点击数：49&#xD;发表时间：2026年10月30日">热血篮途，双喜临门！我校男女篮在2026年市直属高中生篮球赛中双双斩获佳绩</a></li>
+<li><span class="date">2026-10-30</span><a href="/Item/23878.aspx" target="_blank" title="标题：周六社团课通知9则&#xD;点击数：131&#xD;发表时间：2026年10月30日">周六社团课通知9则</a></li>
+<li><span class="date">2026-10-30</span><a href="/Item/23877.aspx" target="_blank" title="标题：热血篮途，双喜临门！我校男女篮在2026年市直属高中生篮球赛中双双斩获佳绩&#xD;点击数：51&#xD;发表时间：2026年10月30日">热血篮途，双喜临门！我校男女篮在2026年市直属高中生篮球赛中双双斩获佳绩</a></li>
 <li><span class="date">2026-10-30</span><a href="/Item/23876.aspx" target="_blank" title="标题：笃行反思 精进赋能  ——青年教师第三期业务提升培训顺利举行&#xD;点击数：52&#xD;发表时间：2026年10月30日">笃行反思 精进赋能  ——青年教师第三期业务提升培训顺利举行</a></li>
 <li><span class="date">2026-10-30</span><a href="/Item/23875.aspx" target="_blank" title="标题：高二晚自修（11.2-11.8）&#xD;点击数：42&#xD;发表时间：2026年10月30日">高二晚自修（11.2-11.8）</a></li>
-<li><span class="date">2026-10-30</span><a href="/Item/23874.aspx" target="_blank" title="标题：10月份“美丽寝室”表彰公告&#xD;点击数：83&#xD;发表时间：2026年10月30日">10月份“美丽寝室”表彰公告</a></li>
+<li><span class="date">2026-10-30</span><a href="/Item/23874.aspx" target="_blank" title="标题：10月份“美丽寝室”表彰公告&#xD;点击数：84&#xD;发表时间：2026年10月30日">10月份“美丽寝室”表彰公告</a></li>
 <li><span class="date">2026-10-30</span><a href="/Item/23873.aspx" target="_blank" title="标题：关于高三体测抽测同学的通知&#xD;点击数：100&#xD;发表时间：2026年10月30日">关于高三体测抽测同学的通知</a></li>
 <li><span class="date">2026-10-29</span><a href="/Item/23872.aspx" target="_blank" title="标题：10.29跑操量化考核反馈&#xD;点击数：68&#xD;发表时间：2026年10月29日">10.29跑操量化考核反馈</a></li>
 <li><span class="date">2026-10-29</span><a href="/Item/23871.aspx" target="_blank" title="标题：10.28班级一日考核&#xD;点击数：47&#xD;发表时间：2026年10月29日">10.28班级一日考核</a></li>
@@ -371,7 +371,7 @@ function GetUserInfo1(response){
 <li><span class="date">2026-10-27</span><a href="/Item/23864.aspx" target="_blank" title="标题：高考报名工作相关通知（两则）&#xD;点击数：165&#xD;发表时间：2026年10月27日">高考报名工作相关通知（两则）</a></li>
 <li><span class="date">2026-10-27</span><a href="/Item/23863.aspx" target="_blank" title="标题：10.26班级一日考核&#xD;点击数：66&#xD;发表时间：2026年10月27日">10.26班级一日考核</a></li>
 <li><span class="date">2026-10-27</span><a href="/Item/23862.aspx" target="_blank" title="标题：10.27跑操量化考核反馈&#xD;点击数：60&#xD;发表时间：2026年10月27日">10.27跑操量化考核反馈</a></li>
-<li><span class="date">2026-10-27</span><a href="/Item/23861.aspx" target="_blank" title="标题：博雅育人| 德育名师风采录（第十期）&#xD;点击数：133&#xD;发表时间：2026年10月27日">博雅育人| 德育名师风采录（第十期）</a></li>
+<li><span class="date">2026-10-27</span><a href="/Item/23861.aspx" target="_blank" title="标题：博雅育人| 德育名师风采录（第十期）&#xD;点击数：134&#xD;发表时间：2026年10月27日">博雅育人| 德育名师风采录（第十期）</a></li>
 <li><span class="date">2026-10-27</span><a href="/Item/23860.aspx" target="_blank" title="标题：聚焦教学评一致性，聚力研思共促成长  ——绍兴市中小学美术学科专项评价活动在我校圆满举行&#xD;点击数：79&#xD;发表时间：2026年10月27日">聚焦教学评一致性，聚力研思共促成长  ——绍兴市中小学美术学科专项评价活动在我校圆满举行</a></li>
 <li><span class="date">2026-10-26</span><a href="/Item/23859.aspx" target="_blank" title="标题：高三2026体质健康抽测名单&#xD;点击数：205&#xD;发表时间：2026年10月26日">高三2026体质健康抽测名单</a></li>
 <li><span class="date">2026-10-26</span><a href="/Item/23858.aspx" target="_blank" title="标题：10.24班级一日考核&#xD;点击数：62&#xD;发表时间：2026年10月26日">10.24班级一日考核</a></li>
@@ -385,14 +385,14 @@ function GetUserInfo1(response){
 <li><span class="date">2026-10-26</span><a href="/Item/23850.aspx" target="_blank" title="标题：关于“校友之家”活动中心启用的通知&#xD;点击数：166&#xD;发表时间：2026年10月26日">关于“校友之家”活动中心启用的通知</a></li>
 <li><span class="date">2026-10-26</span><a href="/Item/23849.aspx" target="_blank" title="标题：失物招领（手表）&#xD;点击数：41&#xD;发表时间：2026年10月26日">失物招领（手表）</a></li>
 <li><span class="date">2026-10-26</span><a href="/Item/23848.aspx" target="_blank" title="标题：越窑青瓷社社员开会通知&#xD;点击数：87&#xD;发表时间：2026年10月26日">越窑青瓷社社员开会通知</a></li>
-<li><span class="date">2026-10-26</span><a href="/Item/23847.aspx" target="_blank" title="标题：榜样领航明方向 奋楫争先迎诊断  ——2026学年第一学期高三年级学生表彰暨市诊断性测试动员大会举行&#xD;点击数：88&#xD;发表时间：2026年10月26日">榜样领航明方向 奋楫争先迎诊断  ——2026学年第一学期高三年级学生表彰暨市诊断性测试动员大会举行</a></li>
+<li><span class="date">2026-10-26</span><a href="/Item/23847.aspx" target="_blank" title="标题：榜样领航明方向 奋楫争先迎诊断  ——2026学年第一学期高三年级学生表彰暨市诊断性测试动员大会举行&#xD;点击数：89&#xD;发表时间：2026年10月26日">榜样领航明方向 奋楫争先迎诊断  ——2026学年第一学期高三年级学生表彰暨市诊断性测试动员大会举行</a></li>
 <li><span class="date">2026-10-26</span><a href="/Item/23846.aspx" target="_blank" title="标题：携手聚力育人，研思共启新篇  ——绍兴一中与仙居中学政治教研组联合教研&#xD;点击数：112&#xD;发表时间：2026年10月26日">携手聚力育人，研思共启新篇  ——绍兴一中与仙居中学政治教研组联合教研</a></li>
-<li><span class="date">2026-10-26</span><a href="/Item/23845.aspx" target="_blank" title="标题：金秋叙芳华 重阳映初心——我校举行离退休教职工重阳节活动暨离退休党支部主题党日活动&#xD;点击数：58&#xD;发表时间：2026年10月26日">金秋叙芳华 重阳映初心——我校举行离退休教职工重阳节活动暨离退休党支部主题党日活动</a></li>
+<li><span class="date">2026-10-26</span><a href="/Item/23845.aspx" target="_blank" title="标题：金秋叙芳华 重阳映初心——我校举行离退休教职工重阳节活动暨离退休党支部主题党日活动&#xD;点击数：59&#xD;发表时间：2026年10月26日">金秋叙芳华 重阳映初心——我校举行离退休教职工重阳节活动暨离退休党支部主题党日活动</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23844.aspx" target="_blank" title="标题：高一晚自修（10.25-10.30）&#xD;点击数：70&#xD;发表时间：2026年10月23日">高一晚自修（10.25-10.30）</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23843.aspx" target="_blank" title="标题：10.22班级一日考核&#xD;点击数：55&#xD;发表时间：2026年10月23日">10.22班级一日考核</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23842.aspx" target="_blank" title="标题：10.23跑操量化考核反馈&#xD;点击数：56&#xD;发表时间：2026年10月23日">10.23跑操量化考核反馈</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23841.aspx" target="_blank" title="标题：关于2026年中高级职称评审申报的通知&#xD;点击数：218&#xD;发表时间：2026年10月23日">关于2026年中高级职称评审申报的通知</a></li>
-<li><span class="date">2026-10-23</span><a href="/Item/23840.aspx" target="_blank" title="标题：高三晚自修（10.26-11.8）&#xD;点击数：69&#xD;发表时间：2026年10月23日">高三晚自修（10.26-11.8）</a></li>
+<li><span class="date">2026-10-23</span><a href="/Item/23840.aspx" target="_blank" title="标题：高三晚自修（10.26-11.8）&#xD;点击数：70&#xD;发表时间：2026年10月23日">高三晚自修（10.26-11.8）</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23839.aspx" target="_blank" title="标题：青年教师会议&#xD;点击数：225&#xD;发表时间：2026年10月23日">青年教师会议</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23838.aspx" target="_blank" title="标题：周六社团课通知8则&#xD;点击数：159&#xD;发表时间：2026年10月23日">周六社团课通知8则</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23837.aspx" target="_blank" title="标题：绍兴一中教育集团“2026年家长开放日”暨第八届家委会成立活动方案&#xD;点击数：273&#xD;发表时间：2026年10月23日">绍兴一中教育集团“2026年家长开放日”暨第八届家委会成立活动方案</a></li>
