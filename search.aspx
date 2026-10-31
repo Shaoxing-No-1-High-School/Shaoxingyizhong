@@ -350,13 +350,13 @@ function GetUserInfo1(response){
                     <h1 class="title"><b>关键词 "<i></i>"</b></h1>
                     <div class="con">
                         <div class="infoList a14" style="margin-bottom: 30px;"> 
-  <li><span class="date">2026-10-31</span><a href="/Item/23883.aspx" target="_blank" title="标题：关于信息技术组外出培训的通知&#xD;点击数：14&#xD;发表时间：2026年10月31日">关于信息技术组外出培训的通知</a></li>
-<li><span class="date">2026-10-30</span><a href="/Item/23882.aspx" target="_blank" title="标题：研究院2026年11月份市直活动安排&#xD;点击数：104&#xD;发表时间：2026年10月30日">研究院2026年11月份市直活动安排</a></li>
+  <li><span class="date">2026-10-31</span><a href="/Item/23883.aspx" target="_blank" title="标题：关于信息技术组外出培训的通知&#xD;点击数：20&#xD;发表时间：2026年10月31日">关于信息技术组外出培训的通知</a></li>
+<li><span class="date">2026-10-30</span><a href="/Item/23882.aspx" target="_blank" title="标题：研究院2026年11月份市直活动安排&#xD;点击数：105&#xD;发表时间：2026年10月30日">研究院2026年11月份市直活动安排</a></li>
 <li><span class="date">2026-10-30</span><a href="/Item/23881.aspx" target="_blank" title="标题：10.30跑操量化考核反馈&#xD;点击数：37&#xD;发表时间：2026年10月30日">10.30跑操量化考核反馈</a></li>
 <li><span class="date">2026-10-30</span><a href="/Item/23880.aspx" target="_blank" title="标题：10.29班级一日考核&#xD;点击数：25&#xD;发表时间：2026年10月30日">10.29班级一日考核</a></li>
 <li><span class="date">2026-10-30</span><a href="/Item/23879.aspx" target="_blank" title="标题：高一晚自修（11.1-11.6）&#xD;点击数：20&#xD;发表时间：2026年10月30日">高一晚自修（11.1-11.6）</a></li>
 <li><span class="date">2026-10-30</span><a href="/Item/23878.aspx" target="_blank" title="标题：周六社团课通知9则&#xD;点击数：133&#xD;发表时间：2026年10月30日">周六社团课通知9则</a></li>
-<li><span class="date">2026-10-30</span><a href="/Item/23877.aspx" target="_blank" title="标题：热血篮途，双喜临门！我校男女篮在2026年市直属高中生篮球赛中双双斩获佳绩&#xD;点击数：52&#xD;发表时间：2026年10月30日">热血篮途，双喜临门！我校男女篮在2026年市直属高中生篮球赛中双双斩获佳绩</a></li>
+<li><span class="date">2026-10-30</span><a href="/Item/23877.aspx" target="_blank" title="标题：热血篮途，双喜临门！我校男女篮在2026年市直属高中生篮球赛中双双斩获佳绩&#xD;点击数：53&#xD;发表时间：2026年10月30日">热血篮途，双喜临门！我校男女篮在2026年市直属高中生篮球赛中双双斩获佳绩</a></li>
 <li><span class="date">2026-10-30</span><a href="/Item/23876.aspx" target="_blank" title="标题：笃行反思 精进赋能  ——青年教师第三期业务提升培训顺利举行&#xD;点击数：53&#xD;发表时间：2026年10月30日">笃行反思 精进赋能  ——青年教师第三期业务提升培训顺利举行</a></li>
 <li><span class="date">2026-10-30</span><a href="/Item/23875.aspx" target="_blank" title="标题：高二晚自修（11.2-11.8）&#xD;点击数：42&#xD;发表时间：2026年10月30日">高二晚自修（11.2-11.8）</a></li>
 <li><span class="date">2026-10-30</span><a href="/Item/23874.aspx" target="_blank" title="标题：10月份“美丽寝室”表彰公告&#xD;点击数：85&#xD;发表时间：2026年10月30日">10月份“美丽寝室”表彰公告</a></li>
@@ -387,7 +387,7 @@ function GetUserInfo1(response){
 <li><span class="date">2026-10-26</span><a href="/Item/23849.aspx" target="_blank" title="标题：失物招领（手表）&#xD;点击数：41&#xD;发表时间：2026年10月26日">失物招领（手表）</a></li>
 <li><span class="date">2026-10-26</span><a href="/Item/23848.aspx" target="_blank" title="标题：越窑青瓷社社员开会通知&#xD;点击数：87&#xD;发表时间：2026年10月26日">越窑青瓷社社员开会通知</a></li>
 <li><span class="date">2026-10-26</span><a href="/Item/23847.aspx" target="_blank" title="标题：榜样领航明方向 奋楫争先迎诊断  ——2026学年第一学期高三年级学生表彰暨市诊断性测试动员大会举行&#xD;点击数：90&#xD;发表时间：2026年10月26日">榜样领航明方向 奋楫争先迎诊断  ——2026学年第一学期高三年级学生表彰暨市诊断性测试动员大会举行</a></li>
-<li><span class="date">2026-10-26</span><a href="/Item/23846.aspx" target="_blank" title="标题：携手聚力育人，研思共启新篇  ——绍兴一中与仙居中学政治教研组联合教研&#xD;点击数：113&#xD;发表时间：2026年10月26日">携手聚力育人，研思共启新篇  ——绍兴一中与仙居中学政治教研组联合教研</a></li>
+<li><span class="date">2026-10-26</span><a href="/Item/23846.aspx" target="_blank" title="标题：携手聚力育人，研思共启新篇  ——绍兴一中与仙居中学政治教研组联合教研&#xD;点击数：114&#xD;发表时间：2026年10月26日">携手聚力育人，研思共启新篇  ——绍兴一中与仙居中学政治教研组联合教研</a></li>
 <li><span class="date">2026-10-26</span><a href="/Item/23845.aspx" target="_blank" title="标题：金秋叙芳华 重阳映初心——我校举行离退休教职工重阳节活动暨离退休党支部主题党日活动&#xD;点击数：60&#xD;发表时间：2026年10月26日">金秋叙芳华 重阳映初心——我校举行离退休教职工重阳节活动暨离退休党支部主题党日活动</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23844.aspx" target="_blank" title="标题：高一晚自修（10.25-10.30）&#xD;点击数：70&#xD;发表时间：2026年10月23日">高一晚自修（10.25-10.30）</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23843.aspx" target="_blank" title="标题：10.22班级一日考核&#xD;点击数：55&#xD;发表时间：2026年10月23日">10.22班级一日考核</a></li>
