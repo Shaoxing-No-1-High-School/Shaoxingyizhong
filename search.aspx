@@ -350,8 +350,10 @@ function GetUserInfo1(response){
                     <h1 class="title"><b>关键词 "<i></i>"</b></h1>
                     <div class="con">
                         <div class="infoList a14" style="margin-bottom: 30px;"> 
-  <li><span class="date">2026-10-31</span><a href="/Item/23883.aspx" target="_blank" title="标题：关于信息技术组外出培训的通知&#xD;点击数：20&#xD;发表时间：2026年10月31日">关于信息技术组外出培训的通知</a></li>
-<li><span class="date">2026-10-30</span><a href="/Item/23882.aspx" target="_blank" title="标题：研究院2026年11月份市直活动安排&#xD;点击数：105&#xD;发表时间：2026年10月30日">研究院2026年11月份市直活动安排</a></li>
+  <li><span class="date">2026-10-31</span><a href="/Item/23885.aspx" target="_blank" title="标题：高三11.03诊断性考场布置及相关要求&#xD;点击数：4&#xD;发表时间：2026年10月31日">高三11.03诊断性考场布置及相关要求</a></li>
+<li><span class="date">2026-10-31</span><a href="/Item/23884.aspx" target="_blank" title="标题：高三11.03诊断性监考安排和学生考场安排&#xD;点击数：7&#xD;发表时间：2026年10月31日">高三11.03诊断性监考安排和学生考场安排</a></li>
+<li><span class="date">2026-10-31</span><a href="/Item/23883.aspx" target="_blank" title="标题：关于信息技术组外出培训的通知&#xD;点击数：26&#xD;发表时间：2026年10月31日">关于信息技术组外出培训的通知</a></li>
+<li><span class="date">2026-10-30</span><a href="/Item/23882.aspx" target="_blank" title="标题：研究院2026年11月份市直活动安排&#xD;点击数：107&#xD;发表时间：2026年10月30日">研究院2026年11月份市直活动安排</a></li>
 <li><span class="date">2026-10-30</span><a href="/Item/23881.aspx" target="_blank" title="标题：10.30跑操量化考核反馈&#xD;点击数：37&#xD;发表时间：2026年10月30日">10.30跑操量化考核反馈</a></li>
 <li><span class="date">2026-10-30</span><a href="/Item/23880.aspx" target="_blank" title="标题：10.29班级一日考核&#xD;点击数：25&#xD;发表时间：2026年10月30日">10.29班级一日考核</a></li>
 <li><span class="date">2026-10-30</span><a href="/Item/23879.aspx" target="_blank" title="标题：高一晚自修（11.1-11.6）&#xD;点击数：20&#xD;发表时间：2026年10月30日">高一晚自修（11.1-11.6）</a></li>
@@ -398,8 +400,6 @@ function GetUserInfo1(response){
 <li><span class="date">2026-10-23</span><a href="/Item/23838.aspx" target="_blank" title="标题：周六社团课通知8则&#xD;点击数：160&#xD;发表时间：2026年10月23日">周六社团课通知8则</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23837.aspx" target="_blank" title="标题：绍兴一中教育集团“2026年家长开放日”暨第八届家委会成立活动方案&#xD;点击数：273&#xD;发表时间：2026年10月23日">绍兴一中教育集团“2026年家长开放日”暨第八届家委会成立活动方案</a></li>
 <li><span class="date">2026-10-23</span><a href="/Item/23836.aspx" target="_blank" title="标题：【考古社】社团课通知&#xD;点击数：13&#xD;发表时间：2026年10月23日">【考古社】社团课通知</a></li>
-<li><span class="date">2026-10-23</span><a href="/Item/23835.aspx" target="_blank" title="标题：【文学社】社团课通知&#xD;点击数：7&#xD;发表时间：2026年10月23日">【文学社】社团课通知</a></li>
-<li><span class="date">2026-10-23</span><a href="/Item/23834.aspx" target="_blank" title="标题：【摄影社】社团课通知&#xD;点击数：13&#xD;发表时间：2026年10月23日">【摄影社】社团课通知</a></li>
   </div>
                         <div class="page"><span id="pe100_page_全站搜索按标题_普通式" class="pagecss"><!--{pe.begin.pagination}-->
  <a href="search.aspx">首页</a>
